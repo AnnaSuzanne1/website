@@ -3,6 +3,8 @@ body {
     padding:0;
   }
 
+
+
 .streep {
 background-color: #A4CC00;
 position:absolute;
@@ -47,6 +49,9 @@ margin-bottom:1em !important;
 }
 
 @media (max-width: 460px) {
+  .custom-body p.lead {
+    font-size: 14px !important; 
+}
   .navbar.mx-5 {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -55,6 +60,8 @@ margin-bottom:1em !important;
     width: 7em;
   }
 }
+
+
 
 .teamviewerimg {
 margin-top: 4px !important;
