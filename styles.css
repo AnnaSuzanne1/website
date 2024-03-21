@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding:0;
+  }
+
+.streep {
+background-color: #A4CC00;
+position:absolute;
+padding-bottom: 5em;
+width: 100%;
+margin-top:-2em;
+z-index: -1;
+}
+
+/* .mijnNav {
+  margin: 1em, 
+} */
+
+.ulFlex {
+display:flex;
+justify-content:space-around;
+background-color: white;
+border-radius:50px;
+z-index: 1;
+margin: 2em 5em 6em 5em;
+padding: 1em 3em 1em 3em;
+
+}
+
+.ulFlex li {
+  list-style-type: none;
+}
+
+.navLink {
+text-decoration: none;
+list-style-type: none; 
+color: black;
+z-index: 1;
+margin-bottom:1em !important;
+}
+
+
+.custom-navbar {
+  border-radius: 80px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding-left: 4em; */
+}
+
+@media (max-width: 460px) {
+  .navbar.mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .navbar-brand img{
+    width: 7em;
+  }
+}
+
+.teamviewerimg {
+margin-top: 4px !important;
+}
+
+/* .h2Advisor {
+text-align: center;
+} */
+
+/* p:first-of-type {
+text-align:center;
+margin-bottom: 4em;
+} */
+
+/* div section {
+display:flex;
+flex-direction:column;
+max-width:20em;
+margin: 7em;
+background-color: white;
+padding-left: 3em;
+padding-right: 3em;
+padding-top: 1.5em;
+padding-bottom:2em;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+border-radius: 24px;
+
+}
+
+div {
+display:flex;
+background-color: #E0ECAE;
+border-top-left-radius: 24px;
+border-top-right-radius: 24px;
+box-shadow: 0rem 0rem black, -0.5rem -0.5rem #ccc;
+}
+button {
+  background-color: #98C600;
+  max-width: 6em;
+} */
