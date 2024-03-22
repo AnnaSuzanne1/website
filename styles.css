@@ -21,7 +21,6 @@ border-radius:50px;
 z-index: 1;
 margin: 2em 5em 6em 5em;
 padding: 1em 3em 1em 3em;
-
 }
 
 .ulFlex li {
@@ -110,4 +109,14 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
   100% {
     transform: translateX(-100%);
   }
+}
+
+
+.custom-footer{
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  margin-top: 3em;
 }
