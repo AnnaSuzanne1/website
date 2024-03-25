@@ -12,6 +12,10 @@ margin-top:-2em;
 z-index: -1;
 }
 
+.plant {
+  max-width: 380px;
+}
+
 
 .ulFlex {
 display:flex;
@@ -64,8 +68,14 @@ margin-bottom:1em !important;
   margin-top: 3em;
 }
 
+
+.producten {
+  max-width: 600px
+}
+
 .vink {
 width: 3em; 
+margin-right: 3em;
 }
 
 .teamviewerimg {
@@ -125,7 +135,7 @@ footer {
 
 /* over ons titel */
 
-.collegacards-wrapper {
+/* .collegacards-wrapper {
   display: flex;
   justify-content: center;
 }
@@ -155,4 +165,60 @@ footer {
   .collegacard img {
     height: 11em;
   }
+} */
+
+.carousel-inner {
+  padding: 1em;
 }
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    margin-right: 0;
+    flex: 0 0 25%;     /* Hoeveelheid slides */
+    display: block;
+  }
+  .carousel-inner {
+    display: flex;
+  }
+}
+.card .img-wrapper {
+    max-width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em 0 2em;
+}
+.card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+  .card .img-wrapper {
+    height: 17em;
+  }
+}
+
+.custom-mt-header{
+  margin-top: 9em;
+}
+
+
+/* Footer */
+.socials{
+  width: 25px;
+}
+
+
