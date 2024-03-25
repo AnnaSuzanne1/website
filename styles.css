@@ -14,11 +14,28 @@ z-index: -1;
 }
 
 
+.navLink {
+text-decoration: none;
+list-style-type: none; 
+color: black;
+z-index: 1;
+margin-bottom:1em !important;
+}
+
+.teamviewerimg {
+margin-top: 4px !important;
+}
+
+.custom-navbar {
+  border-radius: 80px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* padding-left: 4em; */
+}
+
 /* home */
 .plant {
   max-width: 380px;
 }
-
 
 .ulFlex {
 display:flex;
@@ -34,35 +51,6 @@ padding: 1em 3em 1em 3em;
   list-style-type: none;
 }
 
-.navLink {
-text-decoration: none;
-list-style-type: none; 
-color: black;
-z-index: 1;
-margin-bottom:1em !important;
-}
-
-
-.custom-navbar {
-  border-radius: 80px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  /* padding-left: 4em; */
-}
-
-@media (max-width: 460px) {
-  .custom-body p.lead {
-    font-size: 14px !important; 
-}
-  .navbar.mx-5 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  .navbar-brand img{
-    width: 7em;
-  }
-}
-
-
 .center-heading {
   display: flex;
   justify-content: center;
@@ -70,7 +58,6 @@ margin-bottom:1em !important;
   height: 100%;
   margin-top: 3em;
 }
-
 
 .producten {
   max-width: 600px
@@ -81,9 +68,12 @@ width: 3em;
 margin-right: 3em;
 }
 
-.teamviewerimg {
-margin-top: 4px !important;
+.vink-vacature {
+  width: 20px;
+  height: auto; 
 }
+
+
 
 .quote{
 margin-top: 2em;
@@ -108,6 +98,24 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
   animation-play-state: paused;
 }
 
+
+/* Media en Keyframes */
+
+
+
+@media (max-width: 460px) {
+  .custom-body p.lead {
+    font-size: 14px !important; 
+}
+  .navbar.mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .navbar-brand img{
+    width: 7em;
+  }
+}
+
 @media (max-width: 768px) {
   .logos-slide img {
     height: 30px; 
@@ -125,6 +133,8 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
 }
 
 
+
+/* Footer */
 .custom-footer{
   margin: 0;
   width: 100%;
@@ -200,11 +210,11 @@ footer {
     align-items: center;
     padding: 0 2em 0 2em;
 }
-.card img {
+/* .card img {
   width: 100%; 
   height: 100%;
   object-fit: contain;
-}
+} */
 
 
 /* @media */
