@@ -3,6 +3,7 @@ body {
     padding:0;
   }
 
+  /* Nav */
 .streep {
 background-color: #A4CC00;
 position:absolute;
@@ -12,6 +13,8 @@ margin-top:-2em;
 z-index: -1;
 }
 
+
+/* home */
 .plant {
   max-width: 380px;
 }
@@ -239,6 +242,21 @@ footer {
 
 }
 
+.collegacard {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Zorgt ervoor dat de kaarten even lang zijn */
+}
+
+.collegacard .card-body {
+  flex-grow: 1; /* Laat de card-body flexibel groeien om de hoogte van de kaart in te nemen */
+}
+
+.collega-img {
+  padding: 2em 2em 2em 2em;
+  max-width: 100%; /* Maakt de afbeelding responsief */
+  height: auto; /* Behoudt de aspect ratio van de afbeelding */
+}
 
 
 .custom-mt-header{
