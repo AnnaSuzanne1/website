@@ -1,31 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif !important;
+}
 
-body {
-    margin: 0;
-    padding:0;
-    font-family:"Nunito Sans", sans-serif !important;
-  }
+
+/* body {} */
 
 
 /* Nav */
 .streep {
-background-color: #A4CC00;
-position:absolute;
-padding-bottom: 5em;
-width: 100%;
-margin-top:-2em;
-z-index: -1;
+  background-color: #A4CC00;
+  position: absolute;
+  padding-bottom: 5em;
+  width: 100%;
+  margin-top: -2em;
+  z-index: -1;
 }
 
 .navLink {
-text-decoration: none;
-list-style-type: none; 
-color: black;
-z-index: 1;
-margin-bottom:1em !important;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  z-index: 1;
+  margin-bottom: 1em !important;
 }
 
 .teamviewerimg {
-margin-top: 4px !important;
+  margin-top: 4px !important;
 }
 
 .custom-navbar {
@@ -41,13 +44,13 @@ margin-top: 4px !important;
 }
 
 .ulFlex {
-display:flex;
-justify-content:space-around;
-background-color: white;
-border-radius:50px;
-z-index: 1;
-margin: 2em 5em 6em 5em;
-padding: 1em 3em 1em 3em;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 50px;
+  z-index: 1;
+  margin: 2em 5em 6em 5em;
+  padding: 1em 3em 1em 3em;
 }
 
 .ulFlex li {
@@ -68,29 +71,29 @@ padding: 1em 3em 1em 3em;
 }
 
 .vink {
-width: 3em; 
-margin-right: 3em;
+  width: 3em;
+  margin-right: 3em;
 }
 
 .vink-vacature {
   width: 20px;
-  height: auto; 
+  height: auto;
 }
 
 
 /* Quotes */
-.quote{
-margin-top: 2em;
-font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
+.quote {
+  margin-top: 2em;
+  font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
 }
 
-.custom-quote-container{
+.custom-quote-container {
   margin-bottom: 6em;
 }
 
 
 
-/* carousel home */
+/* carousel logos */
 .logos-slide {
   display: flex;
   animation: slide 20s infinite linear;
@@ -106,48 +109,81 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
   animation-play-state: paused;
 }
 
-
-
-/* Collega carousel */
-@media (max-width: 460px) {
-  .custom-body p.lead {
-    font-size: 14px !important; 
-}
-  .navbar.mx-5 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  .navbar-brand img{
-    width: 7em;
-  }
-}
-
-@media (max-width: 768px) {
-  .logos-slide img {
-    height: 30px; 
-    margin: 0 10px;
-  }
-}
-
 @keyframes slide {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
 
+
+
+/* Collega carousel */
+@media (max-width: 460px) {
+  .custom-body p.lead {
+    font-size: 14px !important;
+  }
+
+  .navbar.mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar-brand img {
+    width: 7em;
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-slide img {
+    height: 30px;
+    margin: 0 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* collega carousel */
+/* @media (min-width: 1200px) {
+  .carousel-item {
+    flex: 0 0 25%;    
+    display: block;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .carousel-item {
+    flex: 0 0 50%;    
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 100%;    
+    display: block;
+  }
+}
+
 .card {
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: none;
 }
 
-
-
 .carousel-inner {
   padding: 1em;
+  display: flex;
 }
 
 .collegacard {
@@ -162,43 +198,6 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
     align-items: center;
     padding: 0 2em 0 2em;
 }
-
-
-
-
-/* collega carousel */
-@media (min-width: 900px) {
-  .carousel-item {
-    flex: 0 0 25%;    
-    display: block;
-  }
-  .carousel-inner {
-    display: flex;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1199px) {
-  .carousel-item {
-    flex: 0 0 50%;    
-    display: block;
-  }
-  .carousel-inner {
-    display: flex;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 768px) {
-  .carousel-item {
-    flex: 0 0 100%;    
-    display: block;
-  }
-  .carousel-inner {
-    display: flex;
-  }
-
-}
-
-
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -217,33 +216,61 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
   overflow-x: auto;
 }
 
-
 .collegacard {
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* Zorgt ervoor dat de kaarten even lang zijn */
-}
-
-.collegacard .card-body {
-  flex-grow: 1; /* Laat de card-body flexibel groeien om de hoogte van de kaart in te nemen */
-}
-
-.collega-img {
-  padding: 2em 2em 2em 2em;
-  max-width: 100%; /* Maakt de afbeelding responsief */
-  height: auto; /* Behoudt de aspect ratio van de afbeelding */
-}
-
-
-
-
-.vacature-card{
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.custom-mt-header{
+
+.collega-img {
+  padding: 2em 2em 2em 2em;
+  max-width: 100%; 
+  height: auto;
+}  */
+
+
+
+.custom-section-styles{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.custom-collega-section .custom-collega-card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #E0ECAE;
+}
+
+.custom-collega-section .custom-collega-card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.custom-collega-card{
+  border-radius: 20px;
+  background: #fff;
+
+}
+
+
+
+
+.vacature-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.custom-mt-header {
   margin-top: 3em;
 }
 
@@ -251,11 +278,11 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
 
 
 /* Footer */
-.socials{
+.socials {
   width: 25px;
 }
 
-.custom-footer{
+.custom-footer {
   margin: 0;
   width: 100%;
 }
@@ -263,6 +290,3 @@ font-family: 'truculenta', 'Arial Narrow', Arial, sans-serif;
 footer {
   margin-top: 3em;
 }
-
-
-
