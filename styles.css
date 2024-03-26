@@ -231,7 +231,7 @@
 
 
 
-.custom-section-styles{
+.custom-section-styles {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -244,7 +244,7 @@
   width: 140px;
   border-radius: 50%;
   padding: 3px;
-  background: #E0ECAE;
+  background: #A4CC00;
 }
 
 .custom-collega-section .custom-collega-card .image img {
@@ -255,11 +255,46 @@
   border: 3px solid #fff;
 }
 
-.custom-collega-card{
+.custom-collega-card {
   border-radius: 20px;
   background: #fff;
-
+  position: relative;
+  margin: 20px 0;
 }
+
+.custom-collega-card::before {
+  content: "";
+  position: absolute;
+  height: 55%;
+  width: 100%;
+  background-color: #A4CC00;
+  border-radius: 20px 20px 0 0;
+}
+
+.custom-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+.custom-collega-card .media-icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-collega-card .media-icons i {
+margin-top: 10px;
+color: #fff;
+}
+
+
 
 
 
