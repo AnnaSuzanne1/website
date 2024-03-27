@@ -5,7 +5,6 @@
   font-family: "Nunito Sans", sans-serif !important;
 }
 
-
 /* body {} */
 
 
@@ -231,6 +230,19 @@
 
 
 
+
+
+
+
+
+
+/* Swiper */
+
+/* .swiper {
+  width: 950px;
+
+}
+
 .custom-section-styles {
   height: 100vh;
   display: flex;
@@ -260,6 +272,7 @@
   background: #fff;
   position: relative;
   margin: 20px 0;
+  width: 280px;
 }
 
 .custom-collega-card::before {
@@ -289,10 +302,218 @@
   align-items: center;
 }
 
-.custom-collega-card .media-icons i {
-margin-top: 10px;
-color: #fff;
+.icon {
+  margin-top: 10px;
+  color: #000000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
 }
+
+.icon:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+
+
+.custom-collega-card .name-profession {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: #516500;
+}
+
+.name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.custom-collega-section {
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background-color: #A4CC00;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: #A4CC00;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+  color: #A4CC00;
+} */
+
+.custom-section{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+  position: relative;
+}
+
+.custom-card{
+border-radius: 25px;
+background-color: #fff;
+width: 320px;
+}
+
+/* .slide-content{
+  margin: 0 40px;
+  padding: 45px 20px;
+  overflow: hidden;
+  border-radius: 25px;
+} */
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px;
+  
+}
+
+
+
+.image-content, .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content{
+  row-gap: 5px;
+  position: relative;
+  padding: 25px 0;
+}
+
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #A4CC00;
+  left: 0;
+  top: 0;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before, .overlay::after{
+position: absolute;
+content: "";
+height: 40px;
+width: 40px;
+right: 0;
+bottom: -40px;
+background-color: #A4CC00;
+}
+
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: white;
+}
+
+
+
+
+
+.card-image{
+position: relative;
+height: 150px;
+width: 150px;
+border-radius: 50%;
+background: #fff;
+padding: 3px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #A4CC00;
+}
+
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #374501;
+}
+
+.function{
+  font-size: 18px;
+  font-weight: 400;
+  color: #374501;
+}
+
+.description{
+  font-size: 14px;
+  color: #374501;
+  text-align: center;
+}
+
+
+
+.swiper-navBtn{
+  color: black !important;
+  transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+  color: #374501;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 40px;
+}
+
+.swiper-button-next{
+  right: 0;
+}
+
+.swiper-button-prev{
+  left: 0;
+}
+
+.swiper-pagination-bullet{
+background-color: #A4CC00;
+opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #374501;
+}
+
+@media screen and (max-width: 768px ){
+.swiper.navBtn{
+  display: none;
+}
+.slide-content{
+  margin: 0 10px;
+}
+}
+
+
 
 
 
