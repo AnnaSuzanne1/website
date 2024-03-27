@@ -367,6 +367,7 @@
 /************/
 /* Slider 2 */
 /************/
+
 .custom-section{
   min-height: 80vh;
   display: flex;
@@ -376,22 +377,20 @@
   position: relative;
 }
 
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px;
+}
+
+/* card */
 .custom-card{
 border-radius: 25px;
 background-color: #fff;
 width: 320px;
 min-height: 440px;
 }
-
-
-.slide-container{
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px;
-  
-}
-
-
 
 .image-content, .card-content{
   display: flex;
