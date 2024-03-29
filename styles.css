@@ -6,14 +6,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Nunito Sans", sans-serif !important; */
-  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .home-body nav {
   margin-bottom: 4em !important;
 }
-
 
 * h1,
 * h2,
@@ -109,6 +110,13 @@ nav {
   z-index: 1;
   margin-bottom: 1em !important;
 }
+
+.navbar-nav .nav-link {
+  font-family: 'Arvo', serif;
+}
+
+
+
 
 .teamviewerimg {
   margin-top: 4px !important;
@@ -489,13 +497,14 @@ nav {
 /* Slider 2 */
 /************/
 
-.custom-section {
+.custom-slider-section {
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   /* background-color: #efefef; */
   position: relative;
+  margin-bottom: 3em;
 }
 
 .slide-container {
@@ -511,6 +520,7 @@ nav {
   width: 320px;
   min-height: 440px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 3em 0 3em 0;
 }
 
 .image-content,
@@ -536,26 +546,6 @@ nav {
   top: 0;
   border-radius: 25px 25px 0 25px;
 }
-
-.overlay::before,
-.overlay::after {
-  position: absolute;
-  content: "";
-  height: 40px;
-  width: 40px;
-  right: 0;
-  bottom: -40px;
-  background-color: #A4CC00;
-}
-
-.overlay::after {
-  border-radius: 0 25px 0 0;
-  background-color: white;
-}
-
-
-
-
 
 .card-image {
   position: relative;
