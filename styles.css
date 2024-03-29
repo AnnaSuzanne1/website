@@ -32,10 +32,10 @@ body{
 
 h1 {
   color: #6cb744;
-  ;
   font-weight: 700;
   font-size: 20px;
   font-size: 30px;
+  margin-bottom: 1em;
 }
 
 h2 {
@@ -715,3 +715,11 @@ nav {
   font-size: 30px;
 }
 
+.svg-inline--fa{
+  margin-right: 5px;
+}
+
+.footer-link {
+color: white;
+text-decoration: none;
+}
