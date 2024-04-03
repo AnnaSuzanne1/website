@@ -653,21 +653,19 @@ nav {
   color: white;
 }
 
-/* .banner-txt1{
-  font-size: 30px;
-} */
-
+.banner-white {
+  text-align: center;
+}
 
 .banner img {
   width: 30px;
   margin: 0 10px 12px 0;
 }
 
-.banner-email {
+.banner-flex {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .banner-container {
@@ -675,7 +673,78 @@ nav {
   /* font-family: ; */
 }
 
+.vertical {
+  border-left: 5px solid #A4CC00;
+  height: 450px;
+  margin-top: 0em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
 
+
+
+
+.map-openingstijden-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+
+.map-openingstijden {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.map-openingstijden iframe {
+  max-width: 600px;
+  flex: 1 1 45%;
+}
+
+.openingstijden {
+  max-width: 400px;
+  flex: 1 1 50%;
+  margin: 0 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .map-openingstijden iframe,
+  .openingstijden {
+    flex: 1 1 100%;
+    max-width: 100%; 
+    margin: 10px 0; 
+  }
+  .vertical{
+    display:none;
+  }
+  .servicedesk-card{
+    flex-direction: column;
+  }
+}
+
+.Arjn-Jan{
+  display: block;
+  margin: auto;
+}
+
+.servicedesk-card{
+align-items: center;
+}
+
+.card-text{
+  padding-right: 20px;
+}
+
+
+
+.accordion-container{
+  max-width: 1210px; /* Pas dit aan naar de gewenste maximale breedte */
+  margin: 0 auto;
+}
 
 /* .banner {
   background-color: black;
@@ -724,3 +793,7 @@ nav {
 color: white;
 text-decoration: none;
 }
+
+.footer-link:hover {
+  color: rgba(0, 0, 0, 0.685);
+  }
