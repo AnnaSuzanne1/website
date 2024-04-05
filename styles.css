@@ -77,6 +77,10 @@ h3 {
   p {
     font-size: 14px;
   }
+  .card-text {
+    font-size: 14px;
+    /* padding-right: 0 !important; */
+  }
 }
 
 @media (max-width: 768px) {
@@ -746,9 +750,9 @@ nav {
 align-items: center;
 }
 
-.card-text{
+/* .card-text{
   padding-right: 20px;
-}
+} */
 
 
 
@@ -773,8 +777,31 @@ display: flex;
   }
 
   .nieuws-datum{
-    display: fle;
+    display: flex;
   }
+
+
+  @media (max-width: 1100px) {
+    .nieuws-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nieuws-card img {
+        width: 400px;
+        margin-right: 0;
+
+    }
+
+    .title-date{
+flex-direction: column;
+}
+}
+
+
+
+
+
+
 
 /* .nieuws-card img{
 width: 600px;
