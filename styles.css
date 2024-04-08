@@ -12,9 +12,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.home-body nav {
-  margin-bottom: 4em !important;
-}
 
 * h1,
 * h2,
@@ -121,8 +118,13 @@ h3 {
   z-index: -1;
 }
 
-nav {
+/* nav {
   margin-bottom: 6em;
+} */
+
+
+.home-body nav {
+  margin-bottom: 1em !important;
 }
 
 
@@ -150,6 +152,25 @@ nav {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.close {
+  background: none;
+  border: none;
+  margin-left: 2em;
+}
+
+.alert-dismissible {
+  padding-right: 3rem;
+}
+
+@media (max-width: 768px) {
+  .close {
+    margin-right: 0;
+  }
+
+  .alert-dismissible {
+    padding-right: 1rem;
+  }
+}
 
 
 /* home */
@@ -178,6 +199,7 @@ nav {
   height: 100%;
   margin-top: 3em;
 }
+
 
 
 /* Over Match Online en voordelen*/
@@ -598,7 +620,6 @@ nav {
     margin-left: 2em;
   }
 }
-
 
 
 .servicedesk-card {
