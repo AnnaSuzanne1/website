@@ -84,7 +84,6 @@ h3 {
 
   .card-text {
     font-size: 14px;
-    /* padding-right: 0 !important; */
   }
 }
 
@@ -110,7 +109,6 @@ h3 {
 
 /* Nav */
 .streep {
-  /* background-color: #6cb744; */
   position: absolute;
   padding-bottom: 5em;
   width: 100%;
@@ -118,9 +116,9 @@ h3 {
   z-index: -1;
 }
 
-/* nav {
+nav {
   margin-bottom: 6em;
-} */
+}
 
 
 .home-body nav {
