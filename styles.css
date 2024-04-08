@@ -232,7 +232,7 @@ nav {
 
 
 /* carousel logos */
-.logos-slide {
+ /* .logos-slide {
   display: flex;
   animation: slide 20s infinite linear;
 }
@@ -242,14 +242,14 @@ nav {
   height: 40px;
   margin: 0 50px;
 
-  
-}
 
-.logos-slide:hover {
+} */
+
+/* .logos-slide:hover {
   animation-play-state: paused;
-}
+} */
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     transform: translateX(0);
   }
@@ -257,13 +257,68 @@ nav {
   100% {
     transform: translateX(-100%);
   }
+} */
+
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px;
 }
 
 
 
 
-
 /* Collega carousel */
+
 @media (max-width: 460px) {
   .custom-body p.lead {
     font-size: 14px !important;
