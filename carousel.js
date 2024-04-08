@@ -41,16 +41,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-var swiper = new Swiper('.swiper-container', {
-    // Opties voor de carrousel
-    loop: true, // Oneindige loop
-    slidesPerView: 'auto', // Pas aantal zichtbare slides aan op basis van schermgrootte
-    spaceBetween: 20, // Afstand tussen slides
-    autoplay: {
-      delay: 5000, // Interval tussen slides in milliseconden (hier 5 seconden)
-    },
-    pagination: {
-      el: '.swiper-pagination', // Element voor de paginatie
-      clickable: true, // Klikbaarheid van paginatie
-    },
-  });

@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .home-body nav {
@@ -46,6 +46,11 @@ h3 {
   color: #478a20;
 }
 
+.small-italic {
+  font-style: italic;
+  font-size: 14px;
+}
+
 
 
 .quote-container {
@@ -69,7 +74,7 @@ h3 {
 }
 
 /* Cards */
-.card-opmaak .card{
+.card-opmaak .card {
   margin: 2em 2em 2em 2em;
   padding: 1em 1em 1em 1em;
 }
@@ -79,6 +84,7 @@ h3 {
   p {
     font-size: 14px;
   }
+
   .card-text {
     font-size: 14px;
     /* padding-right: 0 !important; */
@@ -98,7 +104,7 @@ h3 {
     font-size: 20px;
   }
 
-  .minder-margin-heading{
+  .minder-margin-heading {
     margin-bottom: 2em !important;
   }
 }
@@ -232,7 +238,7 @@ nav {
 
 
 /* carousel logos */
- /* .logos-slide {
+/* .logos-slide {
   display: flex;
   animation: slide 20s infinite linear;
 }
@@ -562,35 +568,49 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
+
   .map-openingstijden iframe,
   .openingstijden {
     flex: 1 1 100%;
-    max-width: 100%; 
-    margin: 10px 0; 
+    max-width: 100%;
+    margin: 10px 0;
   }
-  .vertical{
-    display:none;
+
+  .vertical {
+    display: none;
   }
-  .servicedesk-card{
+
+  .servicedesk-card {
     flex-direction: column;
   }
 }
 
-.Arjn-Jan{
+
+.Arjn-Jan {
   display: block;
   margin: auto;
+
 }
 
-.servicedesk-card{
-align-items: center;
+@media screen and (min-width: 1025px) {
+  .Arjn-Jan {
+
+    margin-left: 2em;
+  }
 }
 
-.accordion-container{
+
+
+.servicedesk-card {
+  align-items: center;
+}
+
+.accordion-container {
   max-width: 1210px;
   margin: 0 auto;
 }
 
-.accordion-container button{
+.accordion-container button {
   text-decoration: none;
   color: #374501;
 }
@@ -642,7 +662,8 @@ flex-direction: column;
   .img-lg {
     max-width: 100%;
   }
-  .img-lg img{
+
+  .img-lg img {
     margin-bottom: 2em;
   }
 }
@@ -665,24 +686,24 @@ flex-direction: column;
 
 /* Footer */
 
-.media-icons{
+.media-icons {
   font-size: 30px;
 }
 
-.svg-inline--fa{
+.svg-inline--fa {
   margin-right: 5px;
 }
 
 .footer-link {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-link:hover {
   color: rgba(0, 0, 0, 0.685);
-  }
+}
 
-  .contact-footer a{
-    text-decoration: none;
-    color: white;
-  }
+.contact-footer a {
+  text-decoration: none;
+  color: white;
+}
