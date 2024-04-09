@@ -27,7 +27,7 @@
     <section class="streep bg-primary">
     </section>
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar p-2 mt-4 mx-5">
+    <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar p-2 mt-4 mx-5 dark-theme">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"> <img src="./images/advisorlogo.png"
             alt="Advisor Software Solutions"></a>
@@ -57,15 +57,24 @@
               <li class="nav-item">
                 <a class="nav-link" href="nieuws.html">Nieuws</a>
               </li>
+
               <li class="nav-item d-md-none">
                 <a class="nav-link text-teamviewer" href="https://get.teamviewer.com/jp7j8ek">Teamviewer</a>
-
               </li>
 
               <li class="nav-item ms-2 d-none d-md-inline">
                 <a class="" href="https://get.teamviewer.com/jp7j8ek"><img class="teamviewerimg"
                     src="./images/teamviewer.png" alt="teamviewer" width="30px"></a>
               </li>
+
+              <li class="nav-item d-md-none">
+                <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
+              </li>
+              
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
+              </li>
+              
             </ul>
           </div>
         </div>
@@ -74,18 +83,22 @@
 
 
 
-    <div class="alert alert-danger alert-dismissible d-flex justify-content-between align-items-center" role="alert">
-      <div>
-        <i class="fa-solid fa-triangle-exclamation"></i> Momenteel hebben wij een storing in het Match Online systeem. Wij proberen dit zo snel mogelijk voor u op te lossen.
-        </div>
-      <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>
-  </div>
-  
 
-    
+
+    <div class="alert alert-danger d-flex justify-content-between align-items-center" role="alert">
+      <div>
+        <i class="fas fa-exclamation-triangle"></i> Momenteel hebben wij een storing in het Match Online systeem. Wij
+        proberen dit zo snel mogelijk voor u op te lossen.
+      </div>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+
   </header>
 
   <main>
+
 
     <!-- Banner -->
     <div class="container my-5">
@@ -136,7 +149,7 @@
                   <h3 class="card-title">Match Online ERP systeem</h3>
                   <p class="card-text pb-3">Match Online ERP systeem
                     Hét softwarepakket waarmee u de inkoop, verkoop en logistieke stromen in uw bedrijf aanstuurt.</p>
-                  <a class="btn btn-primary px-4 me-md-2" href="#" role="button"
+                  <a class="btn btn-primary px-4 me-md-2" href="ERPsysteem.html" role="button"
                     alt="Lees meer over het ERP systeem">Lees meer</a>
                 </div>
               </div>
@@ -214,78 +227,61 @@
       <p class="quote-name text-center">-Voornaam Achternaam</p>
 
 
-
-      <!-- Logo carousel -->
-      <!-- <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <div class="logos overflow-hidden py-5 px-0 position-relative bg-white">
-              <div class="logos-slide d-flex">
-                <a href="https://salaba.nl/" target="_blank"><img src="./images/index-img/salaba.png" alt=""></a>
-                <a href="https://www.hvisserbloemen.nl/" target="_blank"><img src="./images/index-img/hansvisser.png" alt=""></a>
-                <a href="https://www.waterdrinker.nl/nl/home" target="_blank"><img src="images/index-img/waterdrinker.png" alt=""></a>
-                <a href="https://tuincentrumovervecht.nl/" target="_blank"><img src="images/index-img/overvecht.png" alt=""></a>
-                <a href="https://www.plantion.nl/" target="_blank"><img src="images/index-img/plantion.png" alt=""></a>
-                <a href="https://moerings.nl/" target="_blank"><img src="images/index-img/moerings.png" alt=""></a>
-                <a href="https://www.quattroplant.nl/" target="_blank"><img src="images/index-img/quattroplant.jpeg" alt=""></a>
-                <a href="https://www.bromeliaspecialist.nl/" target="_blank"><img src="images/index-img/bromelia.svg" alt=""></a>
-                <a href="https://aphrodite-orchidee.com/" target="_blank"><img src="images/index-img/aphrodite.png" alt=""></a>
-                <a href="https://www.gimallplants.com/nl" target="_blank"><img src="images/index-img/gimall.png" alt=""></a>
-               
-                
-                <a href="https://salaba.nl/" target="_blank"><img src="./images/index-img/salaba.png" alt=""></a>
-                <a href="https://www.hvisserbloemen.nl/" target="_blank"><img src="./images/index-img/hansvisser.png" alt=""></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      
-
-
       <div class="logos">
         <div class="logos-slide">
           <!-- Logo 1 -->
           <a href="https://salaba.nl/" target="_blank"><img src="./images/index-img/salaba.png" alt=""></a>
           <!-- Logo 2 -->
-          <a href="https://www.hvisserbloemen.nl/" target="_blank"><img src="./images/index-img/hansvisser.png" alt=""></a>
+          <a href="https://www.hvisserbloemen.nl/" target="_blank"><img src="./images/index-img/hansvisser.png"
+              alt=""></a>
           <!-- Logo 3 -->
-          <a href="https://www.waterdrinker.nl/nl/home" target="_blank"><img src="images/index-img/waterdrinker.png" alt=""></a>
+          <a href="https://www.waterdrinker.nl/nl/home" target="_blank"><img src="images/index-img/waterdrinker.png"
+              alt=""></a>
           <!-- Logo 4 -->
-          <a href="https://tuincentrumovervecht.nl/" target="_blank"><img src="images/index-img/overvecht.png" alt=""></a>
+          <a href="https://tuincentrumovervecht.nl/" target="_blank"><img src="images/index-img/overvecht.png"
+              alt=""></a>
           <!-- Logo 5 -->
           <a href="https://www.plantion.nl/" target="_blank"><img src="images/index-img/plantion.png" alt=""></a>
           <!-- Logo 6 -->
           <a href="https://moerings.nl/" target="_blank"><img src="images/index-img/moerings.png" alt=""></a>
           <!-- Logo 7 -->
-          <a href="https://www.quattroplant.nl/" target="_blank"><img src="images/index-img/quattroplant.jpeg" alt=""></a>
+          <a href="https://www.quattroplant.nl/" target="_blank"><img src="images/index-img/quattroplant.jpeg"
+              alt=""></a>
           <!-- Logo 8 -->
-          <a href="https://www.bromeliaspecialist.nl/" target="_blank"><img src="images/index-img/bromelia.svg" alt=""></a>
+          <a href="https://www.bromeliaspecialist.nl/" target="_blank"><img src="images/index-img/bromelia.svg"
+              alt=""></a>
           <!-- Logo 9 -->
-          <a href="https://aphrodite-orchidee.com/" target="_blank"><img src="images/index-img/aphrodite.png" alt=""></a>
+          <a href="https://aphrodite-orchidee.com/" target="_blank"><img src="images/index-img/aphrodite.png"
+              alt=""></a>
           <!-- Logo 10 -->
           <a href="https://www.gimallplants.com/nl" target="_blank"><img src="images/index-img/gimall.png" alt=""></a>
         </div>
-  
+
         <div class="logos-slide">
           <!-- Logo 1 -->
           <a href="https://salaba.nl/" target="_blank"><img src="./images/index-img/salaba.png" alt=""></a>
           <!-- Logo 2 -->
-          <a href="https://www.hvisserbloemen.nl/" target="_blank"><img src="./images/index-img/hansvisser.png" alt=""></a>
+          <a href="https://www.hvisserbloemen.nl/" target="_blank"><img src="./images/index-img/hansvisser.png"
+              alt=""></a>
           <!-- Logo 3 -->
-          <a href="https://www.waterdrinker.nl/nl/home" target="_blank"><img src="images/index-img/waterdrinker.png" alt=""></a>
+          <a href="https://www.waterdrinker.nl/nl/home" target="_blank"><img src="images/index-img/waterdrinker.png"
+              alt=""></a>
           <!-- Logo 4 -->
-          <a href="https://tuincentrumovervecht.nl/" target="_blank"><img src="images/index-img/overvecht.png" alt=""></a>
+          <a href="https://tuincentrumovervecht.nl/" target="_blank"><img src="images/index-img/overvecht.png"
+              alt=""></a>
           <!-- Logo 5 -->
           <a href="https://www.plantion.nl/" target="_blank"><img src="images/index-img/plantion.png" alt=""></a>
           <!-- Logo 6 -->
           <a href="https://moerings.nl/" target="_blank"><img src="images/index-img/moerings.png" alt=""></a>
           <!-- Logo 7 -->
-          <a href="https://www.quattroplant.nl/" target="_blank"><img src="images/index-img/quattroplant.jpeg" alt=""></a>
+          <a href="https://www.quattroplant.nl/" target="_blank"><img src="images/index-img/quattroplant.jpeg"
+              alt=""></a>
           <!-- Logo 8 -->
-          <a href="https://www.bromeliaspecialist.nl/" target="_blank"><img src="images/index-img/bromelia.svg" alt=""></a>
+          <a href="https://www.bromeliaspecialist.nl/" target="_blank"><img src="images/index-img/bromelia.svg"
+              alt=""></a>
           <!-- Logo 9 -->
-          <a href="https://aphrodite-orchidee.com/" target="_blank"><img src="images/index-img/aphrodite.png" alt=""></a>
+          <a href="https://aphrodite-orchidee.com/" target="_blank"><img src="images/index-img/aphrodite.png"
+              alt=""></a>
           <!-- Logo 10 -->
           <a href="https://www.gimallplants.com/nl" target="_blank"><img src="images/index-img/gimall.png" alt=""></a>
         </div>
@@ -306,7 +302,8 @@
               <h6 class="text-uppercase mb-4 font-weight-bold"> Advisor Software Solutions </h6>
             </a>
             <p>
-              Advisor Software Solutions is gespecialiseerd in het ontwikkelen, beheren en implementeren van branchbrede software voor de sierteelt.
+              Advisor Software Solutions is gespecialiseerd in het ontwikkelen, beheren en implementeren van branchbrede
+              software voor de sierteelt.
             </p>
           </div>
           <hr class="w-100 clearfix d-md-none" />
@@ -329,9 +326,12 @@
           <hr class="w-100 clearfix d-md-none" />
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p class="contact-footer"><i class="fas fa-home mr-5"></i><a href="https://www.google.com/maps/place/Advisor+Software+Solutions/@52.2100187,4.8720148,17z/data=!4m15!1m8!3m7!1s0x47c675a4893a8d5d:0x81bc48399e687674!2sGroot+Mijdrechtstraat+52,+3641+RW+Mijdrecht!3b1!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F11cslv4qsm!3m5!1s0x47c675ae1febebf1:0x1b07fbf0092031b8!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F1ptxjnh0h?entry=ttu" target="_blank">Groot Mijdrechtstraat 52, 3641 RW Mijdrecht</a></p>
-            <p class="contact-footer"><i class="fas fa-envelope mr-3"></i><a href="mailto:info@advisorsoftware.nl">info@advisorsoftware.nl</a></p>
-            
+            <p class="contact-footer"><i class="fas fa-home mr-5"></i><a
+                href="https://www.google.com/maps/place/Advisor+Software+Solutions/@52.2100187,4.8720148,17z/data=!4m15!1m8!3m7!1s0x47c675a4893a8d5d:0x81bc48399e687674!2sGroot+Mijdrechtstraat+52,+3641+RW+Mijdrecht!3b1!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F11cslv4qsm!3m5!1s0x47c675ae1febebf1:0x1b07fbf0092031b8!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F1ptxjnh0h?entry=ttu"
+                target="_blank">Groot Mijdrechtstraat 52, 3641 RW Mijdrecht</a></p>
+            <p class="contact-footer"><i class="fas fa-envelope mr-3"></i><a
+                href="mailto:info@advisorsoftware.nl">info@advisorsoftware.nl</a></p>
+
             <p class="contact-footer"><i class="fas fa-phone mr-3"></i><a href="tel:+31297745547">0297 74 55 47</a></p>
           </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -357,13 +357,12 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
     crossorigin="anonymous"></script>
+  <script src="carousel.js"></script>
 </body>
 
 

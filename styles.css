@@ -1,3 +1,5 @@
+
+
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap');
@@ -138,11 +140,47 @@ nav {
   font-family: 'Arvo', serif;
 }
 
+.dark-theme {
+  /* Voeg hier je specifieke stijlen toe voor de navigatie in de dark theme */
+  background-color: rgb(255, 255, 255) !important;
+  color: black;
+}
+
+
+
+.dark-theme a {
+color: rgb(76, 76, 76);
+}
+
+.dark-theme a:hover {
+  color: rgb(0, 0, 0);
+  }
+
+.dark-theme:active{
+  color: black !important;
+  }
 
 
 
 .teamviewerimg {
   margin-top: 4px !important;
+}
+
+.toggleThemeBtn{
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0;
+  margin-left: 10px;
+  /* padding-top: 3px; */
+}
+
+.toggleThemeBtn:hover{
+  background: none;
+}
+
+.toggleThemeBtn:active{
+  background: none;
 }
 
 .custom-navbar {
@@ -299,9 +337,9 @@ nav {
 }
 
 .logos {
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 60px 0;
-  background: white;
+  /* background: white; */
   white-space: nowrap;
   position: relative;
 }
@@ -318,12 +356,12 @@ nav {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
 }
 
 .logos:hover .logos-slide {
