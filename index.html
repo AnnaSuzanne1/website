@@ -27,7 +27,7 @@
     <section class="streep bg-primary">
     </section>
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar p-2 mt-4 mx-5 dark-theme">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar p-2 mt-4 mx-5 dark-theme">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"> <img src="./images/advisorlogo.png"
             alt="Advisor Software Solutions"></a>
@@ -66,21 +66,6 @@
                 <a class="" href="https://get.teamviewer.com/jp7j8ek"><img class="teamviewerimg"
                     src="./images/teamviewer.png" alt="teamviewer" width="30px"></a>
               </li>
-
-              <li>
-                <div class="dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown button
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </div>
-              </li>
-
               <li class="nav-item d-md-none">
                 <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
               </li>
@@ -88,7 +73,20 @@
               <li class="nav-item ms-2 d-none d-md-inline">
                 <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
               </li>
-
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle flag" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="nav-flag" src="images/united-kingdom-flag-icon.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item flag" href="#"><img src="images/united-kingdom-flag-icon.png"
+                          alt=""></a></li>
+                    <li><a class="dropdown-item flag" href="#"><img src="images/netherlands-flag-icon.png" alt=""
+                          style="border-radius: 1px;"></a></li>
+                  </ul>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -197,53 +195,55 @@
 
 
     <!-- De voordelen van Match Online -->
-    <div class="container mx-auto custom-padding">
-      <div class="row flex-lg-row-reverse align-items-center">
-        <h2 class="center-heading  mb-5 minder-margin-heading">De voordelen van Match Online</h2>
-        <div class="col-lg-6">
-          <div class="lc-block">
-            <div class="vink-en-vinkjes-tekst d-flex align-items-center justify-content-center">
+    <div class="jemoeder">
+      <div class="container custom-padding">
+        <div class="row flex-lg-row-reverse align-items-center">
+          <h2 class="center-heading mb-5 minder-margin-heading">De voordelen van Match Online</h2>
+          <div class="col-lg-6">
+
+            <div class="vink-en-vinkjes-tekst d-flex align-items-center">
               <img class="vink" src="./images/vink.png" alt="">
-              <p class="vinkjes-tekst lead m-0 ms-2">Intuïtieve Gebruikerservaring</p>
+              <p class="vinkjes-tekst lead m-0 ms-2">Flexibiliteit</p>
             </div>
-            <div class="vink-en-vinkjes-tekst d-flex align-items-center justify-content-center">
+            <div class="vink-en-vinkjes-tekst d-flex align-items-center">
               <img class="vink" src="./images/vink.png" alt="">
-              <p class="vinkjes-tekst lead m-0 ms-2">Intuïtieve Gebruikerservaring</p>
+              <p class="vinkjes-tekst lead m-0 ms-2">Gekoppelde webshop</p>
             </div>
-            <div class="vink-en-vinkjes-tekst d-flex align-items-center justify-content-center">
+            <div class="vink-en-vinkjes-tekst d-flex align-items-center">
               <img class="vink" src="./images/vink.png" alt="">
-              <p class="vinkjes-tekst lead m-0 ms-2">Intuïtieve Gebruikerservaring</p>
+              <p class="vinkjes-tekst lead m-0 ms-2">Vele scanmogelijkheden</p>
             </div>
-            <div class="vink-en-vinkjes-tekst d-flex align-items-center justify-content-center">
+            <div class="vink-en-vinkjes-tekst d-flex align-items-center">
               <img class="vink" src="./images/vink.png" alt="">
-              <p class="vinkjes-tekst lead m-0 ms-2">Intuïtieve Gebruikerservaring</p>
+              <p class="vinkjes-tekst lead m-0 ms-2">Warehouse management oplossingen</p>
             </div>
-            <div class="vink-en-vinkjes-tekst d-flex align-items-center justify-content-center">
+            <div class="vink-en-vinkjes-tekst d-flex align-items-center">
               <img class="vink" src="./images/vink.png" alt="">
-              <p class="vinkjes-tekst lead m-0 ms-2">Intuïtieve Gebruikerservaring</p>
+              <p class="vinkjes-tekst lead m-0 ms2">24/7 service</p>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+            <div class="img-centreren lc-block">
+              <img class="voordelen-img img-fluid" src="images/index-img/mockups.png">
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="img-centreren lc-block">
-            <img class="voordelen-img img-fluid" src="images/index-img/mockups.png">
-          </div>
-        </div>
+
       </div>
-
-
 
 
       <!-- Quote -->
 
-      <p class="quote text-center">"Onze automatisering is op orde. hierdoor kunnen wij ons focussen op een excellente
-        logistieke afhandeling en de marketing van producten"</p>
-      <p class="quote-name text-center">Verbeek en Bol</p>
+      <p class="quote text-center">"Onze automatisering is op orde. Hierdoor kunnen wij ons focussen op een excellente
+        logistieke afhandeling en de marketing van producten."</p>
+      <p class="quote-name text-center"><a href="https://verbeekenbol.com/">Verbeek en Bol</a> </p>
 
 
-       <div class="logos">
+
+      <div class="logos">
         <div class="logos-slide">
-          
+
           <a href="https://salaba.nl/" target="_blank"><img src="./images/index-img/salaba.png" alt=""></a>
           <a href="https://www.hvisserbloemen.nl/" target="_blank"><img src="./images/index-img/hansvisser.png"
               alt=""></a>
@@ -260,7 +260,7 @@
           <a href="https://aphrodite-orchidee.com/" target="_blank"><img src="images/index-img/aphrodite.png"
               alt=""></a>
           <a href="https://www.gimallplants.com/nl" target="_blank"><img src="images/index-img/gimall.png" alt=""></a>
-           <!-- <a href="https://www.rmplants.nl/" target="_blank"><img src="images/index-img/rmplants.png" alt=""></a>  -->
+          <!-- <a href="https://www.rmplants.nl/" target="_blank"><img src="images/index-img/rmplants.png" alt=""></a>  -->
 
         </div>
 
@@ -283,7 +283,7 @@
           <a href="https://www.gimallplants.com/nl" target="_blank"><img src="images/index-img/gimall.png" alt=""></a>
           <!-- <a href="https://www.rmplants.nl/" target="_blank"><img src="images/index-img/rmplants.png" alt=""></a> -->
         </div>
-      </div> 
+      </div>
 
 
 
