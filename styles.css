@@ -74,8 +74,8 @@ h3 {
 
 /* Cards */
 .card-opmaak .card {
-  margin: 2em 2em 2em 2em;
-  padding: 1em 1em 1em 1em;
+  margin: 2em 2em 0em 2em;
+  padding: 1em 1em 0em 1em;
 }
 
 
@@ -237,6 +237,16 @@ color: rgb(76, 76, 76);
 }
 
 
+.align-cards {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+}
+
+
+
 
 /* Over Match Online en voordelen*/
 .producten {
@@ -295,37 +305,9 @@ color: rgb(76, 76, 76);
 
 
 
-/* carousel logos */
-/* .logos-slide {
-  display: flex;
-  animation: slide 20s infinite linear;
-}
-
-.logos-slide img {
-  flex-shrink: 0;
-  height: 40px;
-  margin: 0 50px;
 
 
-} */
-
-/* .logos-slide:hover {
-  animation-play-state: paused;
-} */
-
-/* @keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-100%);
-  }
-} */
-
-
-
-
+/* Logos  */
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -337,7 +319,7 @@ color: rgb(76, 76, 76);
 }
 
 .logos {
-  /* overflow: hidden; */
+  overflow: hidden;
   padding: 60px 0;
   /* background: white; */
   white-space: nowrap;
