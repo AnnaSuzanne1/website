@@ -28,7 +28,7 @@
   <section class="streep  bg-primary">
   </section>
 
-  <nav class="navbar navbar-expand-md bg-body-tertiary custom-navbar p-2 mt-4 mx-5">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar p-2 mt-4 mx-5 dark-theme">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"> <img src="./images/advisorlogo.png"
           alt="Advisor Software Solutions"></a>
@@ -44,7 +44,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="overons.html">Over Ons</a>
@@ -56,8 +56,9 @@
               <a class="nav-link" href="support.html">Support</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="nieuws.html">Nieuws</a>
+              <a class="nav-link" href="nieuws.html">Nieuws</a>
             </li>
+
             <li class="nav-item d-md-none">
               <a class="nav-link text-teamviewer" href="https://get.teamviewer.com/jp7j8ek">Teamviewer</a>
             </li>
@@ -65,6 +66,27 @@
             <li class="nav-item ms-2 d-none d-md-inline">
               <a class="" href="https://get.teamviewer.com/jp7j8ek"><img class="teamviewerimg"
                   src="./images/teamviewer.png" alt="teamviewer" width="30px"></a>
+            </li>
+            <!-- <li class="nav-item d-md-none">
+              <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
+            </li>
+
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
+            </li> -->
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle flag" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="nav-flag" src="images/united-kingdom-flag-icon.png" alt="">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item flag" href="#"><img src="images/united-kingdom-flag-icon.png"
+                        alt=""></a></li>
+                  <li><a class="dropdown-item flag" href="#"><img src="images/netherlands-flag-icon.png" alt=""
+                        style="border-radius: 1px;"></a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -75,62 +97,11 @@
 
   <main>
     <h1 class="text-center mb-5">Nieuws</h1>
-    <!-- 
-    <div class="card-opmaak">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="card mb-3 position-relative">
-              <div class="card-body d-flex servicedesk-card">
-                <div class="card-text">
-                  <div class="mb-3 title-date d-lg-flex justify-content-between align-items-start">
-                    <h2 class="card-title mb-0">Planning nieuwe releases Match Online in 2024</h2>
-                    <p class="mb-0">03/04/2024</p>
-                  </div>
-                  <div class="nieuws-card">
-                    <img class="img-fluid img-lg" src="./images/nieuws-img/nieuwsitem1.jpg" alt="">
-                    <p>Ook in 2024 streven we er weer naar om Match Online te blijven verbeteren en nieuwe
-                      functionaliteiten
-                      toe te voegen. Deze nieuwe releases worden zo zorgvuldig mogelijk vervaardigd. Zodra de nieuwe
-                      release
-                      beschikbaar is, ontvangt u van onze Service Desk een e-mail met release notes, waarin is
-                      weergegeven
-                      welke verbeteringen en/of nieuwe functionaliteiten er zijn toegevoegd.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3 position-relative">
-              <div class="card-body d-flex servicedesk-card flex-column">
-                <div class="card-text">
-                  <div class="d-flex justify-content-between align-items-start mb-3 title-date">
-                    <h2 class="card-title mb-0">Mogelijkheden 24 x 7 support</h2>
-                    <p class="mb-0">03/04/2024</p>
-                  </div>
-                  <div class="nieuws-card">
-                    <img class="img-fluid img-lg" src="./images/helpdesk-600x450.jpg" alt="">
-                    <p>Ook in 2024 streven we er weer naar om Match Online te blijven verbeteren en nieuwe
-                      functionaliteiten toe te voegen. Deze nieuwe releases worden zo zorgvuldig mogelijk vervaardigd.
-                      Zodra de nieuwe release beschikbaar is, ontvangt u van onze Service Desk een e-mail met release
-                      notes, waarin is weergegeven welke verbeteringen en/of nieuwe functionaliteiten er zijn
-                      toegevoegd.</p>
-                  </div>
-                </div>
-                <div class="position-absolute bottom-0 end-0">
-                  <a class="btn btn-primary px-4 me-md-2 mb-2" href="#" role="button"
-                    alt="Lees meer over het ERP systeem">Lees meer</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
 
-    <!-- News item 1 -->
+    <!-- News item 3 -->
     <div class="container news-item">
-      <div class="row gx-5 col-lg-10 ">
+      <div class="row gx-5 col-lg-10 mx-auto">
         <div class="col-md-6 mb-4">
           <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
             <img src="images/nieuws-img/nieuwsitem1.jpg" class="img-fluid" />
@@ -157,7 +128,7 @@
 
     <!-- News item 2 -->
     <div class="container news-item">
-      <div class="row gx-5 col-lg-10">
+      <div class="row gx-5 col-lg-10 mx-auto">
         <div class="col-md-6 mb-4">
           <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
             <img src="images/helpdesk-600x450.jpg" class="img-fluid" />
@@ -171,8 +142,38 @@
           <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">08-04-2024</span>
           <h4><strong>Mogelijkheden 24 x 7 support</strong></h4>
           <p class="text-muted">
-            Onze Match Online ServiceDesk is bereikbaar op werkdagen (maandag t/m vrijdag) van 06.00 uur tot 17.00 uur. Bij bedrijf kritische storingen, buiten onze reguliere openingstijden, zijn wij er ook graag voor u. Wij bieden U de mogelijkheid om een overeenkomst met ons af te sluiten voor 24 x 7 support met een uiterlijke responsetijd binnen 2 uur.
+            Onze Match Online ServiceDesk is bereikbaar op werkdagen (maandag t/m vrijdag) van 06.00 uur tot 17.00 uur.
+            Bij bedrijf kritische storingen, buiten onze reguliere openingstijden, zijn wij er ook graag voor u. Wij
+            bieden U de mogelijkheid om een overeenkomst met ons af te sluiten voor 24 x 7 support met een uiterlijke
+            responsetijd binnen 2 uur.
 
+
+          </p>
+          <button type="button" class="btn btn-primary">Lees meer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- News item 1 -->
+    <div class="container news-item">
+      <div class="row gx-5 col-lg-10 mx-auto">
+        <div class="col-md-6 mb-4">
+          <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+            <img src="images/helpdesk-600x450.jpg" class="img-fluid" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">08-04-2024</span>
+          <h4><strong>Ticketsysteem Service Desk</strong></h4>
+          <p class="text-muted">
+            Wist u dat de Service Desk al uw opmerkingen, vragen en wensen in een ticketsysteem bijhouden ? Wij kunnen u
+            hiervoor een inlogcode verstrekken zodat u zelf, op elk gewenst moment, een ticket kunt maken en de status
+            en voortgang hiervan kunt volgen. Wenst u hier meer informatie en/of een inlogcode voor te ontvangen dan
+            kunt u hierover contact opnemen met onze Service Desk: servicedesk@advisorsoftware.nl
 
           </p>
           <button type="button" class="btn btn-primary">Lees meer</button>
@@ -246,8 +247,11 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+    crossorigin="anonymous"></script>
 
 </body>
 

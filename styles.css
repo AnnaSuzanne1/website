@@ -143,13 +143,10 @@ nav {
   font-family: 'Arvo', serif;
 }
 
-.dark-theme {
-  /* Voeg hier je specifieke stijlen toe voor de navigatie in de dark theme */
+/* .dark-theme {
   background-color: rgb(255, 255, 255) !important;
   color: black;
 }
-
-
 
 .dark-theme a {
   color: rgb(76, 76, 76);
@@ -161,13 +158,18 @@ nav {
 
 .dark-theme:active {
   color: black !important;
-}
+} */
 
 .dropdown-toggle{
   padding: 0;
   background:none;
   border: none;
+  background-color: transparent !important;
 }
+.dropdown-menu {
+  min-width: 60px !important;
+}
+
 #dropdownMenuButton1.btn.btn-secondary.dropdown-toggle.show::after{
   color: black;
 }
@@ -186,13 +188,11 @@ nav {
 }
 
 .nav-flag{
-  margin-top: 10px;
+  margin-top: 9px;
   margin-left: 1em;
 }
 
-.news-item{
-  margin-bottom: 20em;
-}
+
 
 
 
@@ -725,6 +725,11 @@ nav {
   .position-absolute {
     right: 0;
   }
+}
+
+
+.news-item{
+  margin-bottom: 3em;
 }
 
 
