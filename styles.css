@@ -351,6 +351,14 @@ nav {
 }
 
 
+.erpenwebshop{
+  margin-bottom: 9em;
+}
+
+.voordelen-heading{
+  margin-bottom: 2em;
+  margin-top: 6em;
+}
 
 .custom-quote-container {
   margin-bottom: 6em;
@@ -440,6 +448,24 @@ nav {
   }
 }
 
+.card-body{
+  position: relative;
+}
+
+.functies a {
+  position: relative;
+bottom: 20px;
+right: 20px;
+}
+/* .functies{
+  display: flex;                 
+  flex-direction: column;          
+  justify-content: space-between;
+} */
+
+/* .functies a {
+
+} */
 
 
 /************/
