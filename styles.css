@@ -169,34 +169,36 @@ nav {
   color: black !important;
 } */
 
-.dropdown-toggle{
+.dropdown-toggle {
   padding: 0;
-  background:none;
+  background: none;
   border: none;
   background-color: transparent !important;
 }
+
 .dropdown-menu {
   min-width: 60px !important;
 }
 
-#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle.show::after{
+#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle.show::after {
   color: black;
 }
 
-.dropdown-toggle::after{
-  color:black;
+.dropdown-toggle::after {
+  color: black;
 }
 
-.dropdown-toggle:hover, .dropdown-toggle:active{
+.dropdown-toggle:hover,
+.dropdown-toggle:active {
   background: none;
   border: none;
 }
 
-.flag img{
+.flag img {
   width: 30px;
 }
 
-.nav-flag{
+.nav-flag {
   margin-top: 9px;
   margin-left: 1em;
 }
@@ -351,11 +353,11 @@ nav {
 }
 
 
-.erpenwebshop{
+.erpenwebshop {
   margin-bottom: 9em;
 }
 
-.voordelen-heading{
+.voordelen-heading {
   margin-bottom: 2em;
   margin-top: 6em;
 }
@@ -448,15 +450,16 @@ nav {
   }
 }
 
-.card-body{
+.card-body {
   position: relative;
 }
 
 .functies a {
   position: relative;
-bottom: 20px;
-right: 20px;
+  bottom: 20px;
+  right: 20px;
 }
+
 /* .functies{
   display: flex;                 
   flex-direction: column;          
@@ -617,7 +620,7 @@ right: 20px;
   height: 100%;
 }
 
-.vacature-card p{
+.vacature-card p {
   font-size: 16px;
 }
 
@@ -742,7 +745,21 @@ right: 20px;
 
 
 
+/* ERP systeem  */
+.erp-icon-met-tekst {
+  display: flex;
+  flex-direction: column;
+}
 
+.erp-icon-met-tekst p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.erp-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -777,7 +794,7 @@ right: 20px;
 }
 
 
-.news-item{
+.news-item {
   margin-bottom: 3em;
 }
 
