@@ -765,9 +765,20 @@ nav {
 font-size: 25px;
 }
 
-.fluid-h2 {
-  word-wrap: break-word; /* of overflow-wrap: break-word; */
+/* .fluid-h2 {
+  word-wrap: break-word;
+} */
+
+.systeem-interesse{
+  flex-direction: column;
 }
+
+.systeem-interesse .lap-tekst{
+  background-color:#d6e3a1;
+  padding: 1em 1em 1em 1em;
+}
+
+
 
 @media (max-width: 410px) {
   .lap-tekst h2{
