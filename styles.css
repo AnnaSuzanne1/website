@@ -761,6 +761,19 @@ nav {
   margin-bottom: 20px;
 }
 
+.lap-tekst h2{
+font-size: 25px;
+}
+
+.fluid-h2 {
+  word-wrap: break-word; /* of overflow-wrap: break-word; */
+}
+
+@media (max-width: 410px) {
+  .lap-tekst h2{
+    font-size: 20px;
+  }
+}
 
 
 @media (min-width: 765px) {
