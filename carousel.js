@@ -59,3 +59,13 @@ for (var i = 0; i < toggleThemeBtns.length; i++) {
     });
 }
 
+
+
+
+
+
+// Contactformulier
+// Initialization for ES Users
+import { Input, Ripple, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input, Ripple });
