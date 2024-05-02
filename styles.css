@@ -42,6 +42,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  font-family: "Roboto", sans-serif !important;
 }
 
 h3 {
@@ -263,9 +264,7 @@ nav {
   max-width: 380px;
 }
 
-/* .mockups-img{
-  width: 600px;
-} */
+
 
 .ulFlex {
   display: flex;
