@@ -26,10 +26,9 @@ p {
 * h6 {
   font-family: "Arvo", sans-serif !important;
   text-transform: uppercase;
-  ;
   font-weight: 700;
   letter-spacing: 1px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h1 {
@@ -856,6 +855,10 @@ font-size: 25px;
   color: white;
 }
 
+.copyright{
+  font-size: 16px;
+}
+
 /* contactformulier */
 .btn-send {
   font-weight: 300;
@@ -873,4 +876,12 @@ font-size: 25px;
 .card{
 margin-left: 10px;
 margin-right: 10px;
+}
+
+.copyright-container p{
+  font-size: 16px;
+}
+
+.copyright-container h2{
+font-size: 20px !important;
 }
