@@ -919,3 +919,7 @@ font-size: 20px !important;
 .linkedin-link:hover{
   color:#3f4f00 !important;
 }
+
+.bovenkant-footer .row{
+  padding-bottom: 3em;
+}
