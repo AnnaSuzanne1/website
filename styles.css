@@ -59,6 +59,25 @@ h3 {
 }
 
 
+/* unvisited link */
+/* .link:link {
+  color: #000000 !important;
+} */
+
+/* visited link */
+/* .link:visited {
+  color: green !important;
+} */
+
+/* mouse over link */
+.link {
+  text-decoration: none !important;
+}
+
+.link:hover {
+  color: #3f4f00 !important;
+}
+
 
 .quote-container {
   display: flex;
@@ -841,14 +860,14 @@ font-size: 25px;
   height: none !important;
 }
 
-.footer-link {
+/* .footer-link {
   color: white;
   text-decoration: none;
 }
 
 .footer-link:hover {
   color: rgba(0, 0, 0, 0.685);
-}
+} */
 
 .contact-footer a {
   text-decoration: none;
@@ -857,7 +876,13 @@ font-size: 25px;
 
 .copyright{
   font-size: 16px;
+    margin: 0 !important;
 }
+
+/* .footer-link:hover {
+  color: #475900;
+} */
+
 
 /* contactformulier */
 .btn-send {
@@ -884,4 +909,13 @@ margin-right: 10px;
 
 .copyright-container h2{
 font-size: 20px !important;
+}
+
+.linkedin-link {
+  color: white; /* Maakt de tekst en iconen wit */
+  text-decoration: none;
+}
+
+.linkedin-link:hover{
+  color:#3f4f00 !important;
 }
