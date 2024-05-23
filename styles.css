@@ -161,10 +161,9 @@ h3 {
   z-index: -1;
 }
 
-nav {
-  margin-bottom: 6em;
+.navbar{
+  margin-bottom: 1em;
 }
-
 
 .home-body nav {
   margin-bottom: 1em !important;
@@ -234,10 +233,6 @@ nav {
   margin-left: 1em;
 }
 
-
-
-
-
 .teamviewerimg {
   margin-top: 4px !important;
 }
@@ -283,6 +278,15 @@ nav {
     padding-right: 1rem;
   }
 }
+
+.breadcrumb{
+  padding-left: 4em;
+}
+
+.breadcrumbs {
+  margin-bottom: 6em;
+}
+
 
 
 /* home */
