@@ -117,7 +117,7 @@ h3 {
 }
 
 /* Cards */
-.card-opmaak .card {
+/* .card-opmaak .card {
   margin: 2em 2em 0em 2em;
   padding: 1em 1em 0em 1em;
 }
@@ -125,12 +125,16 @@ h3 {
 .card {
   margin-left: 10px;
   margin-right: 10px;
-}
+} */
 
 
 @media (max-width: 460px) {
   p {
     font-size: 16px;
+  }
+
+  .quote {
+    font-size: 30px;
   }
 
   .vacature-ul {
