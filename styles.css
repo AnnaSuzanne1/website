@@ -870,6 +870,11 @@ input.btn {
   margin-bottom: 10px;
 }
 
+.contact-formulier .card{
+  margin-bottom: 30px;
+  border: none;
+}
+
 
 
 .help-block.with-errors {
