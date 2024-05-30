@@ -56,16 +56,21 @@ h3 {
   font-family: "Lato", Arial, Helvetica, sans-serif !important;
 }
 
+.center-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 3em;
+}
+
 .small-italic {
   font-style: italic;
   font-size: 14px;
 }
 
-.vacature-ul{
-  font-size: 20px;
-  font-weight: 300;
-}
 
+/* links */
 
 /* unvisited link */
 /* .link:link {
@@ -77,7 +82,6 @@ h3 {
   color: green !important;
 } */
 
-/* mouse over link */
 .link {
   text-decoration: none !important;
 }
@@ -86,12 +90,11 @@ h3 {
   color: #3f4f00 !important;
 }
 
-
+/* Quotes */
 .quote-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .quote {
@@ -118,6 +121,11 @@ h3 {
   padding: 1em 1em 0em 1em;
 }
 
+.card{
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
 
 @media (max-width: 460px) {
   p {
@@ -131,30 +139,11 @@ h3 {
   }
 }
 
-/* @media (max-width: 768px) {
-  p {
-    font-size: 20px;
-  }
 
-  h2 {
-    font-size: 22px;
-  }
-  h3{
-    font-size: 22px;
-  }
+/*************/
+/* Navigatie */
+/*************/
 
-  .quote {
-    font-size: 22px;
-  }
-
-  .minder-margin-heading {
-    margin-bottom: 2em !important;
-  }
-} */
-
-
-
-/* Nav */
 .streep {
   position: absolute;
   padding-bottom: 5em;
@@ -171,7 +160,6 @@ h3 {
   margin-bottom: 1em !important;
 }
 
-
 .navLink {
   text-decoration: none;
   list-style-type: none;
@@ -183,6 +171,8 @@ h3 {
 .navbar-nav .nav-link {
   font-family: 'Arvo', serif;
 }
+
+/* dark theme */
 
 /* .dark-theme {
   background-color: rgb(255, 255, 255) !important;
@@ -201,6 +191,7 @@ h3 {
   color: black !important;
 } */
 
+/* dropdown */
 .dropdown-toggle {
   padding: 0;
   background: none;
@@ -226,6 +217,7 @@ h3 {
   border: none;
 }
 
+
 .flag img {
   width: 30px;
 }
@@ -245,7 +237,6 @@ h3 {
   font-size: 30px;
   padding: 0;
   margin-left: 10px;
-  /* padding-top: 3px; */
 }
 
 .toggleThemeBtn:hover {
@@ -267,6 +258,7 @@ h3 {
   margin-left: 2em;
 }
 
+/* Alert  */
 .alert-dismissible {
   padding-right: 3rem;
 }
@@ -281,6 +273,7 @@ h3 {
   }
 }
 
+/* Breadcrumbs  */
 .breadcrumb{
   padding-left: 4em;
 }
@@ -291,14 +284,14 @@ h3 {
 
 
 
-/* home */
+/********/
+/* Home */
+/********/
 .plant {
   max-width: 380px;
 }
 
-
-
-.ulFlex {
+/* .ulFlex {
   display: flex;
   justify-content: space-around;
   background-color: white;
@@ -310,26 +303,7 @@ h3 {
 
 .ulFlex li {
   list-style-type: none;
-}
-
-.center-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin-top: 3em;
-}
-
-
-.align-cards {
-  display: flex;
-}
-
-.card {
-  flex: 1;
-}
-
-
+} */
 
 
 /* Over Match Online en voordelen*/
@@ -345,6 +319,11 @@ h3 {
 .vink-vacature {
   width: 20px;
   height: auto;
+}
+
+.voordelen-heading {
+  margin-bottom: 2em;
+  margin-top: 6em;
 }
 
 .voordelen-img {
@@ -391,25 +370,7 @@ h3 {
   }
 }
 
-
-.erpenwebshop {
-  margin-bottom: 9em;
-}
-
-.voordelen-heading {
-  margin-bottom: 2em;
-  margin-top: 6em;
-}
-
-.custom-quote-container {
-  margin-bottom: 6em;
-}
-
-
-
-
-
-/* Logos  */
+/* Logos */
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -423,7 +384,6 @@ h3 {
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  /* background: white; */
   white-space: nowrap;
   position: relative;
 }
@@ -440,12 +400,10 @@ h3 {
 
 .logos:before {
   left: 0;
-  /* background: linear-gradient(to left, rgba(255, 255, 255, 0), white); */
 }
 
 .logos:after {
   right: 0;
-  /* background: linear-gradient(to right, rgba(255, 255, 255, 0), white); */
 }
 
 .logos:hover .logos-slide {
@@ -462,11 +420,24 @@ h3 {
   margin: 0 40px;
 }
 
+/****************/
+/* Match Online */
+/****************/
+.align-cards {
+  display: flex;
+}
+
+.erpenwebshop {
+  margin-bottom: 9em;
+}
+
+.card {
+  flex: 1;
+}
 
 
 
-/* Collega carousel */
-
+/* Collega swiper */
 @media (max-width: 460px) {
   .custom-body p.lead {
     font-size: 14px !important;
@@ -489,37 +460,17 @@ h3 {
   }
 }
 
-.card-body {
-  position: relative;
-}
-
 .functies a {
   position: relative;
   bottom: 20px;
   right: 20px;
 }
 
-/* .functies{
-  display: flex;                 
-  flex-direction: column;          
-  justify-content: space-between;
-} */
-
-/* .functies a {
-
-} */
-
-
-/************/
-/* Slider 2 */
-/************/
-
 .custom-slider-section {
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #efefef; */
   position: relative;
   margin-bottom: 3em;
 }
@@ -531,6 +482,14 @@ h3 {
 }
 
 /* card */
+.card-body {
+  position: relative;
+}
+
+.card-content p{
+  font-weight: 500;
+}
+
 .custom-card {
   border-radius: 25px;
   background-color: #fff;
@@ -597,11 +556,10 @@ h3 {
 
 .description {
   font-size: 16px;
-  /* color: #374501; */
   text-align: center;
 }
 
-
+/* swiper */
 .swiper-slide {
   height: auto !important;
 }
@@ -648,10 +606,9 @@ h3 {
 }
 
 
-
-
-
-
+/**************/
+/* Werken bij */
+/**************/
 
 .vacature-card {
   display: flex;
@@ -667,9 +624,17 @@ h3 {
   margin-top: 3em;
 }
 
+.vacature-ul{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.custom-quote-container {
+  margin-bottom: 6em;
+}
+
 
 /* Banner */
-
 .banner {
   background-color: #83A108;
   text-align: center;
@@ -696,17 +661,11 @@ h3 {
   padding: 35px 0 35px 0;
 }
 
-.vertical {
-  border-left: 5px solid #A4CC00;
-  height: 450px;
-  margin-top: 0em;
-  margin-left: 3em;
-  margin-right: 3em;
-}
 
 
-
-
+/***********/
+/* Support */
+/***********/
 .map-openingstijden-container {
   display: flex;
   justify-content: center;
@@ -720,6 +679,14 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
+}
+
+.vertical {
+  border-left: 5px solid #A4CC00;
+  height: 450px;
+  margin-top: 0em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .map-openingstijden iframe {
@@ -752,7 +719,6 @@ h3 {
   }
 }
 
-
 .Arjn-Jan {
   display: block;
   margin: auto;
@@ -765,7 +731,6 @@ h3 {
     margin-left: 2em;
   }
 }
-
 
 .servicedesk-card {
   align-items: center;
@@ -782,8 +747,9 @@ h3 {
 }
 
 
-
-/* ERP systeem  */
+/***************/
+/* ERP systeem */
+/***************/
 .erp-icon-met-tekst {
   display: flex;
   flex-direction: column;
@@ -803,10 +769,6 @@ h3 {
 font-size: 25px;
 }
 
-/* .fluid-h2 {
-  word-wrap: break-word;
-} */
-
 .systeem-interesse{
   flex-direction: column;
 }
@@ -816,18 +778,19 @@ font-size: 25px;
   padding: 1em 1em 1em 1em;
 }
 
-
-
 @media (max-width: 410px) {
   .lap-tekst h2{
     font-size: 20px;
   }
 }
 
-
 @media (min-width: 765px) {
   .img-lg {
     max-width: 300px;
+  }
+
+  .position-absolute {
+    right: 0;
   }
 }
 
@@ -839,9 +802,7 @@ font-size: 25px;
   .img-lg img {
     margin-bottom: 2em;
   }
-}
 
-@media (max-width: 764px) {
   .position-absolute {
     left: 0;
     right: 0;
@@ -849,20 +810,36 @@ font-size: 25px;
   }
 }
 
-@media (min-width: 765px) {
-  .position-absolute {
-    right: 0;
-  }
-}
 
-
+/**********/
+/* Nieuws */
+/**********/
 .news-item {
   margin-bottom: 3em;
 }
 
 
+/********************/
+/* Contactformulier */
+/********************/
+.btn-send {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  margin-left: 3px;
+  }
+  
+.help-block.with-errors {
+  color: #ff5050;
+  margin-top: 5px;
+}
 
+
+
+/**********/
 /* Footer */
+/**********/
 
 .media-icons {
   font-size: 30px;
@@ -872,15 +849,6 @@ font-size: 25px;
   margin-right: 5px;
   height: none !important;
 }
-
-/* .footer-link {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: rgba(0, 0, 0, 0.685);
-} */
 
 .contact-footer a {
   text-decoration: none;
@@ -892,30 +860,6 @@ font-size: 25px;
     margin: 0 !important;
 }
 
-/* .footer-link:hover {
-  color: #475900;
-} */
-
-
-/* contactformulier */
-.btn-send {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  width: 80%;
-  margin-left: 3px;
-  }
-.help-block.with-errors {
-  color: #ff5050;
-  margin-top: 5px;
-
-}
-
-.card{
-margin-left: 10px;
-margin-right: 10px;
-}
-
 .copyright-container p{
   font-size: 16px;
 }
@@ -925,7 +869,7 @@ font-size: 20px !important;
 }
 
 .linkedin-link {
-  color: white; /* Maakt de tekst en iconen wit */
+  color: white;
   text-decoration: none;
 }
 
