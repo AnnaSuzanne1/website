@@ -766,10 +766,10 @@ h3 {
   color: #374501;
 }
 
+.accordion-button:hover {
+  background-color: #A4CC00;
+}
 
-  .accordion-button:hover{
-    background-color:  #A4CC00;
-  }
 
 /***************/
 /* ERP systeem */
@@ -974,7 +974,7 @@ form {
   justify-content: space-between;
 }
 
-.background-grey{
+.background-grey {
   background-color: rgba(0, 0, 0, 0.2)
 }
 
