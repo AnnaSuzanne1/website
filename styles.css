@@ -146,6 +146,11 @@ h3 {
   }
 }
 
+.img-centreren {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
 /*************/
 /* Navigatie */
@@ -376,6 +381,12 @@ h3 {
     width: 50%;
   }
 }
+
+/* @media (max-width: 767px) {
+  .vink-en-vinkjes-tekst {
+    width: 60%;
+  }
+} */
 
 /* Logos */
 @keyframes slide {
@@ -825,6 +836,19 @@ h3 {
   margin-bottom: 3em;
 }
 
+.nieuws-ul {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+table {
+  height: 153px;
+  width: 353;
+}
+
+/* table, th, td  */
+
+
 
 /********************/
 /* Contactformulier */
@@ -870,11 +894,11 @@ input.btn {
   width: 100%;
   border: 1px solid #83a301;
   border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
   margin-bottom: 10px;
 }
 
-.contact-formulier .card{
+.contact-formulier .card {
   margin-bottom: 30px;
   border: none;
 }
