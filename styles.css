@@ -455,6 +455,8 @@ h3 {
 
 
 
+
+
 /* Collega swiper */
 @media (max-width: 460px) {
   .custom-body p.lead {
@@ -765,6 +767,10 @@ h3 {
 }
 
 
+  .accordion-button:hover{
+    background-color:  #A4CC00;
+  }
+
 /***************/
 /* ERP systeem */
 /***************/
@@ -962,4 +968,22 @@ form {
 
 .bovenkant-footer .row {
   padding-bottom: 3em;
+}
+
+.text-center {
+  justify-content: space-between;
+}
+
+.background-grey{
+  background-color: rgba(0, 0, 0, 0.2)
+}
+
+
+@media (max-width: 470px) {
+  .text-center {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center !important;
+  }
 }
