@@ -151,6 +151,19 @@ h3 {
   margin-right: 0;
 }
 
+/* dark theme */
+/* Donkere thema stijlen */
+[data-bs-theme="dark"] {
+  /* Voeg hier je donkere thema stijlen toe */
+  background-color: #333; /* Voorbeeld van een donkere achtergrondkleur */
+  color: #fff; /* Voorbeeld van lichte tekstkleur */
+}
+
+  .light-theme-element {
+    background-color: #f2f2f2; /* Voorbeeld van een lichte achtergrondkleur */
+    color: #555; /* Voorbeeld van donkere tekstkleur */
+}
+
 
 /*************/
 /* Navigatie */
@@ -264,15 +277,26 @@ h3 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.close {
-  background: none;
-  border: none;
-  margin-left: 2em;
+@media (max-width: 460px) {
+  .navbar.mx-5 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar-brand img {
+    width: 7em;
+  }
 }
 
 /* Alert  */
 .alert-dismissible {
   padding-right: 3rem;
+}
+
+.close {
+  background: none;
+  border: none;
+  margin-left: 2em;
 }
 
 @media (max-width: 768px) {
@@ -303,6 +327,10 @@ h3 {
   max-width: 380px;
 }
 
+/* .home-banner{
+  margin-bottom: 10em;
+} */
+
 /* .ulFlex {
   display: flex;
   justify-content: space-around;
@@ -319,21 +347,79 @@ h3 {
 
 
 /* Over Match Online en voordelen*/
+.voordelen {
+  margin-top: 1em;
+  background-color:#e9eaec;
+}
+
+ .voordelen .erp-icon{
+  color: #A4CC00;
+  font-size: 50px;
+}
+
+.voordelen .row {
+  width: 100%;
+}
+
+.voordelen p{
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .voordelen .col-lg-2{
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+}
+
+@media (max-width: 992px) {
+  .voordelen .erp-icon-met-tekst p {
+    font-size: 14px; /* Verklein de tekstgrootte */
+  }
+  .voordelen .erp-icon{
+    font-size: 40px;
+  }
+  .voordelen .col-lg-2{
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .voordelen .erp-icon-met-tekst p {
+    font-size: 12px; /* Nog kleiner bij nog kleinere schermen */
+  }
+  .voordelen .erp-icon{
+    font-size: 30px;
+  }
+}
+
+
+
+@media (max-width: 575.98px) {
+  .voordelen .container {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  .voordelen .row > div[class*="col-"] {
+      flex: 0 0 calc(50% - 1rem);
+      max-width: calc(50% - 1rem);
+  }}
+
+
+
+
+
+/*
 .producten {
   max-width: 600px
-}
+}*/
 
-.vink {
-  width: 3em;
-  margin-right: 3em;
-}
 
-.vink-vacature {
-  width: 20px;
-  height: auto;
-}
 
-.voordelen-heading {
+
+
+/* .voordelen-heading {
   margin-bottom: 2em;
   margin-top: 6em;
 }
@@ -380,7 +466,7 @@ h3 {
     margin: auto;
     width: 50%;
   }
-}
+} */
 
 /* @media (max-width: 767px) {
   .vink-en-vinkjes-tekst {
@@ -441,6 +527,27 @@ h3 {
 /****************/
 /* Match Online */
 /****************/
+
+.matchonline-iconen .erp-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+.erp-icon-met-tekst {
+  display: flex;
+  flex-direction: column;
+}
+
+.erp-icon-met-tekst p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+
+
+
+
 .align-cards {
   display: flex;
 }
@@ -454,24 +561,18 @@ h3 {
 }
 
 
+.aanvullende-webshop-modules{
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.aanvullende-webshop-modules .accordion-body{
+  font-weight: 370;
+}
 
 
 
 /* Collega swiper */
-@media (max-width: 460px) {
-  .custom-body p.lead {
-    font-size: 14px !important;
-  }
-
-  .navbar.mx-5 {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  .navbar-brand img {
-    width: 7em;
-  }
-}
 
 @media (max-width: 768px) {
   .logos-slide img {
@@ -653,8 +754,17 @@ h3 {
   margin-bottom: 6em;
 }
 
+.vink {
+  width: 3em;
+  margin-right: 3em;
+}
 
-/* Banner */
+.vink-vacature {
+  width: 20px;
+  height: auto;
+}
+
+/* vacature Banner */
 .banner {
   background-color: #83A108;
   text-align: center;
@@ -774,20 +884,7 @@ h3 {
 /***************/
 /* ERP systeem */
 /***************/
-.erp-icon-met-tekst {
-  display: flex;
-  flex-direction: column;
-}
 
-.erp-icon-met-tekst p {
-  font-size: 18px;
-  text-align: justify;
-}
-
-.erp-icon {
-  font-size: 50px;
-  margin-bottom: 20px;
-}
 
 .lap-tekst h2 {
   font-size: 25px;

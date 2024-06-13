@@ -39,26 +39,60 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Dark theme 
-function toggleTheme() {
-    console.log("Toggle Theme function is called");
+// // Dark theme 
+// function toggleTheme() {
+//     console.log("Toggle Theme function is called");
+//     var body = document.body;
+//     if (body.getAttribute('data-bs-theme') === 'dark') {
+//         body.removeAttribute('data-bs-theme');
+//     } else {
+//         body.setAttribute('data-bs-theme', 'dark');
+//     }
+// }
+
+// var toggleThemeBtns = document.getElementsByClassName('toggleThemeBtn');
+
+// for (var i = 0; i < toggleThemeBtns.length; i++) {
+//     toggleThemeBtns[i].addEventListener('click', function() {
+//         console.log("Button is clicked");
+//         toggleTheme();
+//     });
+// }
+
+// Dark theme
+function applyDarkTheme() {
     var body = document.body;
-    if (body.getAttribute('data-bs-theme') === 'dark') {
-        body.removeAttribute('data-bs-theme');
-    } else {
-        body.setAttribute('data-bs-theme', 'dark');
-    }
+    body.setAttribute('data-bs-theme', 'dark');
 }
 
-var toggleThemeBtns = document.getElementsByClassName('toggleThemeBtn');
+function removeDarkTheme() {
+    var body = document.body;
+    body.removeAttribute('data-bs-theme');
+}
 
-for (var i = 0; i < toggleThemeBtns.length; i++) {
-    toggleThemeBtns[i].addEventListener('click', function() {
-        console.log("Button is clicked");
-        toggleTheme();
+// Check het voorkeursthema van de gebruiker
+function checkUserColorScheme() {
+    var darkThemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    if (darkThemeQuery.matches) {
+        applyDarkTheme();
+    } else {
+        removeDarkTheme();
+    }
+
+    // Luister naar veranderingen in het voorkeursthema van de gebruiker
+    darkThemeQuery.addListener(function(e) {
+        if (e.matches) {
+            applyDarkTheme();
+        } else {
+            removeDarkTheme();
+        }
     });
 }
 
+// Voer de check uit bij het laden van de pagina
+document.addEventListener('DOMContentLoaded', function() {
+    checkUserColorScheme();
+});
 
 
 
