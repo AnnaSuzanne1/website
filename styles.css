@@ -355,6 +355,15 @@ h3 {
  .voordelen .erp-icon{
   color: #A4CC00;
   font-size: 50px;
+  transition: font-size 0.5s;
+}
+
+.voordelen .erp-icon:hover{
+  font-size: 60px;
+}
+
+.voordelen p:hover{
+  font-size: 20px;
 }
 
 .voordelen .row {
@@ -541,8 +550,18 @@ h3 {
   text-align: justify;
 }
 
+/****************/
+/* Match Online ERP systeem */
+/****************/
 
+.mogelijkheden-iconen .erp-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 
+.mogelijkheden-iconen h5{
+  font-size: 16px;
+}
 
 
 .align-cards {
