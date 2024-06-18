@@ -368,7 +368,7 @@ h3 {
 @media (min-width: 992px) {
   .voordelen .col-lg-2{
     margin-top: 5em;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
   }
 }
 
@@ -427,12 +427,9 @@ h3 {
 .voordelen-img {
   width: 900px;
 }
+*/
 
-.img-centreren {
-  display: flex;
-  justify-content: center;
-}
-
+/*
 .vink-en-vinkjes-tekst {
   margin-bottom: 40px;
 }
@@ -552,8 +549,8 @@ h3 {
   display: flex;
 }
 
-.erpenwebshop {
-  margin-bottom: 9em;
+.erp-en-webshop{
+  margin-bottom: 7em;
 }
 
 .card {
@@ -802,6 +799,7 @@ h3 {
   align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 5em;
+  margin-top: 5em;
 }
 
 .map-openingstijden {
@@ -879,6 +877,11 @@ h3 {
 .accordion-button:hover {
   background-color: #A4CC00;
 }
+.accordion-button{
+  font-weight: 600 !important;
+}
+
+
 
 
 /***************/
@@ -947,6 +950,11 @@ h3 {
 table {
   height: 153px;
   width: 353;
+}
+
+.img-centreren {
+  display: flex;
+  justify-content: center;
 }
 
 /* table, th, td  */
@@ -1033,7 +1041,7 @@ form {
 
 .svg-inline--fa {
   margin-right: 5px;
-  height: none !important;
+  height: none !important;  
 }
 
 .contact-footer a {
