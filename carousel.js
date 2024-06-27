@@ -1,3 +1,4 @@
+console.log("carousel.js is loaded");
 
 
 
@@ -109,3 +110,26 @@ document.getElementById("go-back").addEventListener("click", function(event) {
     event.preventDefault(); // Zorgt ervoor dat de standaard actie van de link niet wordt uitgevoerd
     window.history.back(); // Gaat naar de vorige pagina
 });
+
+
+
+// cards informatieblok
+// const infoData = {
+//     info1: "Dit is de gedetailleerde informatie voor item 1.",
+//     info2: "Dit is de gedetailleerde informatie voor item 2.",
+//     info3: "Dit is de gedetailleerde informatie voor item 3.",
+//     info4: "Dit is de gedetailleerde informatie voor item 4."
+// };
+
+// $(document).ready(function() {
+//     console.log("Document is ready");
+//     $('.card').click(function() {
+//         console.log("Card clicked");
+//         const infoKey = $(this).data('info');
+//         console.log('Card clicked:', infoKey); 
+//         const infoText = infoData[infoKey];
+//         console.log('Info text:', infoText); 
+//         $('#infoBlock .card-text').text(infoText);
+//     });
+// });
+

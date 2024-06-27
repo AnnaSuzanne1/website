@@ -953,6 +953,33 @@ h3 {
   }
 }
 
+/* Stijlen voor de afbeelding in de kaart */
+#infoImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centreert de afbeelding in de kaart */
+}
+
+/* Stijlen voor de tekst in de card-body */
+#infoBlock {
+  text-align: center; /* Centreert de tekst in het informatieblok */
+  padding: 20px; /* Voegt wat padding toe aan de card-body */
+}
+
+
+/* #info-img {
+  max-width: 100%;
+  width: 10em;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+} */
+
+/* .card-body {
+  text-align: center; 
+} */
+
 
 /**********/
 /* Nieuws */
