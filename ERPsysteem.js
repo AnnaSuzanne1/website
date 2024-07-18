@@ -6,7 +6,7 @@ const infoData = {
     },
     info2: {
         title: "Verkoop met meer rendement",
-        text: "Verkoop is het belangrijkste commerciële proces in uw organisatie. In Match Online wordt dit proces efficiënt ondersteund. Vanuit Match Online kunt u eenvoudig algemeen en klantspecifieke aanbodregels en aanbiedingen versturen. Op alle denkbare manieren en op ieder denkbaar moment. Uw standaard assortimentsgegevens (zowel mono als samengestelde producten) zijn samen met de klantspecifieke afspraken die u eenmalig vastlegt in Match Online de basis voor iedere aanbodregel of aanbieding. Daarnaast kunt u realtime voorraad delen met uw klanten en via hun webshops rechtstreeks verkopen aan groothandelaren en bloemisten. Als u uw verkoop wilt ondersteunen met een eigen webshop is dat ook mogelijk in Match Online. Uiteraard ondersteunt Match-Online de ketenstandaarden van Floricode en is het mogelijk om middels de digitale connectors van SRC snel en efficiënt digitaal communiceren met uw handelspartners buiten de sierteeltketen.",
+        text: "Verkoop is het belangrijkste commerciële proces in uw organisatie, en Match Online ondersteunt dit efficiënt. U kunt eenvoudig algemene en klantspecifieke aanbodregels en aanbiedingen versturen, op elk moment en op elke manier. Standaard assortimentsgegevens en klantspecifieke afspraken vormen de basis voor elke aanbodregel. Daarnaast kunt u realtime voorraad delen en rechtstreeks verkopen via webshops aan groothandelaren en bloemisten. Ook een eigen webshop is mogelijk in Match Online. Match Online ondersteunt Floricode-standaarden en biedt via SRC digitale connectors snelle en efficiënte communicatie met handelspartners buiten de sierteeltketen.",
         image: "images/ERP-systeem-img/iStock-531687508_vierkant.jpg"
     },
     info3: {
@@ -34,32 +34,39 @@ const infoData = {
 $(document).ready(function() {
     console.log("Document is ready");
 
-    $('.card').click(function() {
-        const infoKey = $(this).data('info');
-        console.log('Card clicked:', infoKey); // Controleer de waarde van infoKey
-        
-// Verwijder de actieve klasse van alle iconen
-$('.erp-icon').removeClass('active-icon');
-
-// Voeg de actieve klasse toe aan het icoon van de aangeklikte kaart
-$(this).find('.erp-icon').addClass('active-icon');
-
-        // Controleer of infoKey bestaat in infoData
+    // Functie om informatie weer te geven en iconen groen te maken
+    function showInfo(infoKey) {
         if (infoData.hasOwnProperty(infoKey)) {
             const infoTitle = infoData[infoKey].title;
             const infoText = infoData[infoKey].text;
             const infoImage = infoData[infoKey].image;
-            
+
             console.log('Info title:', infoTitle); // Controleer de waarde van infoTitle
             console.log('Info text:', infoText); // Controleer de waarde van infoText
             console.log('Info image:', infoImage); // Controleer de waarde van infoImage
-            
 
             $('#infoBlock .card-title').text(infoTitle);
             $('#infoBlock .card-text').text(infoText);
             $('#infoImage').attr('src', infoImage);
+
+            // Verwijder de actieve klasse van alle iconen
+            $('.erp-icon').removeClass('active-icon');
+            // Voeg de actieve klasse toe aan het huidige icoon
+            $(`.card[data-info="${infoKey}"] .erp-icon`).addClass('active-icon');
         } else {
             console.error('Key not found in infoData:', infoKey);
         }
+    }
+
+    // Toon info1 bij het laden van de pagina
+    showInfo('info1');
+
+    $('.card[data-info="info1"] .erp-icon').addClass('active-icon');
+
+
+    $('.card').click(function() {
+        const infoKey = $(this).data('info');
+        console.log('Card clicked:', infoKey); // Controleer de waarde van infoKey
+        showInfo(infoKey);
     });
 });
