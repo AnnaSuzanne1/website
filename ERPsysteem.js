@@ -49,21 +49,29 @@ $(document).ready(function() {
             $('#infoBlock .card-text').text(infoText);
             $('#infoImage').attr('src', infoImage);
 
-            // Verwijder de actieve klasse van alle iconen
-            $('.erp-icon').removeClass('active-icon');
-            // Voeg de actieve klasse toe aan het huidige icoon
-            $(`.card[data-info="${infoKey}"] .erp-icon`).addClass('active-icon');
+            // Update de actieve icoon
+            updateActiveIcon(infoKey);
         } else {
             console.error('Key not found in infoData:', infoKey);
         }
     }
 
+    // Functie om de actieve icoon bij te werken
+    function updateActiveIcon(infoKey) {
+        // Verwijder de actieve klasse van alle iconen
+        $('.erp-icon').removeClass('active-icon');
+        // Voeg de actieve klasse toe aan het huidige icoon
+        $(`.card[data-info="${infoKey}"] .erp-icon`).addClass('active-icon');
+    }
+
     // Toon info1 bij het laden van de pagina
-    showInfo('info1');
+    $(window).on('load', function() {
+        showInfo('info1');
+        // Zorg ervoor dat het eerste icoontje direct actief wordt
+        $('.card[data-info="info1"] .erp-icon').addClass('active-icon');
+    });
 
-    $('.card[data-info="info1"] .erp-icon').addClass('active-icon');
-
-
+    // Event listener voor het klikken op een kaart
     $('.card').click(function() {
         const infoKey = $(this).data('info');
         console.log('Card clicked:', infoKey); // Controleer de waarde van infoKey

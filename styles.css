@@ -559,6 +559,11 @@ h3 {
 /* Match Online ERP systeem */
 /****************/
 
+.matchonline-iconen .container{
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+
 .mogelijkheden-iconen .erp-icon {
   font-size: 40px;
   margin-bottom: 20px;
@@ -581,7 +586,6 @@ h3 {
   flex: 1;
 }
 
-
 .aanvullende-webshop-modules{
   margin-top: 7em;
   margin-bottom: 7em;
@@ -593,6 +597,10 @@ h3 {
 
 .active-icon {
   color: #478a20;
+}
+
+.mogelijkheden-card .row{
+  margin-bottom: 6em;
 }
 
 /* Collega swiper */
@@ -915,8 +923,12 @@ h3 {
 /***************/
 
 
-.lap-tekst h2 {
+/* .lap-tekst h2 {
   font-size: 25px;
+} */
+
+.lap-tekst p {
+  font-size: 18px;
 }
 
 .systeem-interesse {
@@ -929,7 +941,7 @@ h3 {
 }
 
 @media (max-width: 410px) {
-  .lap-tekst h2 {
+  .lap-tekst {
     font-size: 20px;
   }
 }
