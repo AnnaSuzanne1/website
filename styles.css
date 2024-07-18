@@ -358,12 +358,17 @@ h3 {
   transition: font-size 0.5s;
 }
 
-.voordelen .erp-icon:hover{
+/* .voordelen .erp-icon:hover{
   font-size: 60px;
-}
+} */
 
-.voordelen p:hover{
+/* .voordelen p:hover{
   font-size: 20px;
+} */
+
+.voordelen .erp-icon-met-tekst:hover{
+  transform: scale(1.1);
+  transition-duration: .3s;
 }
 
 .voordelen .row {
@@ -586,7 +591,9 @@ h3 {
   font-weight: 370;
 }
 
-
+.active-icon {
+  color: #478a20;
+}
 
 /* Collega swiper */
 
@@ -963,7 +970,7 @@ h3 {
 
 /* Stijlen voor de tekst in de card-body */
 #infoBlock {
-  text-align: center; /* Centreert de tekst in het informatieblok */
+  text-align: left; /* Centreert de tekst in het informatieblok */
   padding: 20px; /* Voegt wat padding toe aan de card-body */
 }
 
