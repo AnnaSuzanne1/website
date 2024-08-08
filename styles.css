@@ -18,7 +18,7 @@ body {
 p {
   font-size: 20px;
   line-height: 1.8em;
-  font-weight: 300;
+  font-weight: 350;
 }
 
 * h1,
@@ -44,7 +44,7 @@ h1 {
 
 h2 {
   font-size: 30px;
-  font-family: "Roboto", sans-serif !important;
+  /* font-family: "Roboto", sans-serif !important; */
 }
 
 h3 {
@@ -116,6 +116,21 @@ h3 {
   color: black;
 }
 
+.btn {
+  border-radius: 20px; /* Pas deze waarde aan voor een grotere of kleinere radius */
+}
+
+.btn-primary{
+  background-color:#A4CC00;
+  border: none;
+  color: #000000;
+}
+
+.btn-primary:hover{
+  background-color: #4B5035;
+  color: #ffffff;
+}
+
 /* Cards */
 /* .card-opmaak .card {
   margin: 2em 2em 0em 2em;
@@ -155,13 +170,17 @@ h3 {
 /* Donkere thema stijlen */
 [data-bs-theme="dark"] {
   /* Voeg hier je donkere thema stijlen toe */
-  background-color: #333; /* Voorbeeld van een donkere achtergrondkleur */
-  color: #fff; /* Voorbeeld van lichte tekstkleur */
+  background-color: #333;
+  /* Voorbeeld van een donkere achtergrondkleur */
+  color: #fff;
+  /* Voorbeeld van lichte tekstkleur */
 }
 
-  .light-theme-element {
-    background-color: #f2f2f2; /* Voorbeeld van een lichte achtergrondkleur */
-    color: #555; /* Voorbeeld van donkere tekstkleur */
+.light-theme-element {
+  background-color: #f2f2f2;
+  /* Voorbeeld van een lichte achtergrondkleur */
+  color: #555;
+  /* Voorbeeld van donkere tekstkleur */
 }
 
 
@@ -349,10 +368,10 @@ h3 {
 /* Over Match Online en voordelen*/
 .voordelen {
   margin-top: 1em;
-  background-color:#e9eaec;
+  background-color: #e9eaec;
 }
 
- .voordelen .erp-icon{
+.voordelen .erp-icon {
   color: #A4CC00;
   font-size: 50px;
   transition: font-size 0.5s;
@@ -366,21 +385,21 @@ h3 {
   font-size: 20px;
 } */
 
-.voordelen .erp-icon-met-tekst:hover{
+/* .voordelen .erp-icon-met-tekst:hover {
   transform: scale(1.1);
   transition-duration: .3s;
-}
+} */
 
 .voordelen .row {
   width: 100%;
 }
 
-.voordelen p{
+.voordelen p {
   font-weight: 400;
 }
 
 @media (min-width: 992px) {
-  .voordelen .col-lg-2{
+  .voordelen .col-lg-2 {
     margin-top: 5em;
     margin-bottom: 2em;
   }
@@ -388,21 +407,26 @@ h3 {
 
 @media (max-width: 992px) {
   .voordelen .erp-icon-met-tekst p {
-    font-size: 14px; /* Verklein de tekstgrootte */
+    font-size: 14px;
+    /* Verklein de tekstgrootte */
   }
-  .voordelen .erp-icon{
+
+  .voordelen .erp-icon {
     font-size: 40px;
   }
-  .voordelen .col-lg-2{
+
+  .voordelen .col-lg-2 {
     margin-top: 1em;
   }
 }
 
 @media (max-width: 768px) {
   .voordelen .erp-icon-met-tekst p {
-    font-size: 12px; /* Nog kleiner bij nog kleinere schermen */
+    font-size: 12px;
+    /* Nog kleiner bij nog kleinere schermen */
   }
-  .voordelen .erp-icon{
+
+  .voordelen .erp-icon {
     font-size: 30px;
   }
 }
@@ -411,14 +435,15 @@ h3 {
 
 @media (max-width: 575.98px) {
   .voordelen .container {
-      padding-left: 0;
-      padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .voordelen .row > div[class*="col-"] {
-      flex: 0 0 calc(50% - 1rem);
-      max-width: calc(50% - 1rem);
-  }}
+  .voordelen .row>div[class*="col-"] {
+    flex: 0 0 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
 
 
 
@@ -554,12 +579,16 @@ h3 {
   text-align: justify;
 }
 
+.erp-en-webshop .align-cards{
+  justify-content: center;
+}
+
 /****************/
 /* Match Online ERP systeem */
 /****************/
 
-.matchonline-iconen .container{
-  margin-top: 6em;
+.matchonline-iconen .container {
+  margin-top: 7em;
   margin-bottom: 4em;
 }
 
@@ -568,8 +597,12 @@ h3 {
   margin-bottom: 20px;
 }
 
-.mogelijkheden-iconen h5{
+.mogelijkheden-iconen h5 {
   font-size: 16px;
+}
+
+.mogelijkheden-iconen .card:hover{
+  background-color:#ecf5cb;
 }
 
 
@@ -577,7 +610,7 @@ h3 {
   display: flex;
 }
 
-.erp-en-webshop{
+.erp-en-webshop {
   margin-bottom: 7em;
 }
 
@@ -585,12 +618,12 @@ h3 {
   flex: 1;
 }
 
-.aanvullende-webshop-modules{
+.aanvullende-webshop-modules {
   margin-top: 7em;
   margin-bottom: 7em;
 }
 
-.aanvullende-webshop-modules .accordion-body{
+.aanvullende-webshop-modules .accordion-body {
   font-weight: 370;
 }
 
@@ -598,7 +631,7 @@ h3 {
   color: #478a20;
 }
 
-.mogelijkheden-card .row{
+.mogelijkheden-card .row {
   margin-bottom: 6em;
 }
 
@@ -827,21 +860,21 @@ h3 {
 /* Support */
 /***********/
 
-.banner-container{
-text-align: left;
+.banner-container {
+  text-align: left;
 }
 
-.banner-white{
-display: flex;
-justify-content: center;
-align-items: center;
+.banner-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-flex {
-display: flex;
-align-items: center;
-justify-content: start;
- }
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
 
 .map-openingstijden-container {
   display: flex;
@@ -877,20 +910,22 @@ justify-content: start;
   margin: 0 20px;
 }
 
-.openingstijden p{
+.openingstijden p {
   line-height: 1em;
 }
 
 .openingstijden-regel {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   padding: 5px 0;
 }
 
 .openingstijden-regel .dag {
-  flex: 0 1 auto; /* Zorgt ervoor dat de dag alleen zoveel ruimte inneemt als nodig is */
-  margin-right: 10px; /* Pas dit aan om de ruimte tussen dag en tijd te beheren */
+  flex: 0 1 auto;
+  /* Zorgt ervoor dat de dag alleen zoveel ruimte inneemt als nodig is */
+  margin-right: 10px;
+  /* Pas dit aan om de ruimte tussen dag en tijd te beheren */
 }
 
 .openingstijden-regel .tijd {
@@ -898,14 +933,19 @@ justify-content: start;
   text-align: right;
 }
 
-.dag, .tijd {
+.dag,
+.tijd {
   margin: 0;
 }
 
 @media screen and (max-width: 690px) {
-.openingstijden{
-max-width: 60% !important;
-}
+  .openingstijden {
+    max-width: 60% !important;
+  }
+
+  /* .openingstijden {
+    margin-top: 40px;
+  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -914,7 +954,7 @@ max-width: 60% !important;
   .openingstijden {
     flex: 1 1 100%;
     max-width: 100%;
-    margin: 10px 0;
+    margin: 20px 0;
   }
 
   .vertical {
@@ -928,13 +968,13 @@ max-width: 60% !important;
   .openingstijden {
     margin-left: auto;
     margin-right: auto;
-   max-width: 40%;
-    }
+    max-width: 40%;
+  }
 
-    .openingstijden h2{
-      font-size: 20px;
-    }
-   
+  .openingstijden h2 {
+    font-size: 20px;
+  }
+
 }
 
 .Arjn-Jan {
@@ -967,8 +1007,9 @@ max-width: 60% !important;
 .accordion-button:hover {
   background-color: #A4CC00;
 }
-.accordion-button{
-  font-weight: 600 !important;
+
+.accordion-button {
+  font-weight: 500 !important;
 }
 
 
@@ -1033,13 +1074,16 @@ max-width: 60% !important;
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Centreert de afbeelding in de kaart */
+  margin: 0 auto;
+  /* Centreert de afbeelding in de kaart */
 }
 
 /* Stijlen voor de tekst in de card-body */
 #infoBlock {
-  text-align: left; /* Centreert de tekst in het informatieblok */
-  padding: 20px; /* Voegt wat padding toe aan de card-body */
+  text-align: left;
+  /* Centreert de tekst in het informatieblok */
+  padding: 20px;
+  /* Voegt wat padding toe aan de card-body */
 }
 
 
@@ -1162,7 +1206,7 @@ form {
 
 .svg-inline--fa {
   margin-right: 5px;
-  height: none !important;  
+  height: none !important;
 }
 
 .contact-footer a {
