@@ -1034,7 +1034,8 @@ h3 {
 
 .systeem-interesse .lap-tekst {
   background-color: #d6e3a1;
-  padding: 1em 1em 1em 1em;
+  padding: 3em 1em 3em 1em;
+  
 }
 
 @media (max-width: 410px) {
