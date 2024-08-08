@@ -832,11 +832,11 @@ text-align: left;
 }
 
 .banner-white{
-
 display: flex;
 justify-content: center;
 align-items: center;
 }
+
 
 .banner-flex {
 display: flex;
@@ -875,10 +875,7 @@ justify-content: start;
 
 .openingstijden {
   max-width: 400px;
-  /* flex: 1 1 50%; */
   margin: 0 20px;
-  /* text-align: center; */
-  /* width: 60%; */
 }
 
 .openingstijden p{
@@ -888,7 +885,7 @@ justify-content: start;
 .openingstijden-regel {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Zorgt ervoor dat de items gecentreerd zijn */
+  align-items: center; 
   padding: 5px 0;
 }
 
