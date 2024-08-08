@@ -423,7 +423,6 @@ h3 {
 
 
 
-
 /*
 .producten {
   max-width: 600px
@@ -796,29 +795,29 @@ h3 {
 }
 
 /* vacature Banner */
-.banner {
+.vacature-banner .banner {
   background-color: #83A108;
   text-align: center;
   margin-top: 10em;
   color: white;
 }
 
-.banner-white {
+.vacature-banner .banner-white {
   text-align: center;
 }
 
-.banner img {
+.vacature-banner .banner img {
   width: 30px;
   margin: 0 10px 12px 0;
 }
 
-.banner-flex {
+.vacature-banner .banner-flex {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.banner-container {
+.vacature-banner .banner-container {
   padding: 35px 0 35px 0;
 }
 
@@ -827,6 +826,24 @@ h3 {
 /***********/
 /* Support */
 /***********/
+
+.banner-container{
+text-align: left;
+}
+
+.banner-white{
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.banner-flex {
+display: flex;
+align-items: center;
+justify-content: start;
+ }
+
 .map-openingstijden-container {
   display: flex;
   justify-content: center;
@@ -858,9 +875,41 @@ h3 {
 
 .openingstijden {
   max-width: 400px;
-  flex: 1 1 50%;
+  /* flex: 1 1 50%; */
   margin: 0 20px;
-  text-align: center;
+  /* text-align: center; */
+  /* width: 60%; */
+}
+
+.openingstijden p{
+  line-height: 1em;
+}
+
+.openingstijden-regel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Zorgt ervoor dat de items gecentreerd zijn */
+  padding: 5px 0;
+}
+
+.openingstijden-regel .dag {
+  flex: 0 1 auto; /* Zorgt ervoor dat de dag alleen zoveel ruimte inneemt als nodig is */
+  margin-right: 10px; /* Pas dit aan om de ruimte tussen dag en tijd te beheren */
+}
+
+.openingstijden-regel .tijd {
+  flex: 1 0 auto;
+  text-align: right;
+}
+
+.dag, .tijd {
+  margin: 0;
+}
+
+@media screen and (max-width: 690px) {
+.openingstijden{
+max-width: 60% !important;
+}
 }
 
 @media screen and (max-width: 1024px) {
@@ -879,6 +928,17 @@ h3 {
   .servicedesk-card {
     flex-direction: column;
   }
+
+  .openingstijden {
+    margin-left: auto;
+    margin-right: auto;
+   max-width: 40%;
+    }
+
+    .openingstijden h2{
+      font-size: 20px;
+    }
+   
 }
 
 .Arjn-Jan {
