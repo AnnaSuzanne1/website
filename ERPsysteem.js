@@ -49,7 +49,6 @@ $(document).ready(function() {
             $('#infoBlock .card-text').text(infoText);
             $('#infoImage').attr('src', infoImage);
 
-            // Update de actieve icoon
             updateActiveIcon(infoKey);
         } else {
             console.error('Key not found in infoData:', infoKey);
@@ -74,7 +73,7 @@ $(document).ready(function() {
     // Event listener voor het klikken op een kaart
     $('.card').click(function() {
         const infoKey = $(this).data('info');
-        console.log('Card clicked:', infoKey); // Controleer de waarde van infoKey
+        console.log('Card clicked:', infoKey);
         showInfo(infoKey);
     });
 });

@@ -99,18 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Contactformulier
-// Initialization for ES Users
-
-// import { Input, Ripple, initMDB } from "mdb-ui-kit";
-
-// initMDB({ Input, Ripple });
-
-document.getElementById("go-back").addEventListener("click", function(event) {
-    event.preventDefault(); // Zorgt ervoor dat de standaard actie van de link niet wordt uitgevoerd
-    window.history.back(); // Gaat naar de vorige pagina
-});
-
 
 
 // cards informatieblok

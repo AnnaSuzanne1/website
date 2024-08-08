@@ -117,7 +117,7 @@ h3 {
 }
 
 .btn {
-  border-radius: 20px; /* Pas deze waarde aan voor een grotere of kleinere radius */
+  border-radius: 20px; 
 }
 
 .btn-primary{
@@ -130,17 +130,6 @@ h3 {
   background-color: #4B5035;
   color: #ffffff;
 }
-
-/* Cards */
-/* .card-opmaak .card {
-  margin: 2em 2em 0em 2em;
-  padding: 1em 1em 0em 1em;
-}
-
-.card {
-  margin-left: 10px;
-  margin-right: 10px;
-} */
 
 
 @media (max-width: 460px) {
@@ -169,19 +158,14 @@ h3 {
 /* dark theme */
 /* Donkere thema stijlen */
 [data-bs-theme="dark"] {
-  /* Voeg hier je donkere thema stijlen toe */
   background-color: #333;
-  /* Voorbeeld van een donkere achtergrondkleur */
   color: #fff;
-  /* Voorbeeld van lichte tekstkleur */
 }
 
-.light-theme-element {
+/* .light-theme-element {
   background-color: #f2f2f2;
-  /* Voorbeeld van een lichte achtergrondkleur */
   color: #555;
-  /* Voorbeeld van donkere tekstkleur */
-}
+} */
 
 
 /*************/
@@ -408,7 +392,6 @@ h3 {
 @media (max-width: 992px) {
   .voordelen .erp-icon-met-tekst p {
     font-size: 14px;
-    /* Verklein de tekstgrootte */
   }
 
   .voordelen .erp-icon {
@@ -423,7 +406,6 @@ h3 {
 @media (max-width: 768px) {
   .voordelen .erp-icon-met-tekst p {
     font-size: 12px;
-    /* Nog kleiner bij nog kleinere schermen */
   }
 
   .voordelen .erp-icon {
@@ -636,7 +618,6 @@ h3 {
 }
 
 /* Collega swiper */
-
 @media (max-width: 768px) {
   .logos-slide img {
     height: 30px;
@@ -923,9 +904,7 @@ h3 {
 
 .openingstijden-regel .dag {
   flex: 0 1 auto;
-  /* Zorgt ervoor dat de dag alleen zoveel ruimte inneemt als nodig is */
   margin-right: 10px;
-  /* Pas dit aan om de ruimte tussen dag en tijd te beheren */
 }
 
 .openingstijden-regel .tijd {
@@ -942,10 +921,6 @@ h3 {
   .openingstijden {
     max-width: 60% !important;
   }
-
-  /* .openingstijden {
-    margin-top: 40px;
-  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -1019,11 +994,6 @@ h3 {
 /* ERP systeem */
 /***************/
 
-
-/* .lap-tekst h2 {
-  font-size: 25px;
-} */
-
 .lap-tekst p {
   font-size: 18px;
 }
@@ -1070,21 +1040,16 @@ h3 {
   }
 }
 
-/* Stijlen voor de afbeelding in de kaart */
 #infoImage {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  /* Centreert de afbeelding in de kaart */
 }
 
-/* Stijlen voor de tekst in de card-body */
 #infoBlock {
   text-align: left;
-  /* Centreert de tekst in het informatieblok */
   padding: 20px;
-  /* Voegt wat padding toe aan de card-body */
 }
 
 
