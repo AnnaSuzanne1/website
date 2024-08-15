@@ -830,6 +830,13 @@ h3 {
   }
 }
 
+@media (max-width: 425px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    display:none
+  }
+}
+
 
 /**************/
 /* Werken bij */
