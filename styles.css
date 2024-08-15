@@ -196,6 +196,30 @@ h3 {
   .card-content .function {
     color: #000000 !important;
   }
+  .card-content .description{
+    color: #000000;
+  }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #ffffff; /* Zorg ervoor dat de kleur correct wordt toegepast */
+    font-size: 24px; /* Pas indien nodig de grootte aan */
+}
+
+/* Kleur van inactieve bolletjes */
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+
+/* Kleur van actieve bolletjes */
+.swiper-pagination-bullet-active {
+  background-color: #ffffff !important;
+}
+
+
+
+
+
 }
 
 /* .light-theme-element {
