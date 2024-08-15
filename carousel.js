@@ -60,40 +60,44 @@ document.addEventListener('DOMContentLoaded', function() {
 //     });
 // }
 
-// Dark theme
-function applyDarkTheme() {
-    var body = document.body;
-    body.setAttribute('data-bs-theme', 'dark');
-}
 
-function removeDarkTheme() {
-    var body = document.body;
-    body.removeAttribute('data-bs-theme');
-}
 
-// Check het voorkeursthema van de gebruiker
-function checkUserColorScheme() {
-    var darkThemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    if (darkThemeQuery.matches) {
-        applyDarkTheme();
-    } else {
-        removeDarkTheme();
-    }
 
-    // Luister naar veranderingen in het voorkeursthema van de gebruiker
-    darkThemeQuery.addListener(function(e) {
-        if (e.matches) {
-            applyDarkTheme();
-        } else {
-            removeDarkTheme();
-        }
-    });
-}
 
-// Voer de check uit bij het laden van de pagina
-document.addEventListener('DOMContentLoaded', function() {
-    checkUserColorScheme();
-});
+// // Dark theme
+// function applyDarkTheme() {
+//     var body = document.body;
+//     body.setAttribute('data-bs-theme', 'dark');
+// }
+
+// function removeDarkTheme() {
+//     var body = document.body;
+//     body.removeAttribute('data-bs-theme');
+// }
+
+// // Check het voorkeursthema van de gebruiker
+// function checkUserColorScheme() {
+//     var darkThemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+//     if (darkThemeQuery.matches) {
+//         applyDarkTheme();
+//     } else {
+//         removeDarkTheme();
+//     }
+
+//     // Luister naar veranderingen in het voorkeursthema van de gebruiker
+//     darkThemeQuery.addListener(function(e) {
+//         if (e.matches) {
+//             applyDarkTheme();
+//         } else {
+//             removeDarkTheme();
+//         }
+//     });
+// }
+
+// // Voer de check uit bij het laden van de pagina
+// document.addEventListener('DOMContentLoaded', function() {
+//     checkUserColorScheme();
+// });
 
 
 

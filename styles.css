@@ -162,9 +162,40 @@ h3 {
 
 /* dark theme */
 /* Donkere thema stijlen */
-[data-bs-theme="dark"] {
+
+/* [data-bs-theme="dark"] {
   background-color: #333;
   color: #fff;
+} */
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #292929;
+      color: #eaeaea;
+  }
+
+  .card {
+      background-color: #292929;
+      color: #eaeaea;
+  }
+
+  .btn-primary {
+      background-color: #bb86fc;
+      border-color: #bb86fc;
+  }
+
+  .btn-secondary {
+      background-color: #03dac6;
+      border-color: #03dac6;
+  }
+
+  .voordelen{
+    background-color: transparent !important;
+  }
+
+  .card-content .function {
+    color: #000000 !important;
+  }
 }
 
 /* .light-theme-element {
