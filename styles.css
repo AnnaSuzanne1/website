@@ -160,14 +160,9 @@ h3 {
   margin-right: 0;
 }
 
+/**************/
 /* dark theme */
-/* Donkere thema stijlen */
-
-/* [data-bs-theme="dark"] {
-  background-color: #333;
-  color: #fff;
-} */
-
+/**************/
 @media (prefers-color-scheme: dark) {
   body {
       background-color: #292929;
@@ -202,7 +197,7 @@ h3 {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    color: #ffffff; /* Zorg ervoor dat de kleur correct wordt toegepast */
+    color: #eaeaea; /* Zorg ervoor dat de kleur correct wordt toegepast */
     font-size: 24px; /* Pas indien nodig de grootte aan */
 }
 
@@ -213,31 +208,36 @@ h3 {
 
 /* Kleur van actieve bolletjes */
 .swiper-pagination-bullet-active {
-  background-color: #ffffff !important;
+  background-color: #eaeaea !important;
 }
 
 .accordion-button{
   background-color: #292929;
-  color: #ffffff;
+  color: #eaeaea;
 }
 
 .accordion-button::before{
-  color: #ffffff !important;
+  color: #eaeaea !important;
 }
 
 .accordion-body {
   background-color: #292929;
-  color: #ffffff;
+  color: #eaeaea;
 }
 
-
+.text-muted{
+  color: #eaeaea !important;
 }
 
-/* .light-theme-element {
-  background-color: #f2f2f2;
-  color: #555;
+.btn-outline-secondary{
+  color: #eaeaea;
+}
+
+/* .contact-formulier .card{
+  background-color: #292929;
 } */
 
+}
 
 /*************/
 /* Navigatie */
