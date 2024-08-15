@@ -216,8 +216,19 @@ h3 {
   background-color: #ffffff !important;
 }
 
+.accordion-button{
+  background-color: #292929;
+  color: #ffffff;
+}
 
+.accordion-button::before{
+  color: #ffffff !important;
+}
 
+.accordion-body {
+  background-color: #292929;
+  color: #ffffff;
+}
 
 
 }
