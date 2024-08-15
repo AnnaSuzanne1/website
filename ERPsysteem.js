@@ -71,9 +71,33 @@ $(document).ready(function() {
     });
 
     // Event listener voor het klikken op een kaart
+
+
+    // $('.card').click(function() {
+    //     const infoKey = $(this).data('info');
+    //     showInfo(infoKey);
+
+    //     // Scroll naar het informatieveld als infoKey bestaat in infoData
+    //     if (infoData.hasOwnProperty(infoKey)) {
+    //         document.getElementById('infoImage').scrollIntoView({
+    //             behavior: 'smooth'
+    //         });
+    //     }
+    // });
+
     $('.card').click(function() {
         const infoKey = $(this).data('info');
-        console.log('Card clicked:', infoKey);
         showInfo(infoKey);
+
+        // Controleer of de schermbreedte kleiner is dan 768px (mobiel formaat)
+        if (window.innerWidth < 768) {
+            // Scroll naar het informatieveld als infoKey bestaat in infoData
+            if (infoData.hasOwnProperty(infoKey)) {
+                document.getElementById('infoImage').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
+    
 });
