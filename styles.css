@@ -323,6 +323,9 @@ body.dark-mode .systeem-interesse .lap-tekst {
 } */
 
 
+
+
+
 /*************/
 /* Navigatie */
 /*************/
@@ -400,18 +403,42 @@ body.dark-mode .systeem-interesse .lap-tekst {
   border: none;
 }
 
+.navbar-nav {
+  display: flex;
+  align-items: center; /* Centreert de items verticaal */
+  gap: 10px; /* Voegt gelijkmatige ruimte toe tussen de nav-items */
+}
+
+
+.nav-item {
+  display: flex; /* Zorgt ervoor dat de nav-item-inhoud wordt behandeld als flex-items */
+  align-items: center; /* Centreert de inhoud verticaal binnen de nav-item */
+}
+
+.nav-link, .btn {
+  display: flex; /* Zorgt ervoor dat de link- en knop-inhoud als flex-items worden behandeld */
+  align-items: center; /* Centreert de inhoud van de link en knop verticaal */
+}
+
+.fa-moon{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
 
 .flag img {
   width: 30px;
 }
 
 .nav-flag {
-  margin-top: 9px;
-  margin-left: 1em;
+  /* margin-top: 9px;
+  margin-left: 1em; */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 .teamviewerimg {
-  margin-top: 4px !important;
+  /* margin-top: 4px !important; */
 }
 
 .toggleThemeBtn {
