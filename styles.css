@@ -269,6 +269,15 @@ body.dark-mode .navbar-nav{
   background-color: #d8d7d7 !important;
 }
 
+
+
+body.dark-mode .offcanvas {
+  background-color: #292929; /* Donkere achtergrond voor het uitklapmenu */
+}
+
+
+
+
 body.dark-mode .mogelijkheden-iconen .card:hover{
   background-color:#494949 !important;
 }
@@ -276,7 +285,6 @@ body.dark-mode .mogelijkheden-iconen .card:hover{
 body.dark-mode .systeem-interesse .lap-tekst {
   background-color: #494949 !important;
 }
-
 
 
 /* Dark mode styles for the offcanvas menu */
@@ -310,11 +318,11 @@ body.dark-mode .systeem-interesse .lap-tekst {
 
 /* .dark-mode .dropdown-item {
   color: #eaeaea; 
-}
+}*/
 
 .dark-mode .toggleThemeBtn{
   color: #ffffff;
-} */
+}
 
 
 /* .accordion-button::after{
@@ -358,25 +366,6 @@ body.dark-mode .systeem-interesse .lap-tekst {
   font-family: 'Arvo', serif;
 }
 
-/* dark theme */
-
-/* .dark-theme {
-  background-color: rgb(255, 255, 255) !important;
-  color: black;
-}
-
-.dark-theme a {
-  color: rgb(76, 76, 76);
-}
-
-.dark-theme a:hover {
-  color: rgb(0, 0, 0);
-}
-
-.dark-theme:active {
-  color: black !important;
-} */
-
 /* dropdown */
 .dropdown-toggle {
   padding: 0;
@@ -409,7 +398,6 @@ body.dark-mode .systeem-interesse .lap-tekst {
   gap: 10px; /* Voegt gelijkmatige ruimte toe tussen de nav-items */
 }
 
-
 .nav-item {
   display: flex; /* Zorgt ervoor dat de nav-item-inhoud wordt behandeld als flex-items */
   align-items: center; /* Centreert de inhoud verticaal binnen de nav-item */
@@ -435,10 +423,6 @@ body.dark-mode .systeem-interesse .lap-tekst {
   justify-content: center;
   align-items: center;
   margin: auto;
-}
-
-.teamviewerimg {
-  /* margin-top: 4px !important; */
 }
 
 .toggleThemeBtn {
