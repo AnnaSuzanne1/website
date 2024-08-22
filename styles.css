@@ -251,6 +251,18 @@ h3 {
   background-color: #d8d7d7 !important;
 }
 
+.mogelijkheden-iconen .card:hover{
+  background-color:#494949 !important;
+}
+
+.systeem-interesse .lap-tekst {
+  background-color: #494949 !important;
+}
+
+/* .accordion-button::after{
+  color: #ffffff !important;
+  background-color: #ffffff;
+} */
 }
 
 /*************/
