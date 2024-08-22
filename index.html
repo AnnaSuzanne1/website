@@ -20,14 +20,14 @@
 </head>
 
 <body class="home-body">
-<!-- Alert  -->
-<div class="alert alert-danger d-flex justify-content-between align-items-center" role="alert">
-  <div>
-    <i class="fas fa-exclamation-triangle"></i> Momenteel hebben wij een storing in het Match Online systeem. Wij
-    proberen dit zo snel mogelijk voor u op te lossen.
+  <!-- Alert  -->
+  <div class="alert alert-danger d-flex justify-content-between align-items-center" role="alert">
+    <div>
+      <i class="fas fa-exclamation-triangle"></i> Momenteel hebben wij een storing in het Match Online systeem. Wij
+      proberen dit zo snel mogelijk voor u op te lossen.
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
 
   <section class="streep bg-primary"></section>
   <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar p-2 mt-4 mx-5">
@@ -61,32 +61,33 @@
               <a class="nav-link" href="nieuws.html">Nieuws</a>
             </li>
             <li class="nav-item d-md-none">
+              <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
+            </li>
+
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
+            </li>
+            <li>
+            <li class="nav-item d-md-none">
               <a class="nav-link text-teamviewer" href="https://get.teamviewer.com/jp7j8ek">Teamviewer</a>
             </li>
             <li class="nav-item ms-2 d-none d-md-inline">
               <a class="" href="https://get.teamviewer.com/jp7j8ek" target="_blank"><img class="teamviewerimg"
                   src="./images/teamviewer.png" target="_blank" alt="teamviewer" width="30px"></a>
             </li>
-            <!-- <li class="nav-item d-md-none">
-                <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
-              </li>
 
-              <li class="nav-item ms-2 d-none d-md-inline">
-                <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
-              </li> -->
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle flag" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="nav-flag" src="images/netherlands-flag-icon.png" alt="">
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item flag" href="#"><img src="images/united-kingdom-flag-icon.png" alt=""></a>
-                  </li>
-                  <li><a class="dropdown-item flag" href="#"><img src="images/netherlands-flag-icon.png" alt=""
-                        style="border-radius: 1px;"></a></li>
-                </ul>
-              </div>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle flag" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="nav-flag" src="images/netherlands-flag-icon.png" alt="">
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item flag" href="#"><img src="images/united-kingdom-flag-icon.png" alt=""></a>
+                </li>
+                <li><a class="dropdown-item flag" href="#"><img src="images/netherlands-flag-icon.png" alt=""
+                      style="border-radius: 1px;"></a></li>
+              </ul>
+            </div>
             </li>
           </ul>
         </div>
@@ -94,7 +95,7 @@
     </div>
   </nav>
 
-  
+
 
   <main>
 
@@ -350,6 +351,7 @@
 
 
   <script src="carousel.js"></script>
+  <script src="darkmode.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

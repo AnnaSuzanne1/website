@@ -99,171 +99,180 @@
     <main>
         <!-- contactformulier -->
         <section class="contact-formulier">
-        <div class="container mb-5">
-            <div class=" text-center mt-5 ">
-                <h1>Informatie aanvragen</h1>
-            </div>
-            <div class="row ">
-                <div class="col-lg-7 mx-auto">
-                    <div class="card mt-2 mx-auto p-4 bg-light">
-                        <div class="card-body bg-light">
-                            <div class="container">
-                                <form id="contact-form" role="form">
-                                    <div class="controls">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_name">Voornaam *</label>
-                                                    <input id="form_name" type="text" name="name" class="form-control"
-                                                        placeholder="Please enter your firstname *" required="required"
-                                                        data-error="Firstname is required.">
+            <div class="container mb-5">
+                <div class=" text-center mt-5 ">
+                    <h1>Informatie aanvragen</h1>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-7 mx-auto">
+                        <div class="card mt-2 mx-auto p-4 bg-light">
+                            <div class="card-body bg-light">
+                                <div class="container">
+                                    <form id="contact-form" role="form">
+                                        <div class="controls">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_name">Voornaam *</label>
+                                                        <input id="form_name" type="text" name="name"
+                                                            class="form-control"
+                                                            placeholder="Please enter your firstname *"
+                                                            required="required" data-error="Firstname is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_lastname">Achternaam *</label>
+                                                        <input id="form_lastname" type="text" name="surname"
+                                                            class="form-control"
+                                                            placeholder="Please enter your lastname *"
+                                                            required="required" data-error="Lastname is required.">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_lastname">Achternaam *</label>
-                                                    <input id="form_lastname" type="text" name="surname"
-                                                        class="form-control" placeholder="Please enter your lastname *"
-                                                        required="required" data-error="Lastname is required.">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_email">Email *</label>
+                                                        <input id="form_email" type="email" name="email"
+                                                            class="form-control" placeholder="Please enter your email *"
+                                                            required="required" data-error="Valid email is required.">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="form_need">Reden van contact *</label>
+                                                        <select id="form_need" name="need" class="form-control"
+                                                            required="required" data-error="Please specify your need.">
+                                                            <option value="" selected disabled>--reason for contact--
+                                                            </option>
+                                                            <option>Informatie aanvragen</option>
+                                                            <option>Anders</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_email">Email *</label>
-                                                    <input id="form_email" type="email" name="email"
-                                                        class="form-control" placeholder="Please enter your email *"
-                                                        required="required" data-error="Valid email is required.">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_message">Bericht *</label>
+                                                        <textarea id="form_message" name="message" class="form-control"
+                                                            placeholder="Write your message here." rows="4"
+                                                            required="required"
+                                                            data-error="Please, leave us a message."></textarea>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="form_need">Reden van contact *</label>
-                                                    <select id="form_need" name="need" class="form-control"
-                                                        required="required" data-error="Please specify your need.">
-                                                        <option value="" selected disabled>--reason for contact--
-                                                        </option>
-                                                        <option>Informatie aanvragen</option>
-                                                        <option>Anders</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="form_message">Bericht *</label>
-                                                    <textarea id="form_message" name="message" class="form-control"
-                                                        placeholder="Write your message here." rows="4"
-                                                        required="required"
-                                                        data-error="Please, leave us a message."></textarea>
-                                                </div>
-                                            </div>
 
-                                            <div class="container">
-                                                <div class="row">
-                                                  <div class="col-md-12">
-                                                    <input type="checkbox" id="toggleCheckbox" data-toggle="toggle"> I give permission for the collection and processing of my data
-                                                  </div>
-                                                  <p>Bekijk onze<a class="link m-2" href="privacyVerklaring.html">Privacy verklaring</a></p>
-                                                  <div class="col-md-12">
-                                                    <input type="submit" class="btn btn-success btn-send pt-2 btn-block" id="submitButton" value="Send Message" disabled>
-                                                  </div>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <input type="checkbox" id="toggleCheckbox"
+                                                                data-toggle="toggle"> I give permission for the
+                                                            collection and processing of my data
+                                                        </div>
+                                                        <p>Bekijk onze<a class="link m-2"
+                                                                href="privacyVerklaring.html">Privacy verklaring</a></p>
+                                                        <div class="col-md-12">
+                                                            <input type="submit"
+                                                                class="btn btn-success btn-send pt-2 btn-block"
+                                                                id="submitButton" value="Send Message" disabled>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                              </div>
-                                            
-                                            <!-- <div class="col-md-12">
+
+                                                <!-- <div class="col-md-12">
                                                 <input type="submit" class="btn btn-success btn-send  pt-2 btn-block "
                                                     value="Send Message">
                                             </div> -->
+                                            </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
     </main>
 
     <footer class="text-center text-lg-start text-white bg-primary">
         <div class="container p-4 pb-0">
-          <section class="bovenkant-footer">
-            <div class="row">
-              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <a class="text-white text-decoration-none" href="./index.html">
-                  <h6 class="text-uppercase mb-4 font-weight-bold"> Advisor Software Solutions </h6>
-                </a>
-                <p>
-                  Advisor Software Solutions is gespecialiseerd in het ontwikkelen, beheren en implementeren van branchbrede
-                  software voor de sierteelt.
-                </p>
-              </div>
-              <hr class="w-100 clearfix d-md-none" />
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Navigatie</h6>
-                <p>
-                  <a class="link text-white" href="./overons.html">Over ons</a>
-                </p>
-                <p>
-                  <a class="link text-white" href="./werkenbij.html">Werken bij</a>
-                </p>
-                <p>
-                  <a class="link text-white" href="./support.html">Support</a>
-                </p>
-                <p>
-                  <a class="link text-white" href="./nieuws.html">Nieuws</a>
-                </p>
-              </div>
-              <hr class="w-100 clearfix d-md-none" />
-              <hr class="w-100 clearfix d-md-none" />
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                <p class="contact-footer"><i class="fas fa-home mr-5"></i><a class="link"
-                    href="https://www.google.com/maps/place/Advisor+Software+Solutions/@52.2100187,4.8720148,17z/data=!4m15!1m8!3m7!1s0x47c675a4893a8d5d:0x81bc48399e687674!2sGroot+Mijdrechtstraat+52,+3641+RW+Mijdrecht!3b1!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F11cslv4qsm!3m5!1s0x47c675ae1febebf1:0x1b07fbf0092031b8!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F1ptxjnh0h?entry=ttu"
-                    target="_blank">Groot Mijdrechtstraat 52, 3641 RW Mijdrecht</a></p>
-                <p class="contact-footer"><i class="fas fa-envelope mr-3"></i><a class="link"
-                    href="mailto:info@advisorsoftware.nl">info@advisorsoftware.nl</a></p>
-    
-                <p class="contact-footer"><i class="fas fa-phone mr-3"></i><a class="link" href="tel:+31297745547">0297 74
-                    55 47</a></p>
-              </div>
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
-    
-                <div class="media-icons">
-                  <i class="fab fa-facebook icon"></i>
-                  <a class="linkedin-link" target="_blank"
-                    href="https://www.linkedin.com/company/advisor-software-solutions/mycompany/">
-                    <i class="fa-brands fa-linkedin icon"></i>
-                  </a>
-                  <i class="fa-brands fa-instagram icon"></i>
+            <section class="bovenkant-footer">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <a class="text-white text-decoration-none" href="./index.html">
+                            <h6 class="text-uppercase mb-4 font-weight-bold"> Advisor Software Solutions </h6>
+                        </a>
+                        <p>
+                            Advisor Software Solutions is gespecialiseerd in het ontwikkelen, beheren en implementeren
+                            van branchbrede
+                            software voor de sierteelt.
+                        </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Navigatie</h6>
+                        <p>
+                            <a class="link text-white" href="./overons.html">Over ons</a>
+                        </p>
+                        <p>
+                            <a class="link text-white" href="./werkenbij.html">Werken bij</a>
+                        </p>
+                        <p>
+                            <a class="link text-white" href="./support.html">Support</a>
+                        </p>
+                        <p>
+                            <a class="link text-white" href="./nieuws.html">Nieuws</a>
+                        </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p class="contact-footer"><i class="fas fa-home mr-5"></i><a class="link"
+                                href="https://www.google.com/maps/place/Advisor+Software+Solutions/@52.2100187,4.8720148,17z/data=!4m15!1m8!3m7!1s0x47c675a4893a8d5d:0x81bc48399e687674!2sGroot+Mijdrechtstraat+52,+3641+RW+Mijdrecht!3b1!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F11cslv4qsm!3m5!1s0x47c675ae1febebf1:0x1b07fbf0092031b8!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F1ptxjnh0h?entry=ttu"
+                                target="_blank">Groot Mijdrechtstraat 52, 3641 RW Mijdrecht</a></p>
+                        <p class="contact-footer"><i class="fas fa-envelope mr-3"></i><a class="link"
+                                href="mailto:info@advisorsoftware.nl">info@advisorsoftware.nl</a></p>
+
+                        <p class="contact-footer"><i class="fas fa-phone mr-3"></i><a class="link"
+                                href="tel:+31297745547">0297 74
+                                55 47</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                        <div class="media-icons">
+                            <i class="fab fa-facebook icon"></i>
+                            <a class="linkedin-link" target="_blank"
+                                href="https://www.linkedin.com/company/advisor-software-solutions/mycompany/">
+                                <i class="fa-brands fa-linkedin icon"></i>
+                            </a>
+                            <i class="fa-brands fa-instagram icon"></i>
+                        </div>
+
+                    </div>
                 </div>
-    
-              </div>
-            </div>
         </div>
         </section>
         </div>
-    
+
         <div class="text-center background-grey p-3 d-flex flex-wrap">
-          <p class="link copyright">Advisor Software Solutions © 2024</p>
-          <div class="d-flex flex-column flex-sm-row">
-            <a class="link text-white m-2" href="disclaimer.html">Disclaimer</a>
-            <a class="link text-white m-2" href="privacyVerklaring.html">Privacy verklaring</a>
-            <a class="link text-white m-2" href="algemeneVoorwaarden.html">Algemene voorwaarden</a>
-          </div>
+            <p class="link copyright">Advisor Software Solutions © 2024</p>
+            <div class="d-flex flex-column flex-sm-row">
+                <a class="link text-white m-2" href="disclaimer.html">Disclaimer</a>
+                <a class="link text-white m-2" href="privacyVerklaring.html">Privacy verklaring</a>
+                <a class="link text-white m-2" href="algemeneVoorwaarden.html">Algemene voorwaarden</a>
+            </div>
         </div>
-    
-      </footer>
+
+    </footer>
 
 
-
+    <script src="darkmode.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

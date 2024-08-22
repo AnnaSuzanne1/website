@@ -173,97 +173,155 @@ h3 {
 /**************/
 /* dark theme */
 /**************/
-@media (prefers-color-scheme: dark) {
-  body {
+/* @media (prefers-color-scheme: dark) { */
+
+.toggleThemeBtn{
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.toggleThemeBtn:hover{
+background-color: transparent !important;
+border-color: transparent !important;
+color: #9c56f3;
+}
+
+body.dark-mode{
+  background-color:  #292929;
+  color: #eaeaea;
+}
+
+body.dark-mode body {
       background-color: #292929;
       color: #eaeaea;
   }
 
-  .card {
+  body.dark-mode .card {
       background-color: #292929;
       color: #eaeaea;
   }
 
-  .btn-primary {
+  body.dark-mode .btn-primary {
       background-color: #bb86fc;
       border-color: #bb86fc;
   }
 
-  .btn-secondary {
+  body.dark-mode .btn-secondary {
       background-color: #03dac6;
       border-color: #03dac6;
   }
 
-  .voordelen{
+  body.dark-mode .voordelen{
     background-color: transparent !important;
   }
 
-  .card-content .function {
+  body.dark-mode .card-content .function {
     color: #000000 !important;
   }
-  .card-content .description{
+  body.dark-mode .card-content .description{
     color: #000000;
   }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
+  body.dark-mode .swiper-button-next::after,
+  body.dark-mode .swiper-button-prev::after {
     color: #eaeaea; /* Zorg ervoor dat de kleur correct wordt toegepast */
     font-size: 24px; /* Pas indien nodig de grootte aan */
 }
 
 /* Kleur van inactieve bolletjes */
-.swiper-pagination-bullet {
+body.dark-mode .swiper-pagination-bullet {
   background-color: #ffffff !important;
 }
 
 /* Kleur van actieve bolletjes */
-.swiper-pagination-bullet-active {
+body.dark-mode .swiper-pagination-bullet-active {
   background-color: #eaeaea !important;
 }
 
-.accordion-button{
+body.dark-mode .accordion-button{
   background-color: #292929;
   color: #eaeaea;
 }
 
-.accordion-button::before{
+body.dark-mode .accordion-button::before{
   color: #eaeaea !important;
 }
 
-.accordion-body {
+body.dark-mode .accordion-body {
   background-color: #292929;
   color: #eaeaea;
 }
 
-.text-muted{
+body.dark-mode .text-muted{
   color: #eaeaea !important;
 }
 
-.btn-outline-secondary{
+body.dark-mode .btn-outline-secondary{
   color: #eaeaea;
 }
 
-.streep{
+body.dark-mode .streep{
   display: none !important;
 }
 
-.custom-navbar{
+body.dark-mode .custom-navbar,
+body.dark-mode .navbar-nav{
   background-color: #d8d7d7 !important;
 }
 
-.mogelijkheden-iconen .card:hover{
+body.dark-mode .mogelijkheden-iconen .card:hover{
   background-color:#494949 !important;
 }
 
-.systeem-interesse .lap-tekst {
+body.dark-mode .systeem-interesse .lap-tekst {
   background-color: #494949 !important;
 }
+
+
+
+/* Dark mode styles for the offcanvas menu */
+.dark-mode .offcanvas {
+  background-color: #292929; /* Donkere achtergrond voor het uitklapmenu */
+  color: #eaeaea; /* Tekstkleur voor het uitklapmenu */
+}
+
+.dark-mode .offcanvas-header {
+  background-color: #292929; /* Donkere achtergrond voor de header van het uitklapmenu */
+  color: #eaeaea; /* Tekstkleur voor de header */
+}
+
+.dark-mode .offcanvas-body {
+  background-color: #292929; /* Donkere achtergrond voor de body van het uitklapmenu */
+  color: #eaeaea; /* Tekstkleur voor de body */
+}
+
+/* .dark-mode .offcanvas .nav-link {
+  color: #eaeaea; 
+} */
+
+.dark-mode .offcanvas .btn-close {
+  filter: invert(1); /* Kleur van de sluitknop aanpassen in dark mode */
+}
+
+.dark-mode .dropdown-menu {
+  background-color: #292929; /* Donkere achtergrond voor dropdown menu */
+  color: #eaeaea; /* Tekstkleur voor dropdown menu */
+}
+
+/* .dark-mode .dropdown-item {
+  color: #eaeaea; 
+}
+
+.dark-mode .toggleThemeBtn{
+  color: #ffffff;
+} */
+
 
 /* .accordion-button::after{
   color: #ffffff !important;
   background-color: #ffffff;
 } */
-}
+
 
 /*************/
 /* Navigatie */
