@@ -404,7 +404,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
 }
 
 .nav-link, .btn {
-  display: flex; /* Zorgt ervoor dat de link- en knop-inhoud als flex-items worden behandeld */
+  /* display: flex; */
   align-items: center; /* Centreert de inhoud van de link en knop verticaal */
 }
 
@@ -547,6 +547,8 @@ body.dark-mode .systeem-interesse .lap-tekst {
 .voordelen p {
   font-weight: 400;
 }
+
+
 
 @media (min-width: 992px) {
   .voordelen .col-lg-2 {
@@ -782,6 +784,15 @@ body.dark-mode .systeem-interesse .lap-tekst {
 .mogelijkheden-card .row {
   margin-bottom: 6em;
 }
+
+/* 
+.accordion-item {
+  border-color: transparent !important;
+} */
+
+/* .aanvullende-webshop-modules .accordion-flush{
+  display: flex;
+} */
 
 /* Collega swiper */
 @media (max-width: 768px) {
