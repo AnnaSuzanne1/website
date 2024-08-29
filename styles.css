@@ -211,9 +211,25 @@ body.dark-mode body {
       border-color: #03dac6;
   }
 
+  body.dark-mode .breadcrumb-item{
+    color: white;
+  }
+  body.dark-mode .breadcrumb-item+ .breadcrumb-item::before {   
+     color: white;
+  }
+
   body.dark-mode .card{
     color:#292929;
   }
+
+  body.dark-mode .card-body{
+    color: white;
+  }
+
+  body.dark-mode .logos{
+    background-color: #d8d7d7;
+  }
+
 
   body.dark-mode .quote-name a{
     color: white;
