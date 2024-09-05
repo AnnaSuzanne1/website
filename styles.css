@@ -823,6 +823,8 @@ body.dark-mode .systeem-interesse .lap-tekst {
 
 .mogelijkheden-iconen h5 {
   font-size: 16px;
+  cursor: default; /* De cursor verandert niet; het blijft de standaardpijl */
+
 }
 
 .mogelijkheden-iconen .card:hover {
