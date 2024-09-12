@@ -1469,3 +1469,56 @@ form {
 
 
 
+
+
+
+.img-hover .container {
+  position: relative;
+  width: 50%;
+}
+
+.img-hover .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img-hover .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-hover .container:hover .image {
+  opacity: 0.3;
+}
+
+.img-hover .container:hover .middle {
+  opacity: 1;
+}
+
+.img-hover .text {
+  background-color: #374501; /* Achtergrondkleur van de knop */
+  color: white; /* Tekstkleur van de knop */
+  font-size: 16px; /* Lettergrootte */
+  padding: 16px 32px; /* Binnenmarges (padding) van de knop */
+  text-decoration: none; /* Verwijder onderlijning van de link */
+  display: inline-block; /* Zorg ervoor dat de knop inline wordt weergegeven */
+  border-radius: 4px; /* Maak de hoeken van de knop afgerond */
+  border: 2px solid #374501; /* Randkleur en -dikte van de knop */
+  transition: all 0.3s ease; /* Zorg voor een soepele overgang bij hover */
+}
+
+.img-hover .text:hover {
+  background-color: #2a3e28; /* Achtergrondkleur van de knop bij hover */
+  color: #f0f0f0; /* Tekstkleur bij hover */
+  transform: scale(1.05); /* Knop iets groter maken bij hover */
+}
