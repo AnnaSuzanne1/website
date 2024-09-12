@@ -317,15 +317,9 @@ body.dark-mode .navbar-nav {
   background-color: #d8d7d7 !important;
 }
 
-
-
 body.dark-mode .offcanvas {
   background-color: #292929;
-  /* Donkere achtergrond voor het uitklapmenu */
 }
-
-
-
 
 body.dark-mode .mogelijkheden-iconen .card:hover {
   background-color: #494949 !important;
@@ -334,7 +328,6 @@ body.dark-mode .mogelijkheden-iconen .card:hover {
 body.dark-mode .systeem-interesse .lap-tekst {
   background-color: #494949 !important;
 }
-
 
 .dark-mode .offcanvas {
   background-color: #292929;
@@ -351,39 +344,27 @@ body.dark-mode .systeem-interesse .lap-tekst {
   color: #eaeaea;
 }
 
+@media (max-width: 991px) {
+.dark-mode .offcanvas .navbar-nav {
+ background-color: #292929 !important;
+}
 .dark-mode .offcanvas .nav-link {
   color: #eaeaea; 
 }
-
-.dark-mode .offcanvas .navbar-nav {
- background-color: #292929 !important;
 }
 
 .dark-mode .offcanvas .btn-close {
   filter: invert(1);
-  /* Kleur van de sluitknop aanpassen in dark mode */
 }
 
 .dark-mode .dropdown-menu {
   background-color: #292929;
-  /* Donkere achtergrond voor dropdown menu */
   color: #eaeaea;
-  /* Tekstkleur voor dropdown menu */
 }
-
-/* .dark-mode .dropdown-item {
-  color: #eaeaea; 
-}*/
 
 .dark-mode .toggleThemeBtn {
   color: #ffffff;
 }
-
-
-/* .accordion-button::after{
-  color: #ffffff !important;
-  background-color: #ffffff;
-} */
 
 
 
@@ -450,23 +431,17 @@ body.dark-mode .systeem-interesse .lap-tekst {
 .navbar-nav {
   display: flex;
   align-items: center;
-  /* Centreert de items verticaal */
   gap: 10px;
-  /* Voegt gelijkmatige ruimte toe tussen de nav-items */
 }
 
 .nav-item {
   display: flex;
-  /* Zorgt ervoor dat de nav-item-inhoud wordt behandeld als flex-items */
   align-items: center;
-  /* Centreert de inhoud verticaal binnen de nav-item */
 }
 
 .nav-link,
 .btn {
-  /* display: flex; */
   align-items: center;
-  /* Centreert de inhoud van de link en knop verticaal */
 }
 
 /* fa-moon  */
@@ -594,6 +569,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
 /* Over Match Online en voordelen*/
 .voordelen {
   margin-top: 1em;
+  margin-bottom: 10em;
   background-color: #e9eaec;
 }
 
@@ -1486,3 +1462,9 @@ form {
     justify-content: center !important;
   }
 }
+
+
+
+
+
+
