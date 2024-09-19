@@ -7,9 +7,9 @@
 
 // initMDB({ Input, Ripple });
 
-document.getElementById("go-back").addEventListener("click", function(event) {
-    event.preventDefault(); // Zorgt ervoor dat de standaard actie van de link niet wordt uitgevoerd
-    window.history.back(); // Gaat naar de vorige pagina
+document.getElementById("go-back").addEventListener("click", function (event) {
+  event.preventDefault(); // Zorgt ervoor dat de standaard actie van de link niet wordt uitgevoerd
+  window.history.back(); // Gaat naar de vorige pagina
 });
 
 
@@ -22,10 +22,10 @@ const contactForm = document.getElementById('contact-form');
 function checkFormValidation() {
   // Controleer of de checkbox is aangevinkt
   const isCheckboxChecked = toggleCheckbox.checked;
-  
+
   // Controleer of het formulier geldig is
   const isFormValid = contactForm.checkValidity();
-  
+
   // Schakel de knop in of uit afhankelijk van de validatie
   submitButton.disabled = !(isCheckboxChecked && isFormValid);
 

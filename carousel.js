@@ -3,12 +3,12 @@ console.log("carousel.js is loaded");
 
 
 // Swiper 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         spaceBetween: 25,
         loop: true,
-        centerSlide: true, 
+        centerSlide: true,
         fade: true,
         grabCursor: true,
         pagination: {
@@ -22,14 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
 
-        breakpoints:{
-            0:{
+        breakpoints: {
+            0: {
                 slidesPerView: 1,
             },
-            520:{
+            520: {
                 slidesPerView: 2,
             },
-           950:{
+            950: {
                 slidesPerView: 3,
             },
         },

@@ -6,7 +6,7 @@ $my-theme-secondary: #b23cfd;
 $my-dark-theme: mdb-dark-theme($my-theme-primary, $my-theme-secondary);
 
 .dark {
-@include mdb-theme($my-dark-theme);
+    @include mdb-theme($my-dark-theme);
 }
 
 // custom variables

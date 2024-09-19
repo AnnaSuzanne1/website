@@ -20,18 +20,18 @@ const infoData = {
         image: "images/ERP-systeem-img/Willem-Hoogendoorn-Fotografie193_vierkant.jpg"
     },
     info5: {
-        title:"Up-to-date en maximaal inzicht in uw commerciële en logistieke processen",
+        title: "Up-to-date en maximaal inzicht in uw commerciële en logistieke processen",
         text: "In Match Online kunt u omzetoverzichten maken en exporteren naar PDF of Excel, geheel naar eigen wens vormgegeven. U kunt inzicht krijgen in opbrengsten van geveilde producten, omzet per artikel, verkooprelatie, verkoopkanaal en verpakking. Met uitgebreide filtermogelijkheden kunt u informatie specificeren, bijvoorbeeld per klok of veilgroep. De ODATA webservice maakt het mogelijk om data veilig over te nemen in externe programma’s zoals Microsoft Excel, Power BI en QlikView. Hiermee kunt u data analyseren, rapporteren en distribueren, real-time via een dashboard of op vastgestelde tijden. Match Online biedt zo een flexibel systeem voor inzicht in uw commerciële en logistieke processen.",
         image: "images/ERP-systeem-img/iStock-512115792_vierkant.jpg"
     },
     info6: {
-        title:"Integratie met uw teeltautomatisering",
+        title: "Integratie met uw teeltautomatisering",
         text: "Match Online is zo ontwikkeld dat de software gekoppeld kan worden aan uw teeltautomatisering, ongeacht welke software u daarvoor gebruikt. U hoeft daarvoor niet te investeren in nieuwe teeltsoftware. Het koppelen met uw bestaande teeltautomatisering biedt veel voordelen. U kunt bijvoorbeeld de verwachte productieaantallen importeren in Match Online zodat uw verkopers exact hoeveel en welke producten nog verkocht kunnen worden en kunt productieprognoses en -analyses eenvoudig vergelijken met de verkoopprognoses en -analyses. Geïnteresseerd in de mogelijkheden voor uw bedrijf? Neem dan vrijblijvend contact met ons op.",
         image: "images/ERP-systeem-img/Willem-Hoogendoorn-Fotografie388_vierkant.jpg"
     }
 };
 
-$(document).ready(function() {
+$(document).ready(function () {
     console.log("Document is ready");
 
     // Functie om informatie weer te geven en iconen groen te maken
@@ -64,7 +64,7 @@ $(document).ready(function() {
     }
 
     // Toon info1 bij het laden van de pagina
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         showInfo('info1');
         // Zorg ervoor dat het eerste icoontje direct actief wordt
         $('.card[data-info="info1"] .erp-icon').addClass('active-icon');
@@ -85,7 +85,7 @@ $(document).ready(function() {
     //     }
     // });
 
-    $('.card').click(function() {
+    $('.card').click(function () {
         const infoKey = $(this).data('info');
         showInfo(infoKey);
 
@@ -99,5 +99,5 @@ $(document).ready(function() {
             }
         }
     });
-    
+
 });
