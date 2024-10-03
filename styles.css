@@ -818,6 +818,34 @@ body.dark-mode .systeem-interesse .lap-tekst {
   margin: 0 40px;
 }
 
+/************/
+/* Over ons */
+/************/
+
+
+
+/* .infographic {
+  float: right;
+  padding: 0 0 3px 3px;
+  width: 20em;
+  max-width: 100%;
+}
+
+.infographic-met-tekst .tekst2 {
+  margin-top: 9em;
+} */
+
+.tekst1-div, .tekst2-div{
+  display: flex;
+  max-width: 70em;
+}
+
+.infographic{
+  width: 25em;
+}
+
+
+
 /****************/
 /* Match Online */
 /****************/
@@ -937,7 +965,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
 /* card */
 .card-body {
   position: relative;
-  max-width: 40em;
+  /* max-width: 40em; */
 }
 
 .card-content p {
