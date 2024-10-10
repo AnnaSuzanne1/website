@@ -888,6 +888,14 @@ body.dark-mode .systeem-interesse .lap-tekst {
 
 .infographic2{
   width: 20em;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1019px) {
+  .tekst-infographic {
+    flex-direction: column;
+  }
 }
 
 .matchonline-iconen .container {
