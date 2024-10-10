@@ -878,9 +878,17 @@ body.dark-mode .systeem-interesse .lap-tekst {
   justify-content: center;
 }
 
-/****************/
-/* Match Online ERP systeem */
-/****************/
+/***************/
+/* ERP systeem */
+/***************/
+
+.tekst-infographic{
+  display: flex;
+}
+
+.infographic2{
+  width: 20em;
+}
 
 .matchonline-iconen .container {
   margin-top: 7em;
@@ -931,6 +939,76 @@ body.dark-mode .systeem-interesse .lap-tekst {
 .mogelijkheden-card .row {
   margin-bottom: 6em;
 }
+
+.lap-tekst p {
+  font-size: 18px;
+}
+
+.systeem-interesse {
+  flex-direction: column;
+}
+
+.systeem-interesse .lap-tekst {
+  background-color: #d6e3a1;
+  padding: 3em 1em 3em 1em;
+
+}
+
+@media (max-width: 410px) {
+  .lap-tekst {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 765px) {
+  .img-lg {
+    max-width: 300px;
+  }
+
+  .position-absolute {
+    right: 0;
+  }
+}
+
+@media (max-width: 764px) {
+  .img-lg {
+    max-width: 100%;
+  }
+
+  .img-lg img {
+    margin-bottom: 2em;
+  }
+
+  .position-absolute {
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+#infoImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#infoBlock {
+  text-align: left;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 .accordion-item {
@@ -1323,67 +1401,6 @@ body.dark-mode .systeem-interesse .lap-tekst {
 
 
 
-/***************/
-/* ERP systeem */
-/***************/
-
-.lap-tekst p {
-  font-size: 18px;
-}
-
-.systeem-interesse {
-  flex-direction: column;
-}
-
-.systeem-interesse .lap-tekst {
-  background-color: #d6e3a1;
-  padding: 3em 1em 3em 1em;
-
-}
-
-@media (max-width: 410px) {
-  .lap-tekst {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 765px) {
-  .img-lg {
-    max-width: 300px;
-  }
-
-  .position-absolute {
-    right: 0;
-  }
-}
-
-@media (max-width: 764px) {
-  .img-lg {
-    max-width: 100%;
-  }
-
-  .img-lg img {
-    margin-bottom: 2em;
-  }
-
-  .position-absolute {
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-}
-
-#infoImage {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-#infoBlock {
-  text-align: left;
-  padding: 20px;
-}
 
 
 /* #info-img {
