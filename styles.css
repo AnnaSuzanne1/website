@@ -835,15 +835,21 @@ body.dark-mode .systeem-interesse .lap-tekst {
   margin-top: 9em;
 } */
 
-.tekst1-div, .tekst2-div{
+.tekst-div{
   display: flex;
   max-width: 70em;
 }
 
-.infographic{
-  width: 25em;
+.infographic {
+  max-width: 100%;
+  height: auto;
+  width: 20em;
 }
 
+.overons-logos{
+  display: flex;
+  flex-direction: column;
+}
 
 
 /****************/
