@@ -80,6 +80,9 @@ h3 {
   font-size: 14px;
 }
 
+
+
+
 /* links */
 
 /* unvisited link */
@@ -158,6 +161,10 @@ h3 {
   p {
     font-size: 16px;
   }
+
+  .fa-quote-right {
+    font-size: 60px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -171,6 +178,10 @@ h3 {
 
   .vacature-ul {
     font-size: 16px !important;
+  }
+
+  .bronvermelding {
+    font-size: 10px;
   }
 }
 
@@ -610,6 +621,10 @@ body.dark-mode .systeem-interesse .lap-tekst {
   font-weight: 400;
 }
 
+.matchonline-header{
+  font-size: 40px;
+}
+
 
 
 @media (min-width: 992px) {
@@ -641,13 +656,16 @@ body.dark-mode .systeem-interesse .lap-tekst {
   .voordelen .erp-icon {
     font-size: 30px;
   }
+
+  .matchonline-header{
+    font-size: 25px;
+  }
 }
 
 
 
 @media (max-width: 575.98px) {
   .voordelen .container {
-    padding-left: 0;
     padding-right: 0;
   }
 
@@ -662,6 +680,12 @@ body.dark-mode .systeem-interesse .lap-tekst {
 .img-hover .container {
   position: relative;
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .img-hover .container {
+    width: 90%;
+  }
 }
 
 .img-hover .image {
@@ -684,11 +708,11 @@ body.dark-mode .systeem-interesse .lap-tekst {
   text-align: center;
 }
 
-.img-hover .container:hover .image {
+.img-hover:hover .image {
   opacity: 0.3;
 }
 
-.img-hover .container:hover .middle {
+.img-hover:hover .middle {
   opacity: 1;
 }
 
