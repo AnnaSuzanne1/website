@@ -76,6 +76,8 @@ h3 {
   user-select: none;
 }
 
+
+
 .bronvermelding {
   font-size: 14px;
 }
@@ -910,6 +912,20 @@ body.dark-mode .systeem-interesse .lap-tekst {
   flex-direction: column;
 }
 
+.erp-icon-met-tekst a{
+  text-decoration: none;
+  color: #212529;
+}
+
+
+.erp-icon-met-tekst a:hover{
+  color: #A4CC00;
+}
+.erp-icon-met-tekst a:first-child:hover .erp-icon,
+.erp-icon-met-tekst a:first-child:hover ~ a p {
+  color: #A4CC00;
+}
+
 .erp-icon-met-tekst p {
   font-size: 18px;
   text-align: justify;
@@ -917,6 +933,11 @@ body.dark-mode .systeem-interesse .lap-tekst {
 
 .erp-en-webshop .align-cards {
   justify-content: center;
+}
+
+.highlight {
+  background-color: yellow; /* Of een andere opvallende kleur */
+  transition: background-color 0.5s ease-out;
 }
 
 /***************/
