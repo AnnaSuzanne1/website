@@ -568,7 +568,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
   color: #212529bf;
 }
 
-.overons-breadcrumbs .breadcrumbs{
+.overons-breadcrumbs .breadcrumbs {
   margin-bottom: 0px !important;
 }
 
@@ -875,9 +875,9 @@ body.dark-mode .systeem-interesse .lap-tekst {
   font-size: 80px;
 }
 
-.geschiedenis {
+/* .geschiedenis {
   margin-top: 40em;
-}
+} */
 
 /* .infographic {
   float: right;
@@ -908,37 +908,76 @@ body.dark-mode .systeem-interesse .lap-tekst {
   gap: 1em;
 }
 
-.overons-img img{
+.overons-img img {
   margin-top: 0 !important;
 }
 
-@media (min-width: 460px) {
-.overons-img > *{
-  display: none;
-}
+
+.informatie-cards {
+  margin-top: 40em;
+  /* box-shadow: none; */
 }
 
-@media (max-width: 460px) {
-.overons-header {
+.informatie-cards .card {
+  background-color: #effac4;
+}
+
+.informatie-cards .lc-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.informatie-cards .svg-inline--fa {
+  font-size: 50px;
+  /* color: #2a3e28; */
+  color: #292929;
+
+}
+
+.informatie-cards h5 {
   font-size: 30px;
+  color: #2a3e28;
 }
-.streep{
-  background-color: #A4CC00;
-}
-.container-overons-header img{
-margin-top: 5em;
-}
+
+
+
+@media (min-width: 460px) {
+  .overons-img>* {
+    display: none;
+  }
 }
 
 @media (max-width: 460px) {
-  .streep > * { /* Selecteert alle directe kinderen van de sectie */
-      display: none; /* Verberg de inhoud van de sectie */
+  .overons-header {
+    font-size: 30px;
   }
 
-  .streep::after { /* Gebruik pseudo-element om ruimte te maken */
-      content: ""; /* Maakt een lege ruimte aan */
-      display: block; /* Zorg ervoor dat het zichtbaar is */
-      height: 20px; /* Stel een hoogte in voor de ruimte (pas aan indien nodig) */
+  .streep {
+    background-color: #A4CC00;
+  }
+
+  .container-overons-header img {
+    margin-top: 5em;
+  }
+}
+
+@media (max-width: 460px) {
+  .streep>* {
+    /* Selecteert alle directe kinderen van de sectie */
+    display: none;
+    /* Verberg de inhoud van de sectie */
+  }
+
+  .streep::after {
+    /* Gebruik pseudo-element om ruimte te maken */
+    content: "";
+    /* Maakt een lege ruimte aan */
+    display: block;
+    /* Zorg ervoor dat het zichtbaar is */
+    height: 20px;
+    /* Stel een hoogte in voor de ruimte (pas aan indien nodig) */
   }
 }
 
