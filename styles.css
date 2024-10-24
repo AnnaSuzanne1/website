@@ -82,7 +82,10 @@ h3 {
   font-size: 14px;
 }
 
-
+.highlight {
+  background-color: #a3cc00b9; /* Of een andere opvallende kleur */
+  transition: background-color 0.5s ease-out;
+}
 
 
 /* links */
@@ -935,10 +938,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
   justify-content: center;
 }
 
-.highlight {
-  background-color: yellow; /* Of een andere opvallende kleur */
-  transition: background-color 0.5s ease-out;
-}
+
 
 /***************/
 /* ERP systeem */
