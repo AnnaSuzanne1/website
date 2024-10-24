@@ -914,8 +914,9 @@ body.dark-mode .systeem-interesse .lap-tekst {
 
 
 .informatie-cards {
-  margin-top: 40em;
+  margin-top: 42em;
   /* box-shadow: none; */
+
 }
 
 .informatie-cards .card {
@@ -939,6 +940,10 @@ body.dark-mode .systeem-interesse .lap-tekst {
 .informatie-cards h5 {
   font-size: 30px;
   color: #2a3e28;
+}
+
+.informatie-cards img{
+width: 65px;
 }
 
 
