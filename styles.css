@@ -79,11 +79,12 @@ h3 {
 
 
 .bronvermelding {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .highlight {
-  background-color: #a3cc00b9; /* Of een andere opvallende kleur */
+  background-color: #a3cc00b9;
+  /* Of een andere opvallende kleur */
   transition: background-color 0.5s ease-out;
 }
 
@@ -628,7 +629,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
   font-weight: 400;
 }
 
-.matchonline-header{
+.matchonline-header {
   font-size: 40px;
 }
 
@@ -664,7 +665,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
     font-size: 30px;
   }
 
-  .matchonline-header{
+  .matchonline-header {
     font-size: 25px;
   }
 }
@@ -853,6 +854,22 @@ body.dark-mode .systeem-interesse .lap-tekst {
 /* Over ons */
 /************/
 
+.container-overons-header {
+  position: relative;
+}
+
+/* .container-overons-header img{
+  margin-top: 0 !important;
+} */
+
+.overons-header {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -15%);
+  color: white;
+  font-size: 70px;
+}
 
 
 /* .infographic {
@@ -866,7 +883,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
   margin-top: 9em;
 } */
 
-.tekst-div{
+.tekst-div {
   display: flex;
   max-width: 70em;
 }
@@ -884,12 +901,19 @@ body.dark-mode .systeem-interesse .lap-tekst {
   gap: 1em;
 }
 
+@media (max-width: 624px) {
+.overons-header {
+  font-size: 30px;
+}
+}
+
+
 
 /****************/
 /* Match Online */
 /****************/
 
-.infographic1{
+.infographic1 {
   height: auto;
   max-width: 100%;
   width: 10em;
@@ -897,7 +921,7 @@ body.dark-mode .systeem-interesse .lap-tekst {
 }
 
 @media (max-width: 1019px) {
-  .tekst-infographic1 .container-fluid{
+  .tekst-infographic1 .container-fluid {
     flex-direction: column;
   }
 }
@@ -915,17 +939,18 @@ body.dark-mode .systeem-interesse .lap-tekst {
   flex-direction: column;
 }
 
-.erp-icon-met-tekst a{
+.erp-icon-met-tekst a {
   text-decoration: none;
   color: #212529;
 }
 
 
-.erp-icon-met-tekst a:hover{
+.erp-icon-met-tekst a:hover {
   color: #A4CC00;
 }
+
 .erp-icon-met-tekst a:first-child:hover .erp-icon,
-.erp-icon-met-tekst a:first-child:hover ~ a p {
+.erp-icon-met-tekst a:first-child:hover~a p {
   color: #A4CC00;
 }
 
@@ -944,11 +969,11 @@ body.dark-mode .systeem-interesse .lap-tekst {
 /* ERP systeem */
 /***************/
 
-.tekst-infographic{
+.tekst-infographic {
   display: flex;
 }
 
-.infographic2{
+.infographic2 {
   width: 15em;
   max-width: 100%;
   height: auto;
