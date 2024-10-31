@@ -931,10 +931,12 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 
 
 .timeline-container{
-  margin-top:35em;
+  margin-top: 35em;
 }
 
-
+.informatie-cards{
+  margin-top: 10em;
+}
 
 .informatie-cards .card {
   background-color: #effac4;
