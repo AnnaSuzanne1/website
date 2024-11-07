@@ -333,7 +333,7 @@ body.dark-mode .btn-outline-secondary {
 }
 
 body.dark-mode .home-streep .streep {
-  display:none !important;
+  display: none !important;
 }
 
 body.dark-mode .custom-navbar,
@@ -354,14 +354,15 @@ body.dark-mode .systeem-interesse .lap-tekst {
 }
 
 body.dark-mode .match-svg {
-  content: url("images/over-ons-img/match-icon-wit.png"); /* Gebruik hier de witte versie van de afbeelding */
+  content: url("images/over-ons-img/match-icon-wit.png");
+  /* Gebruik hier de witte versie van de afbeelding */
 }
 
-body.dark-mode .informatie-cards .card-title{
+body.dark-mode .informatie-cards .card-title {
   color: #9c56f3;
 }
 
-body.dark-mode .informatie-cards .card{
+body.dark-mode .informatie-cards .card {
   background-color: #494949;
 }
 
@@ -892,6 +893,14 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   font-size: 80px;
 }
 
+.overons-header2 {
+  margin-top: 4em;
+}
+
+.collegaswiper-header {
+  margin-top: 4em !important;
+}
+
 /* .geschiedenis {
   margin-top: 40em;
 } */
@@ -929,12 +938,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   margin-top: 0 !important;
 }
 
-
-.timeline-container{
-  margin-top: 35em;
-}
-
-.informatie-cards{
+.informatie-cards {
   margin-top: 10em;
 }
 
@@ -953,7 +957,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   font-size: 50px;
   /* color: #2a3e28; */
   color: #292929;
-
 }
 
 .informatie-cards h5 {
@@ -961,22 +964,22 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   color: #478a20;
 }
 
-.informatie-cards .match-svg{
-width: 65px;
+.informatie-cards .match-svg {
+  width: 65px;
 }
 
-.informatie-cards .card-body{
+.informatie-cards .card-body {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
 }
 
-@media (min-width: 460px) {
-  .overons-img>* {
-    display: none;
+@media (max-width: 1260px) {
+  .overons-img {
+    display: none !important;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .overons-header {
     font-size: 30px;
   }
@@ -990,21 +993,21 @@ width: 65px;
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 1260px) {
   .streep>* {
-    /* Selecteert alle directe kinderen van de sectie */
     display: none;
-    /* Verberg de inhoud van de sectie */
   }
 
   .streep::after {
-    /* Gebruik pseudo-element om ruimte te maken */
     content: "";
-    /* Maakt een lege ruimte aan */
     display: block;
-    /* Zorg ervoor dat het zichtbaar is */
     height: 20px;
-    /* Stel een hoogte in voor de ruimte (pas aan indien nodig) */
+  }
+}
+
+@media (min-width: 1260px) {
+  .overons-header2 {
+    display: none;
   }
 }
 
@@ -1376,6 +1379,8 @@ width: 65px;
     display: none
   }
 }
+
+
 
 
 /**************/
@@ -1775,6 +1780,11 @@ form {
 
 
 
+
+
+
+
+
 .timeline {
   display: flex;
   margin: 0 auto;
@@ -1783,6 +1793,8 @@ form {
   max-width: 700px;
   position: relative;
 }
+
+
 .timeline__content-title {
   font-weight: normal;
   font-size: 66px;
@@ -1793,6 +1805,7 @@ form {
   font-family: "Pathway Gothic One", sans-serif;
   color: #fff;
 }
+
 .timeline__content-desc {
   margin: 0;
   font-size: 15px;
@@ -1802,6 +1815,7 @@ form {
   font-weight: normal;
   line-height: 25px;
 }
+
 .timeline:before {
   position: absolute;
   left: 50%;
@@ -1811,11 +1825,7 @@ form {
   content: "";
   background: rgba(255, 255, 255, 0.07);
 }
-@media only screen and (max-width: 767px) {
-  .timeline:before {
-    left: 40px;
-  }
-}
+
 .timeline-item {
   padding: 40px 0;
   opacity: .3;
@@ -1827,6 +1837,22 @@ form {
   position: relative;
   transform: translateY(-80px);
 }
+
+@media (max-width: 767px) {
+  .timeline:before {
+    padding: 0 0 !important;
+  }
+
+  .timeline-item {
+    width: auto !important; /* Hiermee overschrijf je de breedte */
+    padding: 0 !important;
+  }
+
+  .timeline__content{
+  padding-bottom: 13em;
+  }
+}
+
 .timeline-item:before {
   content: attr(data-text);
   letter-spacing: 3px;
@@ -1840,55 +1866,67 @@ form {
   margin-top: -5px;
   padding-left: 15px;
   opacity: 0;
-  right: calc(-100% - 56px );
+  right: calc(-100% - 56px);
 }
+
 .timeline-item:nth-child(even) {
   align-self: flex-end;
 }
+
 .timeline-item:nth-child(even):before {
   right: auto;
   text-align: right;
-  left: calc(-100% - 56px );
+  left: calc(-100% - 56px);
   padding-left: 0;
   border-left: none;
   border-right: 2px solid rgba(255, 255, 255, 0.5);
   padding-right: 15px;
 }
+
 .timeline-item--active {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0px);
 }
+
 .timeline-item--active:before {
   top: 50%;
   transition: .3s all .2s;
   opacity: 1;
 }
+
 .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
 }
+
 @media only screen and (max-width: 767px) {
   .timeline-item {
     align-self: baseline !important;
     width: 100%;
     padding: 0 30px 150px 80px;
   }
+
   .timeline-item:before {
     left: 10px !important;
-    padding: 0 !important;
-    top: 50px;
+    /* padding: 0 !important; */
+    /* top: 50px; */
     text-align: center !important;
-    width: 60px;
+    /* width: 60px; */
     border: none !important;
+    padding-bottom: 20em;
+    /* position: relative; */
   }
+
   .timeline-item:last-child {
     padding-bottom: 40px;
   }
 }
+
 .timeline__img {
   max-width: 100%;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
+
 .timeline-container {
   width: 100%;
   position: relative;
@@ -1896,6 +1934,7 @@ form {
   background-attachment: fixed;
   background-size: cover;
 }
+
 .timeline-container:before {
   position: absolute;
   left: 0;
@@ -1905,12 +1944,14 @@ form {
   background: rgba(99, 99, 99, 0.8);
   content: "";
 }
+
 .timeline-header {
   width: 100%;
   text-align: center;
   margin-bottom: 80px;
   position: relative;
 }
+
 .timeline-header__title {
   color: #fff;
   font-size: 46px;
@@ -1918,6 +1959,7 @@ form {
   font-weight: normal;
   margin: 0;
 }
+
 .timeline-header__subtitle {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Pathway Gothic One", sans-serif;
@@ -1931,6 +1973,7 @@ form {
   padding: 60px 0;
   text-align: center;
 }
+
 .demo-footer a {
   color: #999;
   display: inline-block;
@@ -1940,184 +1983,178 @@ form {
 
 
 
-/* SCSS  */
+
+
+
+
+
+
+
+
+
+
+
+/* 
 @import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One');
 
-/* Responsive */
 @media only screen and (max-width: 767px) {
-    .timeline-item {
-        align-self: baseline !important;
-        width: 100%;
-        padding: 0 30px 150px 80px;
-    }
+  .timeline-item {
+    align-self: baseline !important;
+    width: 100%;
+    padding: 0 30px 150px 80px;
+  }
 
-    .timeline-item:before {
-        left: 10px !important;
-        padding: 0 !important;
-        top: 50px;
-        text-align: center !important;
-        width: 60px;
-        border: none !important;
-    }
+  .timeline-item:before {
+    left: 10px !important;
+    padding: 0 !important;
+    top: 50px;
+    text-align: center !important;
+    width: 60px;
+    border: none !important;
+  }
 
-    .timeline-item:last-child {
-        padding-bottom: 40px;
-    }
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
 
-    .timeline:before {
-        left: 40px;
-    }
+  .timeline:before {
+    left: 40px;
+  }
 }
 
-.timeline {
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 700px; /* timeline-width */
-    position: relative;
-}
+
+
 
 .timeline__content-title {
-    font-weight: normal;
-    font-size: 66px;
-    margin: -10px 0 0 0;
-    transition: .4s;
-    padding: 0 10px;
-    box-sizing: border-box;
-    font-family: 'Pathway Gothic One', sans-serif; /* heading-font */
-    color: #fff;
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: .4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #fff;
 }
 
 .timeline__content-desc {
-    margin: 0;
-    font-size: 15px;
-    box-sizing: border-box;
-    color: rgba(255, 255, 255, .7);
-    font-family: 'Cardo'; /* content-font */
-    font-weight: normal;
-    line-height: 25px;
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, .7);
+  font-family: 'Cardo';
+  font-weight: normal;
+  line-height: 25px;
 }
 
 .timeline:before {
-    position: absolute;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    margin-left: -1px;
-    content: "";
-    background: rgba(255, 255, 255, .07);
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(255, 255, 255, .07);
 }
 
-.timeline-item {
-    padding: 40px 0;
-    opacity: .3;
-    filter: blur(2px);
-    transition: .5s;
-    box-sizing: border-box;
-    width: calc(50% - 40px);
-    display: flex;
-    position: relative;
-    transform: translateY(-80px);
-}
 
 .timeline-item:before {
-    content: attr(data-text);
-    letter-spacing: 3px;
-    width: 100%;
-    position: absolute;
-    color: rgba(255, 255, 255, .5);
-    font-size: 13px;
-    font-family: 'Pathway Gothic One', sans-serif; /* heading-font */
-    border-left: 2px solid rgba(255, 255, 255, .5);
-    top: 70%;
-    margin-top: -5px;
-    padding-left: 15px;
-    opacity: 0;
-    right: calc(-100% - 56px);
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, .5);
+  font-size: 13px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  border-left: 2px solid rgba(255, 255, 255, .5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
 }
 
 .timeline-item:nth-child(even) {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .timeline-item:nth-child(even):before {
-    right: auto;
-    text-align: right;
-    left: calc(-100% - 56px);
-    padding-left: 0;
-    border-left: none;
-    border-right: 2px solid rgba(255, 255, 255, .5);
-    padding-right: 15px;
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, .5);
+  padding-right: 15px;
 }
 
 .timeline-item--active {
-    opacity: 1;
-    transform: translateY(0);
-    filter: blur(0);
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
 }
 
 .timeline-item--active:before {
-    top: 50%;
-    transition: .3s all .2s;
-    opacity: 1;
+  top: 50%;
+  transition: .3s all .2s;
+  opacity: 1;
 }
 
 .timeline__img {
-    max-width: 100%;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
 }
 
 .timeline-container {
-    width: 100%; /* timeline-container-width */
-    position: relative;
-    padding: 80px 0;
-    background-attachment: fixed;
-    background-size: cover;
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .timeline-container:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(99, 99, 99, 0.8);
-    content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.8);
+  content: "";
 }
 
 .timeline-header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 80px;
-    position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
 }
 
 .timeline-header__title {
-    color: #fff;
-    font-size: 46px;
-    font-family: 'Cardo'; /* content-font */
-    font-weight: normal;
-    margin: 0;
+  color: #fff;
+  font-size: 46px;
+  font-family: 'Cardo';
+  font-weight: normal;
+  margin: 0;
 }
 
 .timeline-header__subtitle {
-    color: rgba(255, 255, 255, .5);
-    font-family: 'Pathway Gothic One', sans-serif; /* heading-font */
-    font-size: 16px;
-    letter-spacing: 5px;
-    margin: 10px 0 0 0;
-    font-weight: normal;
-}
+  color: rgba(255, 255, 255, .5);
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+} */
 
 /* DEMO */
 .demo-footer {
-    padding: 60px 0;
-    text-align: center;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .demo-footer a {
-    color: #999;
-    display: inline-block;
-    font-family: 'Cardo'; /* content-font */
+  color: #999;
+  display: inline-block;
+  font-family: 'Cardo';
+  /* content-font */
 }
