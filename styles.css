@@ -1081,11 +1081,19 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   width: 15em;
   max-width: 100%;
   height: auto;
-}
+  position: absolute;
+  /* margin: 3em;*/
+  text-align: right !important;
+} 
+
 
 @media (max-width: 1019px) {
   .tekst-infographic {
     flex-direction: column;
+  }
+
+  .infographic2{
+    display: none;
   }
 }
 
