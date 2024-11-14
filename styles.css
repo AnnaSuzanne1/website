@@ -1081,8 +1081,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   width: 15em;
   max-width: 100%;
   height: auto;
-  position: absolute;
-  /* margin: 3em;*/
+  margin: 3em;
   text-align: right !important;
 } 
 
@@ -1157,7 +1156,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 
 .systeem-interesse .lap-tekst {
   background-color: #d6e3a1;
-  padding: 3em 1em 3em 1em;
+  padding: 3em 10em 3em 10em;
 
 }
 
