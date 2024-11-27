@@ -996,7 +996,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
     display: none !important;
   }
   .collegaswiper-header {
-    margin-top: 4em !important;
+    margin-top: 3em !important;
   }
 }
 
@@ -1114,7 +1114,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   top: 70%;
   margin-top: -5px;
-  padding-left: 15px;
+  /* padding-left: 15px; */
   opacity: 0;
   right: calc(-100% - 56px);
 }
@@ -1143,7 +1143,10 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   top: 50%;
   transition: .3s all .2s;
   opacity: 1;
+  /* padding-left: 0; */
 }
+
+
 
 .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
@@ -1169,6 +1172,9 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 
   .timeline-item:last-child {
     padding-bottom: 40px;
+  }
+  .timeline-item--active:before {
+    top: 75%;
   }
 }
 
