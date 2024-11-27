@@ -502,6 +502,8 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   align-items: center;
 }
 
+
+
 /* fa-moon  */
 .nav-item {
   margin: 0 !important;
@@ -914,7 +916,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 .collegaswiper-header {
-  margin-top: 4em !important;
+  margin-top: 25em !important;
 }
 
 /* .geschiedenis {
@@ -992,6 +994,9 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 @media (max-width: 1260px) {
   .overons-img {
     display: none !important;
+  }
+  .collegaswiper-header {
+    margin-top: 4em !important;
   }
 }
 
@@ -1949,7 +1954,6 @@ form {
 }
 
 .svg-inline--fa {
-  margin-right: 5px;
   height: none !important;
 }
 
