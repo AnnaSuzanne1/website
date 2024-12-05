@@ -1211,7 +1211,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 .timeline-header__title {
   color: #fff;
   font-size: 46px;
-  /* font-family: Cardo; */
   font-weight: normal;
   margin: 0;
 }
@@ -1970,7 +1969,11 @@ form {
 
 .copyright {
   font-size: 16px;
-  margin: 0 !important;
+  margin: auto !important;
+}
+
+.footer-documenten{
+  position: absolute;
 }
 
 .copyright-container p {
