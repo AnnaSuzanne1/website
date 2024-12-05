@@ -340,13 +340,17 @@ body.dark-mode .btn-outline-secondary {
   color: #eaeaea;
 }
 
-body.dark-mode .home-streep .streep {
+body.dark-mode .streep {
   display: none !important;
+}
+
+body.dark-mode .overons-streep {
+  display: block !important;
 }
 
 body.dark-mode .custom-navbar,
 body.dark-mode .navbar-nav {
-  background-color: #d8d7d7 !important;
+  background-color: #ffffff !important;
 }
 
 body.dark-mode .offcanvas {
@@ -410,10 +414,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 .dark-mode .dropdown-menu {
   background-color: #292929;
   color: #eaeaea;
-}
-
-.dark-mode .toggleThemeBtn {
-  color: #ffffff;
 }
 
 /*************/
