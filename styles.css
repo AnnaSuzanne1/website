@@ -382,6 +382,14 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   color: #eaeaea;
 }
 
+body.dark-mode .contact-formulier label{
+  color: #212529;
+}
+
+body.dark-mode .contact-formulier input{
+  color: #212529;
+}
+
 .dark-mode .offcanvas {
   background-color: #292929;
   color: #eaeaea;
@@ -396,6 +404,8 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   background-color: #292929;
   color: #eaeaea;
 }
+
+
 
 @media (max-width: 991px) {
   .dark-mode .offcanvas .navbar-nav {
