@@ -1,388 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webshop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webshop</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/main.min.css">
-  <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="paginalogo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="paginalogo.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-
-  <!-- Navigatie -->
-  <section class="streep  bg-primary"></section>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar p-2 mt-4 mx-5 dark-theme">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"> <img src="./images/advisorlogo.png"
-          alt="Advisor Software Solutions"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="overons.html">Over Ons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="werkenbij.html">Werken bij</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact&support.html">Contact & Support</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="nieuws.html">Nieuws</a>
-            </li>
-            <li class="nav-item d-md-none">
-              <a class="nav-link text-teamviewer" href="https://get.teamviewer.com/jp7j8ek">Teamviewer</a>
-            </li>
-            <li class="nav-item ms-2 d-none d-md-inline">
-              <a class="" href="https://get.teamviewer.com/jp7j8ek"><img class="teamviewerimg"
-                  src="./images/teamviewer.png" alt="teamviewer" width="30px"></a>
-            </li>
-            <li class="nav-item d-md-none">
-              <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
-            </li>
-
-            <li class="nav-item ms-2 d-none d-md-inline">
-              <button class="btn btn-primary toggleThemeBtn"><i class="fa-regular fa-moon"></i></button>
-            </li>
-            <li>
-              <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle flag" type="button" id="dropdownMenuButton1"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="nav-flag" src="images/united-kingdom-flag-icon.png" alt="">
+  <body>
+    <!-- Navigatie -->
+    <section class="streep bg-primary"></section>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary custom-navbar p-2 mt-4 mx-5 dark-theme"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/advisorlogo.png" alt="Advisor Software Solutions"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="overons.html">Over Ons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="werkenbij.html">Werken bij</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact&support.html"
+                  >Contact & Support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="nieuws.html"
+                  >Nieuws</a
+                >
+              </li>
+              <li class="nav-item d-md-none">
+                <a
+                  class="nav-link text-teamviewer"
+                  href="https://get.teamviewer.com/jp7j8ek"
+                  >Teamviewer</a
+                >
+              </li>
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <a class="" href="https://get.teamviewer.com/jp7j8ek"
+                  ><img
+                    class="teamviewerimg"
+                    src="./images/teamviewer.png"
+                    alt="teamviewer"
+                    width="30px"
+                /></a>
+              </li>
+              <li class="nav-item d-md-none">
+                <button class="btn btn-primary toggleThemeBtn">
+                  <i class="fa-regular fa-moon"></i>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item flag" href="#"><img src="images/united-kingdom-flag-icon.png" alt=""></a>
-                  </li>
-                  <li><a class="dropdown-item flag" href="#"><img src="images/netherlands-flag-icon.png" alt=""
-                        style="border-radius: 1px;"></a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+              </li>
 
-  <nav class="breadcrumbs" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="matchonline.html">Match Online</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Scanner</li>
-    </ol>
-  </nav>
-
-  <main>
-    <h1 class="text-center mb-5">Scanner</h1>
-
-    <section class="matchonline-iconen">
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="erp-icon-met-tekst">
-              <i class="erp-icon fa-solid fa-bolt-lightning"></i>
-              <h3>Snelheid</h3>
-              <p>Door een slimme manier van vooraf verkoopprijzen berekenen en dynamic scrollen, is het ophalen en
-                presenteren van producten razendsnel. Er is geen sprake van een maximaal aantal producten per pagina.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="erp-icon-met-tekst">
-              <i class="erp-icon fa-solid fa-shield"></i>
-              <h3>Veiligheid</h3>
-              <p>De meest veilige methodes voor beveiliging worden gebruikt voor het beheren van accounts en
-                wachtwoorden.
-
-                Gebruikers kunnen zelf wachtwoorden resetten zonder tussenkomst van een beheerder.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="erp-icon-met-tekst">
-              <i class="erp-icon fa-solid fa-mobile"></i>
-              <h3>Responsive</h3>
-              <p>De webshop lay-out wordt automatisch aangepast aan uw format PC, Tablet en/of Smartphone door middel
-                van
-                een responsive design.
-
-                U kunt zelf bepalen hoe u de webshop eruit wilt laten zien met behulp van een ‘what you see is what you
-                get’ configuratietool.
-              </p>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="erp-icon-met-tekst">
-              <i class="erp-icon fa-solid fa-microchip"></i>
-              <h3>Innovatie</h3>
-              <p>De webshop is ontwikkeld met de nieuwste technieken en daarmee voorbereid op de toekomst.
-                De webshop betreft een Webapp en geen Website, hierdoor functioneert de webshop steeds meer als een
-                applicatie zonder onnodige verversing van het hele scherm.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="erp-icon-met-tekst">
-              <i class="erp-icon fa-solid fa-headset"></i>
-              <h3>Gekwalificeerde Service Desk
-              </h3>
-              <p> Van maandag 06:00 – 17:00 uur staat onze Servicedesk voor u klaar, maar ook 24 x 7 support behoort tot
-                de mogelijkheden.
-              </p>
-            </div>
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <button class="btn btn-primary toggleThemeBtn">
+                  <i class="fa-regular fa-moon"></i>
+                </button>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle flag"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      class="nav-flag"
+                      src="images/united-kingdom-flag-icon.png"
+                      alt=""
+                    />
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a class="dropdown-item flag" href="#"
+                        ><img src="images/united-kingdom-flag-icon.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item flag" href="#"
+                        ><img
+                          src="images/netherlands-flag-icon.png"
+                          alt=""
+                          style="border-radius: 1px"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <div class="container col-lg-6 mt-5 lap-tekst">
-      <h2>De webshop</h2>
-      <p>De webshop is gekoppeld aan het ERP systeem Match Online. De webshop is gericht op het aanbieden van producten
-        aan afnemers. Afnemers kunnen met een account inloggen in de webshop en de gewenste producten kopen.</p>
+    <nav class="breadcrumbs" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">
+          <a href="matchonline.html">Match Online</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Scanner</li>
+      </ol>
+    </nav>
 
-      <h2 class="mt-5">Webshop modules</h2>
+    <main>
+      <h1 class="text-center mb-5">Scanner</h1>
 
-      <p>De webshop is modulair opgebouwd bestaande uit een basismodule en aanvullende modules. De basismodule is altijd
-        vereist. Bij de basismodule is een configuratieportaal inbegrepen, waarmee u de webshop zelf kunt configureren
-        en beheren, van talen tot menu-structuren.</p>
+      <section class="matchonline-iconen">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="erp-icon-met-tekst">
+                <i class="erp-icon fa-solid fa-bolt-lightning"></i>
+                <h3>Snelheid</h3>
+                <p>
+                  Door een slimme manier van vooraf verkoopprijzen berekenen en
+                  dynamic scrollen, is het ophalen en presenteren van producten
+                  razendsnel. Er is geen sprake van een maximaal aantal
+                  producten per pagina.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="erp-icon-met-tekst">
+                <i class="erp-icon fa-solid fa-shield"></i>
+                <h3>Veiligheid</h3>
+                <p>
+                  De meest veilige methodes voor beveiliging worden gebruikt
+                  voor het beheren van accounts en wachtwoorden. Gebruikers
+                  kunnen zelf wachtwoorden resetten zonder tussenkomst van een
+                  beheerder.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="erp-icon-met-tekst">
+                <i class="erp-icon fa-solid fa-mobile"></i>
+                <h3>Responsive</h3>
+                <p>
+                  De webshop lay-out wordt automatisch aangepast aan uw format
+                  PC, Tablet en/of Smartphone door middel van een responsive
+                  design. U kunt zelf bepalen hoe u de webshop eruit wilt laten
+                  zien met behulp van een ‘what you see is what you get’
+                  configuratietool.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="erp-icon-met-tekst">
+                <i class="erp-icon fa-solid fa-microchip"></i>
+                <h3>Innovatie</h3>
+                <p>
+                  De webshop is ontwikkeld met de nieuwste technieken en daarmee
+                  voorbereid op de toekomst. De webshop betreft een Webapp en
+                  geen Website, hierdoor functioneert de webshop steeds meer als
+                  een applicatie zonder onnodige verversing van het hele scherm.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="erp-icon-met-tekst">
+                <i class="erp-icon fa-solid fa-headset"></i>
+                <h3>Gekwalificeerde Service Desk</h3>
+                <p>
+                  Van maandag 06:00 – 17:00 uur staat onze Servicedesk voor u
+                  klaar, maar ook 24 x 7 support behoort tot de mogelijkheden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <p>De aanvullende modules bieden specifieke functionaliteiten welke van toegevoegde waarde kunnen zijn voor uw
-        onderneming. Deze modules zijn additioneel aan te schaffen naast de basismodule. U kiest zelf of investering in
-        één of meerdere van deze modules zinvol is voor u. Wellicht dat de aanschaf van een bepaalde module
-        kostenbesparend kan werken voor uw onderneming. Natuurlijk zijn wij bereid deze aanvullende modules te toetsen
-        aan uw bedrijfsprocessen, zodat u hierover een weloverwogen keuze kunt maken.
+      <div class="container col-lg-6 mt-5 lap-tekst">
+        <h2>De webshop</h2>
+        <p>
+          De webshop is gekoppeld aan het ERP systeem Match Online. De webshop
+          is gericht op het aanbieden van producten aan afnemers. Afnemers
+          kunnen met een account inloggen in de webshop en de gewenste producten
+          kopen.
+        </p>
 
-        Advisor Software Solutions is continue bezig met ontwikkelen van nieuwe functionaliteiten. Daardoor zullen er
-        steeds meer nieuwe modules beschikbaar komen. Deze nieuwe modules komen onder andere tot stand door verzoeken
-        die worden ingediend door klanten voor de uitbreiding van één of meerdere functionaliteiten. Wij luisteren graag
-        naar de wensen van de klant en proberen deze, indien mogelijk, ten uitvoer te brengen. Zodra er nieuwe modules
-        beschikbaar komen, brengen wij u hiervan op de hoogte.</p>
-    </div>
+        <h2 class="mt-5">Webshop modules</h2>
 
-    <!-- Interesse  -->
-    <div class="systeem-teksten d-flex flex-lg-row flex-column-revers">
-      <div class="systeem-interesse order-lg-2">
-        <div class="container-fluid col-12 col-lg-12 mt-5 lap-tekst text-center">
-          <h2>Interesse?</h2>
-          <p>Kiezen voor Match Online betekent maximale keuzevrijheid in de manier waarop u onze software
-            aanschaft en
-            gebruikt. Koop of huur? Gebruik van de software door middel van een Cloud dienst (op onze
-            servers) of
-            door installatie van de software op uw eigen server. De keuze is volledig aan u.
-            Graag komen wij in contact met u om samen te kijken wat de beste oplossing is voor uw bedrijf,
-            zodat u
-            maximaal kunt profiteren van onze oplossingen.</p>
-          <div class="lc-block gap-2 justify-content-center">
-            <a class="btn btn-primary px-4 me-md-2" href="informatieaanvragen.html" role="button">Informatie
-              aanvragen</a>
+        <p>
+          De webshop is modulair opgebouwd bestaande uit een basismodule en
+          aanvullende modules. De basismodule is altijd vereist. Bij de
+          basismodule is een configuratieportaal inbegrepen, waarmee u de
+          webshop zelf kunt configureren en beheren, van talen tot
+          menu-structuren.
+        </p>
+
+        <p>
+          De aanvullende modules bieden specifieke functionaliteiten welke van
+          toegevoegde waarde kunnen zijn voor uw onderneming. Deze modules zijn
+          additioneel aan te schaffen naast de basismodule. U kiest zelf of
+          investering in één of meerdere van deze modules zinvol is voor u.
+          Wellicht dat de aanschaf van een bepaalde module kostenbesparend kan
+          werken voor uw onderneming. Natuurlijk zijn wij bereid deze
+          aanvullende modules te toetsen aan uw bedrijfsprocessen, zodat u
+          hierover een weloverwogen keuze kunt maken. Advisor Software Solutions
+          is continue bezig met ontwikkelen van nieuwe functionaliteiten.
+          Daardoor zullen er steeds meer nieuwe modules beschikbaar komen. Deze
+          nieuwe modules komen onder andere tot stand door verzoeken die worden
+          ingediend door klanten voor de uitbreiding van één of meerdere
+          functionaliteiten. Wij luisteren graag naar de wensen van de klant en
+          proberen deze, indien mogelijk, ten uitvoer te brengen. Zodra er
+          nieuwe modules beschikbaar komen, brengen wij u hiervan op de hoogte.
+        </p>
+      </div>
+
+      <!-- Interesse  -->
+      <div class="systeem-teksten d-flex flex-lg-row flex-column-revers">
+        <div class="systeem-interesse order-lg-2">
+          <div
+            class="container-fluid col-12 col-lg-12 mt-5 lap-tekst text-center"
+          >
+            <h2>Interesse?</h2>
+            <p>
+              Kiezen voor Match Online betekent maximale keuzevrijheid in de
+              manier waarop u onze software aanschaft en gebruikt. Koop of huur?
+              Gebruik van de software door middel van een Cloud dienst (op onze
+              servers) of door installatie van de software op uw eigen server.
+              De keuze is volledig aan u. Graag komen wij in contact met u om
+              samen te kijken wat de beste oplossing is voor uw bedrijf, zodat u
+              maximaal kunt profiteren van onze oplossingen.
+            </p>
+            <div class="lc-block gap-2 justify-content-center">
+              <a
+                class="btn btn-primary px-4 me-md-2"
+                href="informatieaanvragen.html"
+                role="button"
+                >Informatie aanvragen</a
+              >
+            </div>
           </div>
         </div>
       </div>
 
-    </div>
+      <section class="aanvullende-webshop-modules">
+        <h3 class="text-center mt-5">Aanvullende webshop modules</h3>
 
-    <section class="aanvullende-webshop-modules">
-      <h3 class="text-center mt-5">Aanvullende webshop modules</h3>
-
-      <div class="container mt-5 mb-5 col-lg-4">
-        <div class="row justify-content-center">
-
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Doorverdelen aan subklanten</button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">De debiteur koopt in op de webshop en kan meteen de artikelen doorverdelen
-                  aan
-                  de verschillende subklanten. De gegevens van de debiteur en subklanten worden ingesteld in Match
-                  Online.
-                  De internetorder is één order inclusief de regels van de subklanten, maar in MOL kan het gesplitst
-                  worden in orders per subklant zodra het wordt opgenomen in de logistiek.</div>
+        <div class="container mt-5 mb-5 col-lg-4">
+          <div class="row justify-content-center">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Doorverdelen aan subklanten
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    De debiteur koopt in op de webshop en kan meteen de
+                    artikelen doorverdelen aan de verschillende subklanten. De
+                    gegevens van de debiteur en subklanten worden ingesteld in
+                    Match Online. De internetorder is één order inclusief de
+                    regels van de subklanten, maar in MOL kan het gesplitst
+                    worden in orders per subklant zodra het wordt opgenomen in
+                    de logistiek.
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Favorieten</button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Producten kunnen gefavoriet worden en in zelf aangemaakte lijsten worden
-                  gezet. Vervolgens kan je al je favorieten bij elkaar zien en eventueel bestellen. -> Om favorieten te
-                  bestellen moet er of een aparte pagina worden aangemaakt waar alleen de favorieten worden getoond of
-                  een
-                  filter favorieten op de ‘gewone’ pagina toegevoegd worden.</div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Favorieten
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Producten kunnen gefavoriet worden en in zelf aangemaakte
+                    lijsten worden gezet. Vervolgens kan je al je favorieten bij
+                    elkaar zien en eventueel bestellen. -> Om favorieten te
+                    bestellen moet er of een aparte pagina worden aangemaakt
+                    waar alleen de favorieten worden getoond of een filter
+                    favorieten op de ‘gewone’ pagina toegevoegd worden.
+                  </div>
+                </div>
               </div>
-            </div>
 
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Herbestellen
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Vanuit de (module) orderhistorie kan je van een voorgaande
+                    order een voorstel-order maken, met de mogelijk aantallen en
+                    artikelen te wijzigen en opmerking mee te geven.
+                  </div>
+                </div>
+              </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Herbestellen</button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Vanuit de (module) orderhistorie kan je van een voorgaande order een
-                  voorstel-order maken, met de mogelijk aantallen en artikelen te wijzigen en opmerking mee te geven.
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Jivochat
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Mogelijkheid tot het hebben van een chatfunctie in de
+                    webshop. Klanten kunnen hierin vragen stellen en u kan
+                    hierop antwoorden via de app/omgeving van JivoChat. JivoChat
+                    is een extern bedrijf en er dient ook bij hen een account
+                    aangemaakt te worden en eventueel een betaald abonnement
+                    afgesloten te worden.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    Labels
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Zodra een klant een product wil toevoegen kan hij onder in
+                    de productdetails op het labeltje klikken. Hier kan de klant
+                    verschillende informatie toevoegen wat hij op zijn stickers
+                    terug wil zien. Dit is een toegevoegde waarde op het
+                    product. De klant kan hier alvast zijn consumentenprijs op
+                    laten zetten en zijn eigen naam.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    Nieuws
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Op de homepagina kan je nieuws artikelen aanmaken. De
+                    nieuwsartikelen kan je ook toevoegen aan een extra menu tab.
+                    Dan staat al het nieuws bij elkaar.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSeven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSeven"
+                  >
+                    Orderhistorie
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSeven"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Een klant kan op deze pagina zelf historische bestellingen
+                    terugvinden. Deze orders kan hij via een button downloaden
+                    naar Excel. Ook kan de klant als hij de module herbestellen
+                    heeft de orders opnieuw bestellen.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEight">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEight"
+                  >
+                    Subrelaties
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEight"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Klanten van jouw klant krijgen een inlog met aparte prijzen
+                    bepaald door de debiteur.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNine">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseNine"
+                  >
+                    Subshop
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingNine"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    (shop-in-shop). Hierdoor kunnen klanten van uw klanten via
+                    het internet bestellingen plaatsen in uw voorraad. De
+                    Internet module van uw klant is voorzien van het
+                    bedrijfslogo van uw klant en heeft ook een eigen URL
+                    (websiteadres).
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTen">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTen"
+                  >
+                    Tegeltjesmodule
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTen"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTen"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Deze module kan overzichtelijk een samenvatting van de menu
+                    pagina’s op één pagina weergeven in de vorm van een tegel
+                    met informatie. Dit geeft een mooie entree op je website
+                    (homepage). Op de tegel kan je tekst kwijt en een foto. Op
+                    een tegel kan je ook een link zetten naar bijvoorbeeld je
+                    nieuwsbrief. Je kan een tegel overzicht ook achter een menu
+                    pagina doen.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingEleven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEleven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEleven"
+                  >
+                    Tekstpagina
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEleven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEleven"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Dit is een pagina op de webshop waar je tekst kwijt kan.
+                    Hier kan je bijvoorbeeld een nieuwsbrief plaatsen. Ook kan
+                    je hier foto’s en video’s kwijt. Ook kan je hier veel
+                    gestelde vragen kwijt, bedrijfsinfo. Ook kan je een
+                    hyperlink naar je eigen website plaatsen.
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                  Jivochat</button>
-              </h2>
-              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Mogelijkheid tot het hebben van een chatfunctie in de webshop. Klanten
-                  kunnen
-                  hierin vragen stellen en u kan hierop antwoorden via de app/omgeving van JivoChat. JivoChat is een
-                  extern bedrijf en er dient ook bij hen een account aangemaakt te worden en eventueel een betaald
-                  abonnement afgesloten te worden.</div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                  Labels</button>
-              </h2>
-              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Zodra een klant een product wil toevoegen kan hij onder in de productdetails
-                  op het labeltje klikken. Hier kan de klant verschillende informatie toevoegen wat hij op zijn stickers
-                  terug wil zien. Dit is een toegevoegde waarde op het product. De klant kan hier alvast zijn
-                  consumentenprijs op laten zetten en zijn eigen naam.</div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingSix">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                  Nieuws</button>
-              </h2>
-              <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Op de homepagina kan je nieuws artikelen aanmaken. De nieuwsartikelen kan je
-                  ook toevoegen aan een extra menu tab.
-                  Dan staat al het nieuws bij elkaar.</div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingSeven">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                  Orderhistorie</button>
-              </h2>
-              <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Een klant kan op deze pagina zelf historische bestellingen terugvinden. Deze
-                  orders kan hij via een button downloaden naar Excel. Ook kan de klant als hij de module herbestellen
-                  heeft de orders opnieuw bestellen.</div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingEight">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                  Subrelaties</button>
-              </h2>
-              <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Klanten van jouw klant krijgen een inlog met aparte prijzen bepaald door de
-                  debiteur.</div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingNine">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                  Subshop</button>
-              </h2>
-              <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">(shop-in-shop). Hierdoor kunnen klanten van uw klanten via het internet
-                  bestellingen plaatsen in uw voorraad. De Internet module van uw klant is voorzien van het bedrijfslogo
-                  van uw klant en heeft ook een eigen URL (websiteadres).</div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTen">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                  Tegeltjesmodule</button>
-              </h2>
-              <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Deze module kan overzichtelijk een samenvatting van de menu pagina’s op één
-                  pagina weergeven in de vorm van een tegel met informatie. Dit geeft een mooie entree op je website
-                  (homepage). Op de tegel kan je tekst kwijt en een foto. Op een tegel kan je ook een link zetten naar
-                  bijvoorbeeld je nieuwsbrief. Je kan een tegel overzicht ook achter een menu pagina doen.</div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingEleven">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                  Tekstpagina</button>
-              </h2>
-              <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven"
-                data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Dit is een pagina op de webshop waar je tekst kwijt kan. Hier kan je
-                  bijvoorbeeld een nieuwsbrief plaatsen. Ook kan je hier foto’s en video’s kwijt. Ook kan je hier veel
-                  gestelde vragen kwijt, bedrijfsinfo. Ook kan je een hyperlink naar je eigen website plaatsen.</div>
-              </div>
-            </div>
-
           </div>
         </div>
-      </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- <div class="container col-lg-6 mt-5 lap-tekst">
+      <!-- <div class="container col-lg-6 mt-5 lap-tekst">
       <h2>Interesse?</h2>
       <p>Kiezen voor Match Online betekent maximale keuzevrijheid in de manier waarop u onze software aanschaft en
         gebruikt. Koop of huur? Gebruik van de software door middel van een Cloud dienst (op onze servers) of door
@@ -393,93 +637,112 @@
 
     <div class="lc-block d-grid gap-2 d-md-flex justify-content-center mb-5"><a class="btn btn-primary px-4 me-md-2"
         href="informatieaanvragen.html" role="button">Informatie aanvragen</a> -->
+    </main>
 
-
-
-  </main>
-
-
-
-
-  <footer class="text-center text-lg-start text-white bg-primary">
-    <div class="container p-4 pb-0">
-      <section class="bovenkant-footer">
-        <div class="row">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <a class="text-white text-decoration-none" href="./index.html">
-              <h6 class="text-uppercase mb-4 font-weight-bold"> Advisor Software Solutions </h6>
-            </a>
-            <p>
-              Advisor Software Solutions is gespecialiseerd in het ontwikkelen, beheren en implementeren van branchbrede
-              software voor de sierteelt.
-            </p>
-          </div>
-          <hr class="w-100 clearfix d-md-none" />
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Navigatie</h6>
-            <p>
-              <a class="link text-white" href="./overons.html">Over ons</a>
-            </p>
-            <p>
-              <a class="link text-white" href="./werkenbij.html">Werken bij</a>
-            </p>
-            <p>
-              <a class="link text-white" href="./contact&support.html">Contact & Support</a>
-            </p>
-            <p>
-              <a class="link text-white" href="./nieuws.html">Nieuws</a>
-            </p>
-          </div>
-          <hr class="w-100 clearfix d-md-none" />
-          <hr class="w-100 clearfix d-md-none" />
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p class="contact-footer"><i class="fas fa-home mr-5"></i><a class="link"
-                href="https://www.google.com/maps/place/Advisor+Software+Solutions/@52.2100187,4.8720148,17z/data=!4m15!1m8!3m7!1s0x47c675a4893a8d5d:0x81bc48399e687674!2sGroot+Mijdrechtstraat+52,+3641+RW+Mijdrecht!3b1!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F11cslv4qsm!3m5!1s0x47c675ae1febebf1:0x1b07fbf0092031b8!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F1ptxjnh0h?entry=ttu"
-                target="_blank">Groot Mijdrechtstraat 52, 3641 RW Mijdrecht</a></p>
-            <p class="contact-footer"><i class="fas fa-envelope mr-3"></i><a class="link"
-                href="mailto:info@advisorsoftware.nl">info@advisorsoftware.nl</a></p>
-
-            <p class="contact-footer"><i class="fas fa-phone mr-3"></i><a class="link" href="tel:+31297745547">0297 74
-                55 47</a></p>
-          </div>
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
-
-            <div class="media-icons">
-              <i class="fab fa-facebook icon"></i>
-              <a class="linkedin-link" target="_blank"
-                href="https://www.linkedin.com/company/advisor-software-solutions/mycompany/">
-                <i class="fa-brands fa-linkedin icon"></i>
+    <footer class="text-center text-lg-start text-white bg-primary">
+      <div class="container p-4 pb-0">
+        <section class="bovenkant-footer">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <a class="text-white text-decoration-none" href="./index.html">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  Advisor Software Solutions
+                </h6>
               </a>
-              <i class="fa-brands fa-instagram icon"></i>
+              <p>
+                Advisor Software Solutions is gespecialiseerd in het
+                ontwikkelen, beheren en implementeren van branchbrede software
+                voor de sierteelt.
+              </p>
             </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Navigatie</h6>
+              <p>
+                <a class="link text-white" href="./overons.html">Over ons</a>
+              </p>
+              <p>
+                <a class="link text-white" href="./werkenbij.html"
+                  >Werken bij</a
+                >
+              </p>
+              <p>
+                <a class="link text-white" href="./contact&support.html"
+                  >Contact & Support</a
+                >
+              </p>
+              <p>
+                <a class="link text-white" href="./nieuws.html">Nieuws</a>
+              </p>
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p class="contact-footer">
+                <i class="fas fa-home mr-5"></i
+                ><a
+                  class="link"
+                  href="https://www.google.com/maps/place/Advisor+Software+Solutions/@52.2100187,4.8720148,17z/data=!4m15!1m8!3m7!1s0x47c675a4893a8d5d:0x81bc48399e687674!2sGroot+Mijdrechtstraat+52,+3641+RW+Mijdrecht!3b1!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F11cslv4qsm!3m5!1s0x47c675ae1febebf1:0x1b07fbf0092031b8!8m2!3d52.2100187!4d4.8745897!16s%2Fg%2F1ptxjnh0h?entry=ttu"
+                  target="_blank"
+                  >Groot Mijdrechtstraat 52, 3641 RW Mijdrecht</a
+                >
+              </p>
+              <p class="contact-footer">
+                <i class="fas fa-envelope mr-3"></i
+                ><a class="link" href="mailto:info@advisorsoftware.nl"
+                  >info@advisorsoftware.nl</a
+                >
+              </p>
 
+              <p class="contact-footer">
+                <i class="fas fa-phone mr-3"></i
+                ><a class="link" href="tel:+31297745547">0297 74 55 47</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+              <div class="media-icons">
+                <i class="fab fa-facebook icon"></i>
+                <a
+                  class="linkedin-link"
+                  target="_blank"
+                  href="https://www.linkedin.com/company/advisor-software-solutions/mycompany/"
+                >
+                  <i class="fa-brands fa-linkedin icon"></i>
+                </a>
+                <i class="fa-brands fa-instagram icon"></i>
+              </div>
+            </div>
           </div>
-        </div>
-    </div>
-    </section>
-    </div>
-
-    <div class="text-center background-grey p-3 d-flex flex-wrap">
-      <p class="link copyright">Advisor Software Solutions © 2024</p>
-      <div class="d-flex flex-column flex-sm-row">
-        <a class="link text-white m-2" href="disclaimer.html">Disclaimer</a>
-        <a class="link text-white m-2" href="privacyVerklaring.html">Privacy verklaring</a>
-        <a class="link text-white m-2" href="algemeneVoorwaarden.html">Algemene voorwaarden</a>
+        </section>
       </div>
-    </div>
 
-  </footer>
+      <div class="text-center background-grey p-3 d-flex flex-wrap">
+        <p class="link copyright">Advisor Software Solutions © 2024</p>
+        <div class="d-flex flex-column flex-sm-row">
+          <a class="link text-white m-2" href="disclaimer.html">Disclaimer</a>
+          <a class="link text-white m-2" href="privacyVerklaring.html"
+            >Privacy verklaring</a
+          >
+          <a class="link text-white m-2" href="algemeneVoorwaarden.html"
+            >Algemene voorwaarden</a
+          >
+        </div>
+      </div>
+    </footer>
 
-  <script src="darkmode.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
-    crossorigin="anonymous"></script>
-
-</body>
-
+    <script src="darkmode.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
