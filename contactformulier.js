@@ -1,5 +1,3 @@
-
-
 // Contactformulier
 // Initialization for ES Users
 
@@ -12,11 +10,10 @@ document.getElementById("go-back").addEventListener("click", function (event) {
   window.history.back(); // Gaat naar de vorige pagina
 });
 
-
 // Selecteer de checkbox, submit button en het formulier
-const toggleCheckbox = document.getElementById('toggleCheckbox');
-const submitButton = document.getElementById('submitButton');
-const contactForm = document.getElementById('contact-form');
+const toggleCheckbox = document.getElementById("toggleCheckbox");
+const submitButton = document.getElementById("submitButton");
+const contactForm = document.getElementById("contact-form");
 
 // Functie om de validatie van het formulier te controleren
 function checkFormValidation() {
@@ -31,22 +28,22 @@ function checkFormValidation() {
 
   // Wijzig de cursor op basis van de status van de knop
   if (submitButton.disabled) {
-    submitButton.style.cursor = 'not-allowed';
+    submitButton.style.cursor = "not-allowed";
   } else {
-    submitButton.style.cursor = 'pointer';
+    submitButton.style.cursor = "pointer";
   }
 }
 
 // Voeg event listeners toe aan de checkbox en de invoervelden
-toggleCheckbox.addEventListener('change', checkFormValidation);
+toggleCheckbox.addEventListener("change", checkFormValidation);
 
 // Voeg event listeners toe aan alle invoervelden
-const inputFields = contactForm.querySelectorAll('input, select, textarea');
-inputFields.forEach(field => {
-  field.addEventListener('input', checkFormValidation);
+const inputFields = contactForm.querySelectorAll("input, select, textarea");
+inputFields.forEach((field) => {
+  field.addEventListener("input", checkFormValidation);
 });
 
 // Zorg ervoor dat de juiste cursor wordt ingesteld bij het laden van de pagina
 if (submitButton.disabled) {
-  submitButton.style.cursor = 'not-allowed';
+  submitButton.style.cursor = "not-allowed";
 }

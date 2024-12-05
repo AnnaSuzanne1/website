@@ -1,46 +1,39 @@
 console.log("carousel.js is loaded");
 
+// Swiper
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: true,
+    fade: true,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-
-// Swiper 
-document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper(".mySwiper", {
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      520: {
+        slidesPerView: 2,
+      },
+      950: {
         slidesPerView: 3,
-        spaceBetween: 25,
-        loop: true,
-        centerSlide: true,
-        fade: true,
-        grabCursor: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-
-
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            520: {
-                slidesPerView: 2,
-            },
-            950: {
-                slidesPerView: 3,
-            },
-        },
-
-
-    });
+      },
+    },
+  });
 });
 
-
-
-// // Dark theme 
+// // Dark theme
 // function toggleTheme() {
 //     console.log("Toggle Theme function is called");
 //     var body = document.body;
@@ -59,10 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //         toggleTheme();
 //     });
 // }
-
-
-
-
 
 // // Dark theme
 // function applyDarkTheme() {
@@ -99,12 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
 //     checkUserColorScheme();
 // });
 
-
-
-
-
-
-
 // cards informatieblok
 // const infoData = {
 //     info1: "Dit is de gedetailleerde informatie voor item 1.",
@@ -118,10 +101,9 @@ document.addEventListener('DOMContentLoaded', function () {
 //     $('.card').click(function() {
 //         console.log("Card clicked");
 //         const infoKey = $(this).data('info');
-//         console.log('Card clicked:', infoKey); 
+//         console.log('Card clicked:', infoKey);
 //         const infoText = infoData[infoKey];
-//         console.log('Info text:', infoText); 
+//         console.log('Info text:', infoText);
 //         $('#infoBlock .card-text').text(infoText);
 //     });
 // });
-

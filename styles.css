@@ -1,10 +1,10 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&display=swap");
 
 * {
   margin: 0;
@@ -77,8 +77,6 @@ h3 {
   user-select: none;
 }
 
-
-
 .bronvermelding {
   font-size: 10px;
 }
@@ -88,7 +86,6 @@ h3 {
   /* Of een andere opvallende kleur */
   transition: background-color 0.5s ease-out;
 }
-
 
 /* links */
 
@@ -148,20 +145,18 @@ h3 {
   margin-top: 10em;
 }
 
-
-
 .btn {
   border-radius: 20px;
 }
 
 .btn-primary {
-  background-color: #A4CC00;
+  background-color: #a4cc00;
   border: none;
   color: #000000;
 }
 
 .btn-primary:hover {
-  background-color: #4B5035;
+  background-color: #4b5035;
   color: #ffffff;
 }
 
@@ -239,21 +234,20 @@ body.dark-mode .btn-secondary {
   border-color: #03dac6;
 }
 
-body.dark-mode .breadcrumb-item{
+body.dark-mode .breadcrumb-item {
   color: #d8d7d7;
 }
 
-body.dark-mode .breadcrumb-item a{
+body.dark-mode .breadcrumb-item a {
   color: #d8d7d7;
 }
-body.dark-mode .breadcrumb-item a:hover{
-  color: #A4CC00;
+body.dark-mode .breadcrumb-item a:hover {
+  color: #a4cc00;
 }
 
-body.dark-mode .breadcrumb-item+.breadcrumb-item::before {
+body.dark-mode .breadcrumb-item + .breadcrumb-item::before {
   color: white;
 }
-
 
 body.dark-mode .accordion-button::after {
   content: "";
@@ -273,7 +267,6 @@ body.dark-mode .accordion-button.collapsed::after {
 body.dark-mode .accordion-button:not(.collapsed)::after {
   transform: rotate(180deg);
 }
-
 
 body.dark-mode .card {
   color: #292929;
@@ -296,12 +289,12 @@ body.dark-mode .voordelen {
 }
 
 body.dark-mode .voordelen p {
-color: white;
+  color: white;
 }
 
 body.dark-mode .voordelen p:hover {
-  color: #A4CC00;
-  }
+  color: #a4cc00;
+}
 
 body.dark-mode .card-content .function {
   color: #000000 !important;
@@ -423,10 +416,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   color: #ffffff;
 }
 
-
-
-
-
 /*************/
 /* Navigatie */
 /*************/
@@ -457,7 +446,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 
 .navbar-nav .nav-link {
   /* font-family: 'Arvo', serif; */
-  font-family: 'Lato', serif;
+  font-family: "Lato", serif;
 }
 
 /* dropdown */
@@ -502,8 +491,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   align-items: center;
 }
 
-
-
 /* fa-moon  */
 .nav-item {
   margin: 0 !important;
@@ -521,8 +508,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   margin: 0 !important;
   padding: 0 !important;
 }
-
-
 
 .flag img {
   width: 30px;
@@ -608,7 +593,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   margin-bottom: 0px !important;
 }
 
-
 /********/
 /* Home */
 /********/
@@ -634,7 +618,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   list-style-type: none;
 } */
 
-
 /* Over Match Online en voordelen*/
 .voordelen {
   margin-top: 1em;
@@ -643,7 +626,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 .voordelen .erp-icon {
-  color: #A4CC00;
+  color: #a4cc00;
   font-size: 50px;
   transition: font-size 0.5s;
 }
@@ -672,8 +655,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 .matchonline-header {
   font-size: 40px;
 }
-
-
 
 @media (min-width: 992px) {
   .voordelen .col-lg-2 {
@@ -710,19 +691,16 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   }
 }
 
-
-
 @media (max-width: 575.98px) {
   .voordelen .container {
     padding-right: 0;
   }
 
-  .voordelen .row>div[class*="col-"] {
+  .voordelen .row > div[class*="col-"] {
     flex: 0 0 calc(50% - 1rem);
     max-width: calc(50% - 1rem);
   }
 }
-
 
 /* home hover mockup img  */
 .img-hover .container {
@@ -741,12 +719,12 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .img-hover .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -781,12 +759,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   color: #f0f0f0;
   transform: scale(1.05);
 }
-
-
-
-
-
-
 
 /* .voordelen-heading {
   margin-bottom: 2em;
@@ -1006,7 +978,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   }
 
   .streep {
-    background-color: #A4CC00;
+    background-color: #a4cc00;
   }
 
   .container-overons-header img {
@@ -1015,7 +987,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 @media (max-width: 1260px) {
-  .streep>* {
+  .streep > * {
     display: none;
   }
 
@@ -1032,8 +1004,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   }
 }
 
-
-
 /* Timeline */
 .timeline {
   display: flex;
@@ -1044,12 +1014,11 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   position: relative;
 }
 
-
 .timeline__content-title {
   font-weight: normal;
   font-size: 66px;
   margin: -10px 0 0 0;
-  transition: .4s;
+  transition: 0.4s;
   padding: 0 10px;
   box-sizing: border-box;
   /* font-family: "Pathway Gothic One", sans-serif; */
@@ -1078,9 +1047,9 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 
 .timeline-item {
   padding: 40px 0;
-  opacity: .3;
+  opacity: 0.3;
   filter: blur(2px);
-  transition: .5s;
+  transition: 0.5s;
   box-sizing: border-box;
   width: calc(50% - 40px);
   display: flex;
@@ -1098,8 +1067,8 @@ body.dark-mode .informatie-cards .svg-inline--fa {
     padding: 0 !important;
   }
 
-  .timeline__content{
-  padding-bottom: 13em;
+  .timeline__content {
+    padding-bottom: 13em;
   }
 }
 
@@ -1141,12 +1110,10 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 
 .timeline-item--active:before {
   top: 50%;
-  transition: .3s all .2s;
+  transition: 0.3s all 0.2s;
   opacity: 1;
   /* padding-left: 0; */
 }
-
-
 
 .timeline-item--active .timeline__content-title {
   margin: -50px 0 20px 0;
@@ -1239,7 +1206,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 /* Match Online */
 /****************/
 
-.scannerpng{
+.scannerpng {
   width: 9em;
   padding: 1em;
 }
@@ -1257,13 +1224,10 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   }
 }
 
-
-
 .matchonline-iconen .erp-icon {
   font-size: 50px;
   margin-bottom: 20px;
 }
-
 
 .erp-icon-met-tekst {
   display: flex;
@@ -1275,14 +1239,13 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   color: #212529;
 }
 
-
 .erp-icon-met-tekst a:hover {
-  color: #A4CC00;
+  color: #a4cc00;
 }
 
 .erp-icon-met-tekst a:first-child:hover .erp-icon,
-.erp-icon-met-tekst a:first-child:hover~a p {
-  color: #A4CC00;
+.erp-icon-met-tekst a:first-child:hover ~ a p {
+  color: #a4cc00;
 }
 
 .erp-icon-met-tekst p {
@@ -1293,8 +1256,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 .erp-en-webshop .align-cards {
   justify-content: center;
 }
-
-
 
 /***************/
 /* ERP systeem */
@@ -1310,15 +1271,14 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   height: auto;
   margin: 3em;
   text-align: right !important;
-} 
-
+}
 
 @media (max-width: 1019px) {
   .tekst-infographic {
     flex-direction: column;
   }
 
-  .infographic2{
+  .infographic2 {
     display: none;
   }
 }
@@ -1336,13 +1296,11 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 .mogelijkheden-iconen h5 {
   font-size: 16px;
   cursor: default;
-
 }
 
 .mogelijkheden-iconen .card:hover {
   background-color: #ecf5cb;
 }
-
 
 .align-cards {
   display: flex;
@@ -1433,18 +1391,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 .accordion-item {
   border-color: transparent !important;
@@ -1520,7 +1466,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #A4CC00;
+  background-color: #a4cc00;
   left: 0;
   top: 0;
   border-radius: 25px 25px 0 25px;
@@ -1540,7 +1486,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #A4CC00;
+  border: 4px solid #a4cc00;
 }
 
 .name {
@@ -1590,7 +1536,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 .swiper-pagination-bullet {
-  background-color: #A4CC00;
+  background-color: #a4cc00;
   opacity: 1;
 }
 
@@ -1609,15 +1555,11 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 @media (max-width: 425px) {
-
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    display: none
+    display: none;
   }
 }
-
-
-
 
 /**************/
 /* Werken bij */
@@ -1659,7 +1601,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 
 /* vacature Banner */
 .vacature-banner .banner {
-  background-color: #83A108;
+  background-color: #83a108;
   text-align: center;
   margin-top: 10em;
   color: white;
@@ -1683,8 +1625,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 .vacature-banner .banner-container {
   padding: 35px 0 35px 0;
 }
-
-
 
 /***********/
 /* Support */
@@ -1723,7 +1663,7 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 .vertical {
-  border-left: 5px solid #A4CC00;
+  border-left: 5px solid #a4cc00;
   height: 450px;
   margin-top: 0em;
   margin-left: 3em;
@@ -1773,7 +1713,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 @media screen and (max-width: 1024px) {
-
   .map-openingstijden iframe,
   .openingstijden {
     flex: 1 1 100%;
@@ -1798,18 +1737,15 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   .openingstijden h2 {
     font-size: 20px;
   }
-
 }
 
 .Arjn-Jan {
   display: block;
   margin: auto;
-
 }
 
 @media screen and (min-width: 1025px) {
   .Arjn-Jan {
-
     margin-left: 2em;
   }
 }
@@ -1829,17 +1765,12 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 }
 
 .accordion-button:hover {
-  background-color: #A4CC00;
+  background-color: #a4cc00;
 }
 
 .accordion-button {
   font-weight: 500 !important;
 }
-
-
-
-
-
 
 /* #info-img {
   max-width: 100%;
@@ -1852,7 +1783,6 @@ body.dark-mode .informatie-cards .svg-inline--fa {
 /* .card-body {
   text-align: center; 
 } */
-
 
 /**********/
 /* Nieuws */
@@ -1877,8 +1807,6 @@ table {
 }
 
 /* table, th, td  */
-
-
 
 /********************/
 /* Contactformulier */
@@ -1915,8 +1843,8 @@ table {
 
 input.btn {
   padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #A4CC00;
+  color: #fff;
+  background-color: #a4cc00;
   font-size: 18px;
   text-align: center;
   font-style: normal;
@@ -1933,8 +1861,6 @@ input.btn {
   border: none;
 }
 
-
-
 .help-block.with-errors {
   color: #ff5050;
   margin-top: 5px;
@@ -1946,9 +1872,6 @@ form {
   background: #f4f7f8;
   border-radius: 8px;
 }
-
-
-
 
 /**********/
 /* Footer */
@@ -1972,7 +1895,7 @@ form {
   margin: auto !important;
 }
 
-.footer-documenten{
+.footer-documenten {
   position: absolute;
 }
 
@@ -2002,9 +1925,8 @@ form {
 }
 
 .background-grey {
-  background-color: rgba(0, 0, 0, 0.2)
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 
 @media (max-width: 470px) {
   .text-center {
@@ -2015,29 +1937,6 @@ form {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* DEMO */
 .demo-footer {
   padding: 60px 0;
@@ -2047,6 +1946,6 @@ form {
 .demo-footer a {
   color: #999;
   display: inline-block;
-  font-family: 'Cardo';
+  font-family: "Cardo";
   /* content-font */
 }
