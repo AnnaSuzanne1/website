@@ -506,6 +506,10 @@ body.dark-mode .contact-formulier input{
 }
 
 /* fa-moon  */
+.fa-moon{
+  color: #292929;
+}
+
 .nav-item {
   margin: 0 !important;
   padding: 0 !important;
