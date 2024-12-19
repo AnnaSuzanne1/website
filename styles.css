@@ -948,18 +948,19 @@ body.dark-mode .contact-formulier input{
 
 .informatie-cards .card {
   background-color: #effac4;
+  height: 200px;
+  width: 200px;
 }
 
 .informatie-cards .lc-block {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 100px;  
 }
 
 .informatie-cards .svg-inline--fa {
   font-size: 50px;
-  /* color: #2a3e28; */
   color: #292929;
 }
 
@@ -984,9 +985,7 @@ body.dark-mode .contact-formulier input{
   .collegaswiper-header {
     margin-top: 3em !important;
   }
-}
 
-@media (max-width: 1260px) {
   .overons-header {
     font-size: 30px;
   }
@@ -998,9 +997,7 @@ body.dark-mode .contact-formulier input{
   .container-overons-header img {
     margin-top: 5em;
   }
-}
 
-@media (max-width: 1260px) {
   .streep > * {
     display: none;
   }
@@ -1017,6 +1014,8 @@ body.dark-mode .contact-formulier input{
     display: none;
   }
 }
+
+
 
 /* Timeline */
 .timeline {
