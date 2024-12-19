@@ -386,6 +386,17 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   color: #eaeaea;
 }
 
+body.dark-mode .grijze-section{
+  background-color: #494949 !important;
+}
+
+body.dark-mode #team{
+  background-color: #494949 !important;
+
+}
+
+
+
 body.dark-mode .contact-formulier label{
   color: #212529;
 }
@@ -1642,7 +1653,7 @@ body.dark-mode .contact-formulier input{
   padding: 35px 0 35px 0;
 }
 
-.vacatures-section{
+.grijze-section{
   padding: 60px 0;
   background-color: #eee !important;
 }
@@ -1652,6 +1663,10 @@ body.dark-mode .contact-formulier input{
 #team {
   background: #eee !important;
   padding: 60px 0;
+}
+
+#team .card-text{
+  color: #212529;
 }
 
 .btn-primary:hover,
