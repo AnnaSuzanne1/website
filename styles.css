@@ -983,7 +983,7 @@ body.dark-mode .contact-formulier input {
 
 .informatie-cards h5 {
   font-size: 30px;
-  color: #478a20;
+  color: #007b5e;
 }
 
 .informatie-cards .match-svg {
@@ -1783,8 +1783,11 @@ section .section-title {
 .image-flip:hover .backside,
 .image-flip.hover .backside {
   -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  transform: rotateY(0deg);
   -moz-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
   border-radius: 0.25rem;
@@ -1803,6 +1806,7 @@ section .section-title {
   -webkit-transform-style: preserve-3d;
   -ms-transition: 1s;
   -moz-transition: 1s;
+  transform: perspective(1000px);
   -moz-transform: perspective(1000px);
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -1815,6 +1819,7 @@ section .section-title {
   position: relative;
   -webkit-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
   z-index: 2;
   margin-bottom: 30px;
 }
@@ -1868,14 +1873,12 @@ section .section-title {
 }
 
 .frontside .card .card-body img {
-  /* width: 120px; */
-  /* height: 120px; */
   border-radius: 2%;
 }
 
-/***********/
-/* Support */
-/***********/
+/*********************/
+/* Contact & Support */
+/*********************/
 
 .banner-container {
   text-align: left;
@@ -1900,6 +1903,8 @@ section .section-title {
   flex-wrap: wrap;
   margin-bottom: 5em;
   margin-top: 5em;
+  padding: 3em 0 3em 0;
+  background-color: #eee;
 }
 
 .map-openingstijden {
