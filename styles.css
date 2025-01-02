@@ -238,6 +238,10 @@ body.dark-mode .btn-secondary {
   border-color: #03dac6;
 }
 
+body.dark-mode .navbar-nav .nav-link:hover {
+  color: #bb86fc;
+}
+
 body.dark-mode .breadcrumb-item {
   color: #d8d7d7;
 }
@@ -467,7 +471,18 @@ body.dark-mode .contact-formulier input {
 .navbar-nav .nav-link {
   /* font-family: 'Arvo', serif; */
   font-family: "Lato", serif;
+  color: #000000;
 }
+
+.navbar-nav .nav-link:hover {
+  color: #108d6f;
+}
+
+.navbar-nav .nav-link .active {
+  color: #fa0909;
+  text-decoration:wavy;
+}
+
 
 /* dropdown */
 .dropdown-toggle {
@@ -580,7 +595,7 @@ body.dark-mode .contact-formulier input {
 
 /* Alert  */
 
-.alert{
+.alert {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -1033,11 +1048,11 @@ body.dark-mode .contact-formulier input {
 }
 
 /* Timeline */
-.timeline{
+.timeline {
   background-color: #eee;
 }
 
-.timeline h1{
+.timeline h1 {
   padding-top: 3em;
 }
 
@@ -1046,7 +1061,7 @@ body.dark-mode .contact-formulier input {
 }
 
 .timeline ul li {
-  position:relative;
+  position: relative;
   list-style-type: none;
   width: 6px;
   background-color: #d0e79f;
@@ -1056,24 +1071,23 @@ body.dark-mode .contact-formulier input {
 
 .timeline ul li::after {
   background: #d0e79f;
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  position:absolute;
-  left:50%;
+  position: absolute;
+  left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  }
+}
 
-
-  .timeline ul li div{
+.timeline ul li div {
   position: relative;
   width: 400px;
   padding: 15px;
   border-radius: 5px;
   bottom: 0;
-  background: #FFF;
+  background: #fff;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -1094,7 +1108,7 @@ body.dark-mode .contact-formulier input {
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -1121,11 +1135,9 @@ body.dark-mode .contact-formulier input {
   }
 }
 
-.timeline .img-timeline1{
+.timeline .img-timeline1 {
   width: 23em;
 }
-
-
 
 /* 
 
@@ -2202,16 +2214,3 @@ form {
   font-family: "Cardo";
   /* content-font */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
