@@ -43,7 +43,7 @@ h1 {
   margin-bottom: 1em;
 }
 
-.h1-section{
+.h1-section {
   margin-bottom: 4em;
 }
 
@@ -386,22 +386,19 @@ body.dark-mode .informatie-cards .svg-inline--fa {
   color: #eaeaea;
 }
 
-body.dark-mode .grijze-section{
+body.dark-mode .grijze-section {
   background-color: #494949 !important;
 }
 
-body.dark-mode #team{
+body.dark-mode #team {
   background-color: #494949 !important;
-
 }
 
-
-
-body.dark-mode .contact-formulier label{
+body.dark-mode .contact-formulier label {
   color: #212529;
 }
 
-body.dark-mode .contact-formulier input{
+body.dark-mode .contact-formulier input {
   color: #212529;
 }
 
@@ -419,8 +416,6 @@ body.dark-mode .contact-formulier input{
   background-color: #292929;
   color: #eaeaea;
 }
-
-
 
 @media (max-width: 991px) {
   .dark-mode .offcanvas .navbar-nav {
@@ -517,7 +512,7 @@ body.dark-mode .contact-formulier input{
 }
 
 /* fa-moon  */
-.fa-moon{
+.fa-moon {
   color: #292929;
 }
 
@@ -584,9 +579,16 @@ body.dark-mode .contact-formulier input{
 }
 
 /* Alert  */
-.alert-dismissible {
-  padding-right: 3rem;
+
+.alert{
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
+
+/* .alert-dismissible {
+  padding-right: 3rem;
+} */
 
 .close {
   background: none;
@@ -971,7 +973,7 @@ body.dark-mode .contact-formulier input{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;  
+  height: 100px;
 }
 
 .informatie-cards .svg-inline--fa {
@@ -1030,9 +1032,103 @@ body.dark-mode .contact-formulier input{
   }
 }
 
-
-
 /* Timeline */
+.timeline{
+  background-color: #eee;
+}
+
+.timeline h1{
+  padding-top: 3em;
+}
+
+.timeline ul {
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  position:relative;
+  list-style-type: none;
+  width: 6px;
+  background-color: #d0e79f;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.timeline ul li::after {
+  background: #d0e79f;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  }
+
+
+  .timeline ul li div{
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 0;
+  background: #FFF;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -445px;
+}
+
+.timeline time {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+.timeline .img-timeline1{
+  width: 23em;
+}
+
+
+
+/* 
+
 .timeline {
   display: flex;
   margin: 0 auto;
@@ -1049,7 +1145,6 @@ body.dark-mode .contact-formulier input{
   transition: 0.4s;
   padding: 0 10px;
   box-sizing: border-box;
-  /* font-family: "Pathway Gothic One", sans-serif; */
   color: #fff;
 }
 
@@ -1058,7 +1153,6 @@ body.dark-mode .contact-formulier input{
   font-size: 15px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.7);
-  /* font-family: Cardo; */
   font-weight: normal;
   line-height: 25px;
 }
@@ -1091,7 +1185,7 @@ body.dark-mode .contact-formulier input{
   }
 
   .timeline-item {
-    width: auto !important; /* Hiermee overschrijf je de breedte */
+    width: auto !important; 
     padding: 0 !important;
   }
 
@@ -1107,11 +1201,9 @@ body.dark-mode .contact-formulier input{
   position: absolute;
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
-  /* font-family: "Pathway Gothic One", sans-serif; */
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   top: 70%;
   margin-top: -5px;
-  /* padding-left: 15px; */
   opacity: 0;
   right: calc(-100% - 56px);
 }
@@ -1140,7 +1232,6 @@ body.dark-mode .contact-formulier input{
   top: 50%;
   transition: 0.3s all 0.2s;
   opacity: 1;
-  /* padding-left: 0; */
 }
 
 .timeline-item--active .timeline__content-title {
@@ -1156,13 +1247,10 @@ body.dark-mode .contact-formulier input{
 
   .timeline-item:before {
     left: 10px !important;
-    /* padding: 0 !important; */
-    /* top: 50px; */
+    
     text-align: center !important;
-    /* width: 60px; */
     border: none !important;
     padding-bottom: 20em;
-    /* position: relative; */
   }
 
   .timeline-item:last-child {
@@ -1212,7 +1300,6 @@ body.dark-mode .contact-formulier input{
 
 .timeline-header__subtitle {
   color: rgba(255, 255, 255, 0.5);
-  /* font-family: "Pathway Gothic One", sans-serif; */
   font-size: 16px;
   letter-spacing: 5px;
   margin: 10px 0 0 0;
@@ -1227,8 +1314,11 @@ body.dark-mode .contact-formulier input{
 .demo-footer a {
   color: #999;
   display: inline-block;
-  /* font-family: Cardo; */
 }
+
+.timeline-container:before {
+background-color: #effac4;
+} */
 
 /****************/
 /* Match Online */
@@ -1419,7 +1509,6 @@ body.dark-mode .contact-formulier input{
   padding: 20px;
 }
 
-
 .accordion-item {
   border-color: transparent !important;
 }
@@ -1494,7 +1583,7 @@ body.dark-mode .contact-formulier input{
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #a4cc00;
+  background-color: #d0e79f;
   left: 0;
   top: 0;
   border-radius: 25px 25px 0 25px;
@@ -1514,7 +1603,7 @@ body.dark-mode .contact-formulier input{
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #a4cc00;
+  border: 4px solid #d0e79f;
 }
 
 .name {
@@ -1653,19 +1742,17 @@ body.dark-mode .contact-formulier input{
   padding: 35px 0 35px 0;
 }
 
-.grijze-section{
+.grijze-section {
   padding: 60px 0;
   background-color: #eee !important;
 }
-
-
 
 #team {
   background: #eee !important;
   padding: 60px 0;
 }
 
-#team .card-text{
+#team .card-text {
   color: #212529;
 }
 
@@ -1682,7 +1769,6 @@ body.dark-mode .contact-formulier input{
   background-color: #007b5e;
   border-color: #007b5e;
 }
-
 
 section .section-title {
   text-align: center;
@@ -1701,7 +1787,7 @@ section .section-title {
   -o-transform: rotateY(0deg);
   -ms-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .image-flip:hover .frontside,
@@ -1903,7 +1989,7 @@ section .section-title {
 .Arn-Jan {
   display: block;
   margin: auto;
-  width: 300px
+  width: 300px;
 }
 
 @media screen and (min-width: 1025px) {
@@ -2111,3 +2197,16 @@ form {
   font-family: "Cardo";
   /* content-font */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
