@@ -1,14 +1,17 @@
-@import "../node_modules/mdb-ui-kit/src/scss/mdb.free.scss";
+
+// custom variables
+$primary: #A7C714; 
 
 // DARK SKIN
-$my-theme-primary: #1266f1;
+$my-theme-primary: #d012f1;
 $my-theme-secondary: #b23cfd;
 $my-dark-theme: mdb-dark-theme($my-theme-primary, $my-theme-secondary);
 
 
 
-// custom variables
-$primary: #A7C714; 
+
+
+@import "../node_modules/mdb-ui-kit/src/scss/mdb.free.scss";
 
 //import the functions and variables
 @import "../node_modules/bootstrap/scss/functions";
