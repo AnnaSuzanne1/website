@@ -1,4 +1,4 @@
-@import "~mdb-ui-kit/src/scss/mdb.pro.scss";
+@import "../node_modules/mdb-ui-kit/src/scss/mdb.pro.scss";
 
 // DARK SKIN
 $my-theme-primary: #1266f1;
@@ -10,8 +10,7 @@ $my-dark-theme: mdb-dark-theme($my-theme-primary, $my-theme-secondary);
 }
 
 // custom variables
-$primary: #a4cc00;
-// $primary: #6cb744;
+$primary: #A7C714;
 
 //import the functions and variables
 @import "../node_modules/bootstrap/scss/functions";

@@ -154,7 +154,7 @@ h3 {
 }
 
 .btn-primary {
-  background-color: #a4cc00;
+  background-color: #A7C714;
   border: none;
   color: #000000;
 }
@@ -450,7 +450,10 @@ body.dark-mode .contact-formulier input {
   width: 100%;
   margin-top: -2em;
   z-index: -1;
+  background: #A7C714;
 }
+
+
 
 .navbar {
   margin-bottom: 1em;
@@ -478,9 +481,9 @@ body.dark-mode .contact-formulier input {
   color: #108d6f;
 }
 
-.navbar-nav .nav-link .active {
-  color: #fa0909;
-  text-decoration:wavy;
+.navbar-nav .active {
+  color: #108d6f !important;
+  font-weight: bold;
 }
 
 
@@ -1023,7 +1026,7 @@ body.dark-mode .contact-formulier input {
   }
 
   .streep {
-    background-color: #a4cc00;
+    background-color: #A7C714;
   }
 
   .container-overons-header img {
@@ -1045,6 +1048,10 @@ body.dark-mode .contact-formulier input {
   .overons-header2 {
     display: none;
   }
+
+  .overons-streep{
+background-color: transparent;  }
+
 }
 
 /* Timeline */
