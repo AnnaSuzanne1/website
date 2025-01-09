@@ -228,7 +228,7 @@ body.dark-mode .card {
   color: #eaeaea;
 }
 
-body.dark-mode .btn-primary {
+/* body.dark-mode .btn-primary {
   background-color: #bb86fc;
   border-color: #bb86fc;
 }
@@ -236,10 +236,14 @@ body.dark-mode .btn-primary {
 body.dark-mode .btn-secondary {
   background-color: #03dac6;
   border-color: #03dac6;
-}
+} */
 
 body.dark-mode .navbar-nav .nav-link:hover {
   color: #bb86fc;
+}
+
+body.dark-mode .fa-moon{
+  color: #eee;
 }
 
 body.dark-mode .breadcrumb-item {
@@ -250,7 +254,7 @@ body.dark-mode .breadcrumb-item a {
   color: #d8d7d7;
 }
 body.dark-mode .breadcrumb-item a:hover {
-  color: #a4cc00;
+  color: #A7C714;
 }
 
 body.dark-mode .breadcrumb-item + .breadcrumb-item::before {
@@ -301,7 +305,7 @@ body.dark-mode .voordelen p {
 }
 
 body.dark-mode .voordelen p:hover {
-  color: #a4cc00;
+  color: #A7C714;
 }
 
 body.dark-mode .card-content .function {
@@ -532,6 +536,7 @@ body.dark-mode .contact-formulier input {
 /* fa-moon  */
 .fa-moon {
   color: #292929;
+  border: none;
 }
 
 .nav-item {
@@ -675,7 +680,7 @@ body.dark-mode .contact-formulier input {
 }
 
 .voordelen .erp-icon {
-  color: #a4cc00;
+  color: #A7C714;
   font-size: 50px;
   transition: font-size 0.5s;
 }
@@ -1377,12 +1382,12 @@ background-color: #effac4;
 }
 
 .erp-icon-met-tekst a:hover {
-  color: #a4cc00;
+  color: #A7C714;
 }
 
 .erp-icon-met-tekst a:first-child:hover .erp-icon,
 .erp-icon-met-tekst a:first-child:hover ~ a p {
-  color: #a4cc00;
+  color: #A7C714;
 }
 
 .erp-icon-met-tekst p {
@@ -1672,7 +1677,7 @@ background-color: #effac4;
 }
 
 .swiper-pagination-bullet {
-  background-color: #a4cc00;
+  background-color: #A7C714;
   opacity: 1;
 }
 
@@ -1737,7 +1742,7 @@ background-color: #effac4;
 
 /* vacature Banner */
 .vacature-banner .banner {
-  background-color: #83a108;
+  background-color: #91ad10;
   text-align: center;
   color: white;
 }
@@ -1934,7 +1939,7 @@ section .section-title {
 }
 
 .vertical {
-  border-left: 5px solid #a4cc00;
+  border-left: 5px solid #A7C714;
   height: 450px;
   margin-top: 0em;
   margin-left: 3em;
@@ -2037,7 +2042,7 @@ section .section-title {
 }
 
 .accordion-button:hover {
-  background-color: #a4cc00;
+  background-color: #A7C714;
 }
 
 .accordion-button {
@@ -2116,7 +2121,7 @@ table {
 input.btn {
   padding: 19px 39px 18px 39px;
   color: #fff;
-  background-color: #a4cc00;
+  background-color: #A7C714;
   font-size: 18px;
   text-align: center;
   font-style: normal;

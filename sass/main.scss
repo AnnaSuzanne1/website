@@ -1,21 +1,19 @@
 
 // custom variables
 $primary: #A7C714; 
+$secondary: #91ad10;
 
 // DARK SKIN
 $my-theme-primary: #d012f1;
 $my-theme-secondary: #b23cfd;
 $my-dark-theme: mdb-dark-theme($my-theme-primary, $my-theme-secondary);
 
-
-
-
-
+//Import libraries
 @import "../node_modules/mdb-ui-kit/src/scss/mdb.free.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-//import the functions and variables
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
+
+//custom theme colors
 
 $custom-theme-colors: (
   "teamviewer": #0c81e0,
@@ -23,5 +21,8 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-// import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+
