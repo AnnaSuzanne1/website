@@ -21,7 +21,10 @@ $custom-theme-colors: (
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
-
+//apply dark theme
+.dark {
+  @include mdb-theme($my-dark-theme);
+}
 
 
 
