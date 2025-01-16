@@ -658,6 +658,10 @@ body.dark-mode .contact-formulier input {
   max-width: 380px;
 }
 
+.home-banner img{
+  width: 80%;
+}
+
 /* .home-banner{
   margin-bottom: 10em;
 } */
@@ -2207,7 +2211,7 @@ font-size: 16px;
 }
 
 .bovenkant-footer .row {
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 
 .bovenkant-footer .row p{
