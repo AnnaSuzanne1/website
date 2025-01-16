@@ -1357,7 +1357,7 @@ background-color: #effac4;
 /****************/
 
 .scannerpng {
-  width: 9em;
+  width: 8.8em;
   padding: 1em;
 }
 
@@ -1405,6 +1405,13 @@ background-color: #effac4;
 
 .erp-en-webshop .align-cards {
   justify-content: center;
+}
+
+@media (max-width: 990px) {
+.erp-en-webshop .col-lg-4{
+  margin-bottom: 3em;
+}
+  
 }
 
 /***************/
