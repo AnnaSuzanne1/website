@@ -2053,6 +2053,12 @@ section .section-title {
   background-color: #A7C714;
 }
 
+.accordion-button:not(.collapsed){
+  color:  var(--mdb-body-color);
+  background-color: #A7C714;
+}
+
+
 .accordion-button {
   font-weight: 500 !important;
 }
