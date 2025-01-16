@@ -2174,18 +2174,10 @@ form {
 }
 
 
-
 .copyright {
   font-size: 16px;
   margin: auto !important;
 }
-
-.footer-documenten {
-  position: absolute;
-  font-size: 16px;
-
-}
-
 
 .copyright-container p {
   font-size: 16px;
@@ -2194,6 +2186,16 @@ form {
 .copyright-container h2 {
   font-size: 20px !important;
 }
+
+.footer-documenten {
+  position: absolute;
+}
+
+.footer-documenten p{
+margin: 0 !important;
+font-size: 16px;
+}
+
 
 .linkedin-link {
   color: white;
@@ -2227,6 +2229,12 @@ font-size: 14px !important;
     align-items: center;
     justify-content: center !important;
   }
+}
+
+@media (min-width: 1199px) {
+.bottom-footer{
+  display: block;
+}
 }
 
 /* DEMO */
