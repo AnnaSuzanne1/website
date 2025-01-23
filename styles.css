@@ -181,7 +181,7 @@ h3 {
   }
 
   .quote {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .vacature-ul {
@@ -215,6 +215,8 @@ body.dark-mode .toggleThemeBtn:hover {
 }
 
 
+body.dark-mode .fa-quote-right {
+color: #9c56f3;}
 
 body.dark-mode {
   background-color: #292929;
@@ -294,6 +296,11 @@ body.dark-mode .logos {
 
 body.dark-mode .quote{
   color: #ffffff;
+}
+
+body.dark-mode .quote-name a {
+  color: #ffffff;
+
 }
 
 body.dark-mode .voordelen {
