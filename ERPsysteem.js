@@ -17,7 +17,7 @@ const infoData = {
   },
   info4: {
     title: "Maximaal inzicht en grip op uw administratieve processen",
-    text: "Uw administratie moet waterdicht zijn en u op ieder gewenst moment inzicht verschaffen in uw financiële stand van zaken. Of het nu gaat om uw fust- en karrenregistratie of om de uitstaande EAB’s en facturen. Match Online ondersteunt u hierin optimaal en neemt de daadwerkelijk orders en bestellingen als uitgangspunt voor alle controles en registraties. Match Online is geïntegreerd met de veiling en is ook te koppelen aan Avalanche en uw eigen boekhoudsysteem.",
+    text: "Uw administratie moet waterdicht zijn en u kunt op ieder gewenst moment inzicht verschaffen in uw financiële stand van zaken.  In Match Online kunt u uw orders snel en correct factureren en versturen naar uw klanten. Ook als het gaat om uw fust- en karrenregistratie of om de uitstaande EAB’s en facturen, heeft u snel inzicht.  Match Online ondersteunt u hierin optimaal en neemt de daadwerkelijke orders en bestellingen als uitgangspunt voor alle controles en registraties. Match Online is geïntegreerd met de veiling en is ook te koppelen aan Avalanche/Track-Online en uw eigen boekhoudsysteem. ",
     image:
       "images/ERP-systeem-img/Willem-Hoogendoorn-Fotografie193_vierkant.jpg",
   },
