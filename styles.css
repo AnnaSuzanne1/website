@@ -1471,9 +1471,14 @@ background-color: #effac4;
   flex: 1;
 }
 
-.aanvullende-webshop-modules {
+.aanvullende-webshop-h3{
   margin-top: 7em;
+}
+
+.aanvullende-webshop-modules {
+  margin-top: 1em;
   margin-bottom: 7em;
+  display: flex;
 }
 
 .aanvullende-webshop-modules .accordion-body {
