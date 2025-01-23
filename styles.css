@@ -126,6 +126,7 @@ h3 {
   font-family: "Lato", "Arial";
   max-width: 38em;
   text-align: center;
+  color: #000000;
 }
 
 .quote-name {
@@ -147,6 +148,7 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-top: 10em;
+  color: #2c3601;
 }
 
 .btn {
@@ -995,7 +997,7 @@ body.dark-mode .contact-formulier input {
 }
 
 .informatie-cards .card {
-  background-color: #effac4;
+  background-color: #c9df8c;
   height: 200px;
   width: 200px;
 }
@@ -1014,7 +1016,9 @@ body.dark-mode .contact-formulier input {
 
 .informatie-cards h5 {
   font-size: 30px;
-  color: #007b5e;
+  /* color: #007b5e; */
+  /* color: #292929; */
+  color: #2c3601;
 }
 
 .informatie-cards .match-svg {
@@ -1802,16 +1806,18 @@ background-color: #effac4;
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #108d6f;
-  border-color: #108d6f;
+  /* background-color: #108d6f;
+  border-color: #108d6f; */
+  background-color: #1a2101;
   box-shadow: none;
   outline: none;
 }
 
 .btn-primary {
   color: #fff;
-  background-color: #007b5e;
-  border-color: #007b5e;
+  /* background-color: #007b5e;
+  border-color: #007b5e; */
+background-color: #2c3601;
 }
 
 section .section-title {
