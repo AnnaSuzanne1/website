@@ -2198,7 +2198,6 @@ form {
 
 .copyright {
   font-size: 16px;
-  margin: auto !important;
 }
 
 .copyright-container p {
@@ -2209,9 +2208,9 @@ form {
   font-size: 20px !important;
 }
 
-.footer-documenten {
+/* .footer-documenten {
   position: absolute;
-}
+} */
 
 .footer-documenten p{
 margin: 0 !important;
